@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet"> <!-- from Google Fonts -->
+  </head>
+
+  <body>
+
+    <h1>PET SHARE - P01 Style Guide</h1>
+
+    <nav>
+      <p>
+        Go to:
+        <a class="button top-nav" href="#interactive-elements">INTERACTIVE ELEMENTS</a>
+        <a class="button top-nav" href="#text-elements">TEXT ELEMENTS</a>
+        <a class="button top-nav" href="#combined-elements">COMBINED ELEMENTS</a>
+        <a class="button top-nav" href="citations.html">CITATIONS</a>
+        <a class="button top-nav" href="https://x2dsew.axshare.com/#id=vld965&p=home&sc=1&c=1" target="_blank">DESKTOP WIRE-FLOW</a>
+        <a class="button top-nav" href="https://pw74r0.axshare.com/#id=yl05ft&p=home&c=1" target="_blank">MOBILE WIRE-FLOW</a>
+      </p>
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive-elements">
+
+
+      <section>
+        <!-- link -->
+        <h2>In-text link</h2>
+        <h3>CSS selector:</h3>
+        <p>.a</p>
+        <h3>Sample code:</h3>
+        <code>&lt;a class="link" href="https://www.google.ca"&gt;Link to Google&lt;/a&gt;</code>
+        <h3>Rendered code:</h3>
+        <a class="link" href="https://www.google.ca">Link to Google</a>
+      </section>
+
+      <!-- navigation button -->
+      <section>
+        <h2>Navigation Button</h2>
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button"&gt;Navigation Button&lt;/a&gt;</code>
+        <h3>Rendered element:</h3>
+        <a class="button" href="#">Navigation Button</a>
+      </section>
+
+      <section>
+        <!-- buttons (referenced from www.w3schools.com)-->
+        <h2>Submit/Reset Buttons</h2>
+        <h3>CSS selector:</h3>
+        <p>.button-click</p>
+        <h3>Sample code:</h3>
+        <code>&lt;button class="button-click" type="button" onclick="alert('Submitted!')">SUBMIT&lt;/button&gt;</code>
+        <p>or</p>
+        <code>&lt;button class="button-click" type="button">RESET&lt;/button&gt;</code>
+        <h3>Rendered element:</h3>
+        <button class="button-click" type="button" onclick="alert('Submitted!')">SUBMIT</button>
+        <button class="button-click" type="button">RESET</button>
+      </section>
+
+      <section>
+        <!-- text field referenced from www.w3schools.com -->
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p>.input</p>
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" input="text input"&gt;</code>
+        <h3>Rendered element:</h3>
+        Text input field <input type="text" input="text input">
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text-elements">
+
+      <section>
+        <h2>Headings</h2>
+
+        <!-- h1 -->
+        <h3>CSS selector:</h3>
+        <p>.h1</p>
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+        <h3>Rendered element:</h3>
+        <h1>Heading 1</h1>
+
+        <!-- h2 -->
+        <h3>CSS selector:</h3>
+        <p>.h2</p>
+        <h3>Sample code:</h3>
+        <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+        <h3>Rendered element:</h3>
+        <h2>Heading 2</h2>
+
+        <!-- h3 -->
+        <h3>CSS selector:</h3>
+        <p>.h3</p>
+        <h3>Sample code:</h3>
+        <code>&lt;h3&gt;HEADING 3&lt;/h3&gt;</code>
+        <h3>Rendered element:</h3>
+        <h3 id=heading>HEADING 3</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <!-- p -->
+        <h3>CSS selector:</h3>
+        <p>.p</p>
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        <h3>Rendered element:</h3>
+        <p>This is a paragraph.</p>
+      </section>
+
+      <section>
+        <!-- bulleted list -->
+        <h2>Bulleted Lists</h2>
+        <h3>CSS selectors:</h3>
+        <p>.ul and .li</p>
+        <h3>Sample code:</h3>
+        <code>&lt;ul&gt;</code>
+        <code>&lt;li&gt;First bullet&lt;/li&gt;</code>
+        <code>&lt;li&gt;Second bullet&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+        <h3>Rendered element:</h3>
+        <ul>
+          <li>First bullet</li>
+          <li>Second bullet</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- numbered list -->
+        <h2>Numbered Lists</h2>
+        <h3>CSS selectors:</h3>
+        <p>.ol and .li</p>
+        <h3>Sample code:</h3>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;First item&lt;/li&gt;</code>
+        <code>&lt;li&gt;Second item&lt;/li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+        <h3>Rendered element:</h3>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined-elements">
+
+      <section>
+        <!-- main nav (referenced from www.w3schools.com)-->
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p>.main-nav</p>
+        <h3>Sample code:</h3>
+        <code>&lt;div class="main-nav"&gt;</code>
+        <code>&lt;div class="dropdown"&gt;</code>
+        <code>&lt;button class="nav-button"&gt;&lt;a href="open-page.html"&gt;BROWSE PETS&lt;a&gt;&lt;/button&gt;</code>
+        <code>&lt;div class="dropdown-content"&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;DOGS&lt;/a&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;CATS&lt;/a&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;BUNNIES&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;div class="dropdown"&gt;</code>
+        <code>&lt;button class="nav-button"&gt;&lt;a href="open-page.html"&gt;MY ACCOUNT&lt;a&gt;&lt;/button&gt;</code>
+        <code>&lt;div class="dropdown-content"&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;LOG IN&lt;/a&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;SIGN UP&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;a href="open-page.html"&gt;CART&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="main-nav">
+          <a href="open-page.html">CART</a>
+          <div class="dropdown">
+            <button class="nav-button"><a href="open-page.html">MY ACCOUNT</a></button>
+            <div class="dropdown-content">
+              <a href="open-page.html">LOG IN</a>
+              <a href="open-page.html">SIGN UP</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="nav-button"><a href="open-page.html">BROWSE PETS</a></button>
+            <div class="dropdown-content">
+              <a href="open-page.html">DOGS</a>
+              <a href="open-page.html">CATS</a>
+              <a href="open-page.html">BUNNIES</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- product listing -->
+        <h2>Product Listing</h2>
+
+        <h2>Dogs</h2>
+        <div class="pets">
+          <div class="one-pet">
+            <img class="box-item-image" id="pet-image" src="img/image.png" alt="Load image of pet here">
+            <h3>PET NAME</h3>
+            <p>Insert description here</p>
+          </div>
+          <div class="one-pet">
+            <img class="box-item-image" id="pet-image" src="img/image.png" alt="Load image of pet here">
+            <h3>PET NAME</h3>
+            <p>Insert description here</p>
+          </div>
+          <div class="one-pet">
+            <img class="box-item-image" id="pet-image" src="img/image.png" alt="Load image of pet here">
+            <h3>PET NAME</h3>
+            <p>Insert description here</p>
+          </div>
+          <div class="one-pet">
+            <img class="box-item-image" id="pet-image" src="img/image.png" alt="Load image of pet here">
+            <h3>PET NAME</h3>
+            <p>Insert description here</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- grid structure referenced from in class tutorial and css-tricks.com-->
+        <h2>Website Grid Structure</h2>
+        <h3>CSS selector:</h3>
+        <p>.box-item</p>
+        <h3>Sample code:</h3>
+        <code>&lt;div class="grid"&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="box-item"&gt;&lt/div&gt;</code>
+        <code>&lt;div class="box-item"&gt;&lt/div&gt;</code>
+        <code>&lt;div class="box-item"&gt;&lt/div&gt;</code>
+        <code>&lt;div class="box-item"&gt;&lt/div&gt;</code>
+        <h3>Rendered element:</h3>
+        <div class="grid">
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+          <div class="box-item"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Colour Swatches</h2>
+        <h3>CSS selectors:</h3>
+        <p>.orange</p>
+        <p>.light-blue</p>
+        <p>.dark-blue</p>
+        <p>background-color</p>
+        <h3>Sample code:</h3>
+        <p class="label">Html:</p>
+        <code>&lt;div class="colour orange"&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="colour light-blue"&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="colour dark-blue"&gt;&lt;/div&gt;</code>
+        <p class="label">CSS:</p>
+        <code>.orange{background-color: rgb(249, 163, 50);}</code>
+        <code>.orange{background-color: rgb(139,174,196);}</code>
+        <code>.orange{background-color: rgb(86,98,122);}</code>
+        <h3>Rendered element</h3>
+        <div class="colour orange"></div>
+        <div class="colour light-blue"></div>
+        <div class="colour dark-blue"></div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
