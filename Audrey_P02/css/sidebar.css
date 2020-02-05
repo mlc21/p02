@@ -56,9 +56,9 @@
 }
 
 #more-links a {
-    color: white;
+    color: #1a1a1a;
     opacity: 1;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 #logo {

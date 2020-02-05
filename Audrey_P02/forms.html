@@ -36,8 +36,6 @@
         
         <section id="more-links">
             <ul>
-                <li><a href="https://www.figma.com/proto/NX02I6gXoDlAaYCvbAdHoE/Untitled?node-id=11%3A251&scaling=min-zoom">Mobile Wireflow</a></li>
-                <li><a href="https://www.figma.com/proto/NX02I6gXoDlAaYCvbAdHoE/Untitled?node-id=5%3A703&scaling=min-zoom">Desktop Wireflow</a></li>
                 <li><a href="citations.html">Citations</a></li>
             </ul>
         </section>
@@ -45,12 +43,24 @@
     </div> <!-- end of #side-bar -->
       
     <div class="main">
-        <h1>Forms</h1>
-        <input type="text" value="Type something">
-        <button type="button" class="button orange-bg" onclick="alert('Thank you')">Submit</button>
+        
+        <div id="form">
+            <h1>Forms</h1>
+            <h4 class="form-label">Full Name</h4>
+            <input type="text">
+
+            <h4 class="form-label">Favourite Colour</h4>
+            <input type="text">
+
+            <button class="button">Book now</button>
+        </div>
+        
+        <h3>CSS Selector</h3>
+        <code>.form-label</code>
         
         <h3>Sample Code</h3>
-        <code>&lt;input type="text" value="Type something"&gt;</code>
+        <code>&lt;h4 class="form-label"&gt;Full Name&lt;/h4&gt;</code>
+        <code>&lt;input type="text"&gt;</code>
     </div><!-- end of main -->
   </body>
 </html>
