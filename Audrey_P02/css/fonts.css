@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Book.woff2') format('woff2'),
+        url('PostGrotesk-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Bold.woff2') format('woff2'),
+        url('PostGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Medium.woff2') format('woff2'),
+        url('PostGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Light.woff2') format('woff2'),
+        url('PostGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

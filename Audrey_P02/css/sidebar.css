@@ -1,0 +1,70 @@
+/* Code sourced from W3Schools */
+#side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#active-page {
+    background-color: #FF8A00;
+}
+
+.side-bar {
+    background-color: #FFA000;
+    position: fixed;
+    min-width: 250px;
+    width: 29%;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    
+    -ms-overflow-style: none;
+}
+
+
+.side-bar .content {
+    margin-left: 18%;
+}
+
+.side-bar section {
+    color: #1a1a1a;
+    margin-top: 50px;
+    font-size: 1.05em;
+}
+
+.side-bar ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.side-bar p, .side-bar a {
+    font-weight: 500;
+    line-height: 0.5;
+    padding-left: 3%;
+}
+
+.side-bar ul > li, .side-bar a {
+    color: #1a1a1a;
+    opacity: 0.7;
+    font-weight: 100;
+    padding: 0% 3%;
+    width: 70%;
+}
+
+.side-bar ul > li:hover, side-bar a:hover {
+    background-color: rgba(255, 138, 0, 0.51);
+    color: #F0E8E7;
+}
+
+#more-links a {
+    color: white;
+    opacity: 1;
+    font-weight: normal;
+}
+
+#logo {
+    margin-top: 18%;
+    margin-bottom: 7%;
+    width: 30%;
+    min-width: 70px;
+    padding-left: 3%;
+}
