@@ -59,17 +59,13 @@ p {
 
 }
 
-nav {
-    border-bottom: 2px solid grey;
-    padding-bottom: 10px;
-}
-
 nav > a {
     color: #343434;
     margin-right: 15px;
     font-size: 1.25em;
     font-weight: bold;
     transition: color 0.25s;
+    text-transform: uppercase;
 }
 
 
@@ -91,11 +87,29 @@ a:hover {
 }
 
 input {
-    padding: 8px 14px;
+    padding: 0;
+    padding-bottom: 12px;
     border: none;
-    border-radius: 3px;
+    border-bottom: 4px solid rgb(0, 0, 0, 0.1);
     color: rgb(0,0,0,0.7);
-    width: 75%;
+    width: 100%;
+}
+
+input:focus {
+    border-bottom: 4px solid #8BC8E9;
+    outline-style: none;
+    color: rgb(0,0,0,0.9);
+}
+
+.form-label {
+    padding-bottom: 0;
+    margin-top: 45px;
+    margin-bottom: 12px;
+    color: #5A9EC4;
+}
+
+table li {
+    margin-left: 5%;
 }
 
 .button {
@@ -213,12 +227,27 @@ input {
     background-color: #8BC8E9;
 }
 
-#last-row td {
-    border-bottom: none;
+#active-nav {
+    color: black;
+    padding-bottom: 7px;
+    border-bottom: 4px solid black;
+    stroke-linecap: round;
 }
 
-table li {
-    margin-left: 5%;
+#form {
+    width: 50%;
+}
+
+#form button {
+    margin-top: 35px;
+    margin-left: 0;
+    background-color: #8BC8E9;
+    display: block;
+    width: 100%;
+}
+
+#last-row td {
+    border-bottom: none;
 }
 
 #swatches{
@@ -227,16 +256,23 @@ table li {
     margin-top: -10px;
 }
 
-#sample-listing > img {
-    width: 25%;
+#sample-listing col {
+    width: 30%;
+    display: block;
 }
 
-#sample-listing h2 {
-    padding-left: 10%;
+#sample-listing img {
+    max-width: 225px;
+}
+
+#sample-listing h3 {
+    display: block;
+    padding-left: 0;
+    padding-bottom: 20px;
 }
 
 #sample-listing p {
-   display: block;
+    padding-left: 0;
 }
 
 @media (max-width: 855px) {
