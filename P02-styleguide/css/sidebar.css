@@ -31,13 +31,14 @@
 }
 
 .side-bar ul {
+  font-family: freight-sans-pro, sans-serif;
     list-style-type: none;
     padding: 0;
     line-height: 2.2;
 }
 
 .side-bar p, .side-bar a {
-    font-weight: 500;
+    font-weight: 400;
     line-height: 0.5;
     padding-left: 3%;
 }
@@ -58,7 +59,7 @@
 #more-links a {
     color: #1a1a1a;
     opacity: 1;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #logo {
