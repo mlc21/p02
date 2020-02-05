@@ -1,5 +1,8 @@
 body {
-    font-family: 'Post Grotesk';
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -10,7 +13,7 @@ table {
     border-radius: 3px;
 }
 
-table h1, table h2, table h3, table p, table a {
+table h1, table h2, table h3, table h4, table p, table a {
     padding: 0 10%;
 }
 
@@ -24,22 +27,36 @@ h2, h3 {
 }
 
 h1 {
+    font-family: termina, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     font-size: 3.375em;
-    letter-spacing: -1px;
 }
 
 h2 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
     font-size: 2.25em;
-    font-weight: 500;
 }
 
 h3 {
-    font-size: 1.25em;
-    font-weight: 500;
+  font-family: termina, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 1.75em;
+}
+
+h4 {
+  font-family: termina, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  letter-spacing: 0.2rem;
 }
 
 p {
-    
+
 }
 
 nav {
@@ -117,7 +134,7 @@ input {
 .container {
     display: -webkit-flex;
     display: -ms-flex;
-    display: flex; 
+    display: flex;
 
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
@@ -216,31 +233,30 @@ table li {
     .side-bar {
         display:none;
     }
-    
+
     .main {
         margin-left: 5%;
         padding: 0;
     }
-    
+
     .col {
         width: 100%;
     }
-    
+
     .col > p {
         padding-left: 3%;
     }
-    
+
     #sample-listing h2 {
     padding-left: 3%;
      padding-bottom: 3%;
 }
-    
+
     table p {
         font-size: 0.8em;
     }
-    
+
     #swatches {
         height: 600px;
     }
 }
-
