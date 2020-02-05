@@ -104,17 +104,27 @@ input {
     border-radius: 3px;
     padding: 9px 18px;
     font-size: 0.95em;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(0,0,0,0.8);
-    transition: background-color 0.25s ease;
+    transition: background-color 0.4s ease;
 }
 
-.button.red-bg:hover{
-    background-color: #b50808;
+.button.whiteorange-bg{
+  border: 1px solid #FFA000;
+  color: #FFA000;
+}
+
+.button.whiteorange-bg:hover{
+    background-color: #FFA000;
+    color: white;
+}
+
+.button.orange-bg{
+  color: white;
 }
 
 .button.orange-bg:hover{
-    background-color: #d04424;
+    background-color: #ffc76e;
 }
 
 .button.lightgrey-bg:hover{
