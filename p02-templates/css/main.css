@@ -1,0 +1,42 @@
+html {
+    background-color: mintcream;
+    height: 2000px;
+}
+
+.top-nav {
+    position: fixed;
+/*    top: 0;*/
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding: 0 16px;
+
+}
+
+.top-nav a {
+    float: left;
+/*    display: block;*/
+    color: rgb(0, 0, 0, 0.8);
+    text-align: centre;
+    padding: 20px 16px;
+}
+
+.top-nav a:hover {
+    color: rgb(0, 0, 0, 1);
+}
+
+
+.top-nav-right {
+    float: right;
+    padding-right: 32px;
+}
+
+#nav-logo {
+    padding: 15px 16px;
+}
+
+@media(max-width: 768px){
+    .top-nav-right {
+        display: none;
+    }
+}
