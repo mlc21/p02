@@ -53,6 +53,8 @@ h4 {
   font-style: normal;
   font-size: 1em;
   letter-spacing: 0.2rem;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -78,7 +80,7 @@ nav > a:hover{
 }
 
 nav > a:active{
-    color: #c61616;
+    color: #C61616;
 }
 
 a {
@@ -88,6 +90,10 @@ a {
 
 a:hover {
     color: #F98981;
+}
+
+button:focus{
+  outline-style: none;
 }
 
 input {
@@ -109,26 +115,27 @@ input {
     transition: background-color 0.4s ease;
 }
 
-.button.whiteorange-bg{
-  border: 1px solid #FFA000;
-  color: #FFA000;
+.button.whiteblue-bg{
+  border: 1px solid #8BC8E9;
+  color: #8BC8E9;
 }
 
-.button.whiteorange-bg:hover{
-    background-color: #FFA000;
+.button.whiteblue-bg:hover{
+    background-color: #5A9EC4;
+    border: 1px solid #5A9EC4;
     color: white;
 }
 
-.button.orange-bg{
+.button.mediumblue-bg{
   color: white;
 }
 
-.button.orange-bg:hover{
-    background-color: #ffc76e;
+.button.mediumblue-bg:hover{
+  background-color: #5A9EC4;
 }
 
 .button.lightgrey-bg:hover{
-    background-color: #c1c1c1;
+    background-color: #C9C9C9;
 }
 
 
@@ -181,10 +188,6 @@ input {
     opacity: 0.8;
 }
 
-.orange-bg {
-    background-color: #FFA000;
-}
-
 .lightblue-bg {
     background-color: #D5E9F3;
 }
@@ -198,8 +201,7 @@ input {
 }
 
 .lightgrey-bg {
-    background-color: #cecece;
-    border: 1px solid rgb(0, 0, 0, 0.25);
+    background-color: #D9D9D9;
 }
 
 .grey-bg > p {
@@ -211,6 +213,33 @@ input {
     margin: 30px 0;
     border: 10px solid #D5E9F3;
     background-color: #8BC8E9;
+}
+
+#active-nav {
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    stroke-linecap: round;
+}
+
+#form {
+    width: 50%;
+}
+
+#form button {
+    margin-top: 35px;
+    margin-left: 0;
+    background-color: #FFA000;
+    border: 1px solid #FFA000;
+    transition: background-color 0.4s ease;
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+#form button:hover {
+  background-color: #FFC76E;
+  border: 1px solid #FFC76e;
 }
 
 #last-row td {
@@ -235,8 +264,18 @@ table li {
     padding-left: 10%;
 }
 
+#sample-listing img {
+    max-width: 225px;
+}
+
+#sample-listing h3 {
+    display: block;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
 #sample-listing p {
-   display: block;
+    padding-left: 0;
 }
 
 @media (max-width: 855px) {
