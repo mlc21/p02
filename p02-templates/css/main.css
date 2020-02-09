@@ -1,10 +1,6 @@
 html {
     background-color: mintcream;
     height: 2000px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
     position: relative;
 }
 
@@ -15,6 +11,13 @@ body {
     font-size: 1em;
     letter-spacing: 0.02em;
     color: #212121;
+}
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 h1, h2, h3, h4{
@@ -45,7 +48,7 @@ h4 {
 
 .top-nav {
     position: fixed;
-/*    top: 0;*/
+    top: 0;
     width: 100%;
     background-color: white;
     overflow: hidden;
