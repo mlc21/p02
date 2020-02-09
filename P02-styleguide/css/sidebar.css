@@ -4,11 +4,11 @@
 }
 
 #active-page {
-    background-color: #FF8A00;
+    background-color: #bbddf0;
 }
 
 .side-bar {
-    background-color: #FFA000;
+    background-color: #D5E9F3;
     position: fixed;
     min-width: 250px;
     width: 29%;
@@ -52,7 +52,7 @@
 }
 
 .side-bar ul > li:hover, side-bar a:hover {
-    background-color: rgba(255, 138, 0, 0.51);
+    background-color: rgba(197, 225, 240, 0.6);
     color: #F0E8E7;
 }
 
