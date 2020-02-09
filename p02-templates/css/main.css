@@ -5,8 +5,9 @@ html {
 
 .top-nav {
     position: fixed;
-/*    top: 0;*/
+    top: 0;
     width: 100%;
+    height: 60px;
     background-color: white;
     overflow: hidden;
     padding: 0 16px;
@@ -15,7 +16,6 @@ html {
 
 .top-nav a {
     float: left;
-/*    display: block;*/
     color: rgb(0, 0, 0, 0.8);
     text-align: centre;
     padding: 20px 16px;
@@ -24,7 +24,6 @@ html {
 .top-nav a:hover {
     color: rgb(0, 0, 0, 1);
 }
-
 
 .top-nav-right {
     float: right;
@@ -35,8 +34,20 @@ html {
     padding: 15px 16px;
 }
 
+#hamburger {
+    float: right;
+    display: none;
+    padding: 15px 40px;
+    font-size: 1.5em;
+}
+
+
 @media(max-width: 768px){
     .top-nav-right {
         display: none;
+    }
+    
+    #hamburger {
+        display: block;
     }
 }
