@@ -53,8 +53,6 @@ h4 {
   font-style: normal;
   font-size: 1em;
   letter-spacing: 0.2rem;
-  padding: 0;
-  margin: 0;
 }
 
 p {
@@ -80,7 +78,7 @@ nav > a:hover{
 }
 
 nav > a:active{
-    color: #C61616;
+    color: #c61616;
 }
 
 a {
@@ -90,10 +88,6 @@ a {
 
 a:hover {
     color: #F98981;
-}
-
-button:focus{
-  outline-style: none;
 }
 
 input {
@@ -115,27 +109,26 @@ input {
     transition: background-color 0.4s ease;
 }
 
-.button.whiteblue-bg{
-  border: 1px solid #8BC8E9;
-  color: #8BC8E9;
+.button.whiteorange-bg{
+  border: 1px solid #FFA000;
+  color: #FFA000;
 }
 
-.button.whiteblue-bg:hover{
-    background-color: #5A9EC4;
-    border: 1px solid #5A9EC4;
+.button.whiteorange-bg:hover{
+    background-color: #FFA000;
     color: white;
 }
 
-.button.mediumblue-bg{
+.button.orange-bg{
   color: white;
 }
 
-.button.mediumblue-bg:hover{
-  background-color: #5A9EC4;
+.button.orange-bg:hover{
+    background-color: #ffc76e;
 }
 
 .button.lightgrey-bg:hover{
-    background-color: #C9C9C9;
+    background-color: #c1c1c1;
 }
 
 
@@ -201,7 +194,8 @@ input {
 }
 
 .lightgrey-bg {
-    background-color: #D9D9D9;
+    background-color: #cecece;
+    border: 1px solid rgb(0, 0, 0, 0.25);
 }
 
 .grey-bg > p {
