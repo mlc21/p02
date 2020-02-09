@@ -5,6 +5,7 @@ body {
     font-size: 1em;
     letter-spacing: 0.02em;
     color: #212121;
+    height: 3000px;
 }
 
 table {
@@ -61,18 +62,29 @@ p {
 
 }
 
-nav > a {
-    color: #343434;
-    margin-right: 15px;
-    font-size: 1.25em;
-    font-weight: bold;
-    transition: color 0.25s;
-    text-transform: uppercase;
+nav {
+    position: sticky;
+    display: block;
+    top: 0;
+    background-color: white;
+    padding-top: 5%;
+        padding-bottom: 7px;
 }
 
+nav > a {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0, 0.8);
+  margin: 0 4%;
+}
 
 nav > a:hover{
-    color: black;
+  color: black;
+  transition: opacity 2s linear;
 }
 
 nav > a:active{
@@ -232,8 +244,8 @@ table li {
 
 #active-nav {
     color: black;
-    padding-bottom: 7px;
-    border-bottom: 4px solid black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
     stroke-linecap: round;
 }
 
