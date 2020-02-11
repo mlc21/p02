@@ -1,5 +1,4 @@
 html {
-    background-color: mintcream;
     height: 2000px;
     position: relative;
 }
@@ -46,6 +45,48 @@ h4 {
   letter-spacing: 0.2rem;
 }
 
+body {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1, h2, h3, h4{
+  font-family: termina, sans-serif;
+  line-height: 1.25em;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.375em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.25em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 1em;
+  letter-spacing: 0.2rem;
+}
+
 .top-nav {
     position: fixed;
     top: 0;
@@ -54,23 +95,55 @@ h4 {
     background-color: white;
     overflow: hidden;
     padding: 0 16px;
+    z-index: 1;
 
 }
 
 .top-nav a {
     float: left;
-    color: rgb(0, 0, 0, 0.8);
+    color: black;
+    opacity: 0.8;
     text-align: centre;
-    padding: 20px 16px;
+    margin: 20px 16px;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 .top-nav a:hover {
-    color: rgb(0, 0, 0, 1);
+    opacity: 1;
 }
 
 .top-nav-right {
     float: right;
-    padding-right: 32px;
+    padding-right: 48px;
+}
+
+.underline-link {
+    position: relative;
+}
+
+.underline-link:after {
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 3px;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.underline-link:hover:after {
+    width: 100%;
+    left: 0;
+    background: #000;
+        opacity: 0.8;
 }
 
 #nav-logo {
@@ -84,13 +157,45 @@ h4 {
     font-size: 1.5em;
 }
 
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: lightgrey;
+    z-index: 0;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: left;
+    top: 38%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 48%;
+}
+
+p.hero {
+    font-size: 1.25em;
+    margin-top: 0.5em;
+}
+
 
 @media(max-width: 768px){
     .top-nav-right {
         display: none;
     }
+    
+    .hero-text {
+        width: 70%;
+    }
 
     #hamburger {
         display: block;
+    }
+}
+
+@media(max-width: 600px){
+    .hero-text {
+        width: 82%;
     }
 }
