@@ -76,6 +76,10 @@ button:focus{
   margin-left: 10%;
 }
 
+.top-padding {
+  padding-top: 10%;
+}
+
 .top-nav {
     position: fixed;
     top: 0;
@@ -217,9 +221,15 @@ button:focus{
   opacity: 1;
 }
 
-.pet-nav.active a {
+.active::after {
   opacity: 1;
-  border-bottom: 2px solid black;
+  content: '';
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 3px;
+  right: 0;
+  background: #000;
+  opacity: 0.8;
 }
 
 /* end of pet nav */
@@ -325,7 +335,7 @@ button:focus{
     .top-nav-right {
         display: none;
     }
-    
+
     .hero .textblock {
         width: 70%;
     }
