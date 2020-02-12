@@ -1,0 +1,19 @@
+/* Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan */
+*, *::after, *::before {  /* select EVERYTHING */
+  box-sizing: border-box;
+}
+
+.grid-container {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.col {
+  flex: 1 1 25%;
+  flex-grow: 1;
+}

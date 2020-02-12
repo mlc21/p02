@@ -12,16 +12,11 @@ body {
     color: #212121;
 }
 
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
 h1, h2, h3, h4{
   font-family: termina, sans-serif;
   font-style: normal;
+  line-height: 1.25em;
+  padding-left: 10%;
 }
 
 h1 {
@@ -54,37 +49,12 @@ body {
     color: #212121;
 }
 
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+button:focus {
+  outline-style: none;
 }
 
-h1, h2, h3, h4{
-  font-family: termina, sans-serif;
-  line-height: 1.25em;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 3.375em;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 2.25em;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 1.75em;
-}
-
-h4 {
-  font-weight: 800;
-  font-size: 1em;
-  letter-spacing: 0.2rem;
+a:focus {
+  outline-style: none;
 }
 
 .top-nav {
@@ -143,7 +113,7 @@ h4 {
     width: 100%;
     left: 0;
     background: #000;
-        opacity: 0.8;
+    opacity: 0.8;
 }
 
 #nav-logo {
@@ -179,12 +149,57 @@ p.hero {
     margin-top: 0.5em;
 }
 
+/* pet nav referenced from www.w3schools.com */
+.pet-nav {
+  margin: 10%;
+  width: 80%;
+  border-bottom: 2px solid rgba(0,0,0,0.8);
+  position: absolute;
+  padding-bottom: 5px;
+}
 
-@media(max-width: 768px){
+.pet-nav nav {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+.pet-nav a {
+  float: left;
+  margin: 0 10% 0 0;
+  display: block;
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  font-family: termina;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.pet-nav:hover a {
+  opacity: 1;
+}
+
+.pet-nav.active a{
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
+/* end of pet nav */
+
+/* media queries */
+@media(max-width: 600px){
+    .hero-text {
+        width: 82%;
+    }
+}
+
+@media (max-width: 768px){
     .top-nav-right {
         display: none;
     }
-    
+
     .hero-text {
         width: 70%;
     }
@@ -192,10 +207,20 @@ p.hero {
     #hamburger {
         display: block;
     }
+
+    .pet-nav {
+      width: 80%;
+    }
 }
 
-@media(max-width: 600px){
-    .hero-text {
-        width: 82%;
-    }
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(min-width: 1200px){
+
 }
