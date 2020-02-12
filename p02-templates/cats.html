@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Our Pets</title>
+  <title>Cats</title>
 
   <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
   <title>P01 Process</title>
@@ -10,19 +10,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
 </head>
 
 <body>
 
-  <h1>Our Pets</h1>
+  <h1 class="left-align">Our Pets</h1>
 
   <nav class="pet-nav" role="pet navigation" aria-label="secondary">
     <div>
-      <a class="active underline-link" href="dogs.html">Dogs</a>
+      <a class="active underline-link" href="our-pets.html">Dogs</a>
       <a class="underline-link" href="cats.html">Cats</a>
       <a class="underline-link" href="bunnies.html">Bunnies</a>
     </div>
-  </nav> <!-- end of pet-nav -->
+  </nav> <!-- end of .pet-nav -->
+
+  <!-- PRODUCT LISTINGS -->
+  <div class="listings grid-container" role="rowgroup" aria-label="pet listings">
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 1</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 2</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 3</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 4</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 1</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 2</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 3</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 4</h4>
+      <p class="left-align">Enter breed here<p>
+    </div>
+  </div> <!-- end of .listings -->
 </body>
 </html>
