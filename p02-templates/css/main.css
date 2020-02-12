@@ -150,6 +150,10 @@ button:focus{
 /*------------------------OUR PETS (NAV)------------------------*/
 
 /* pet nav referenced from www.w3schools.com */
+.our-pets-banner {
+  z-index: 0;
+}
+
 .pet-nav {
   margin: 10%;
   width: 80%;
@@ -166,7 +170,7 @@ button:focus{
 
 .pet-nav a {
   float: left;
-  margin: 0 10% 0 0;
+  margin: 0 5% 0 0;
   display: block;
   color: black;
   opacity: 0.8;
@@ -256,6 +260,12 @@ button:focus{
     min-width: 400px;
     display: inline-block;
 }
+
+/* footer */
+.footer {
+  
+}
+/* end of footer */
 
 #type-of-pets {
     vertical-align: top;
