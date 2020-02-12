@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
 </head>
 
@@ -18,11 +19,40 @@
   <h1>Our Pets</h1>
 
   <nav class="pet-nav" role="pet navigation" aria-label="secondary">
-    <div class="grid">
-      <a class="col active underline-link" href="our-pets.html">Dogs</a>
-      <a class="col underline-link" href="cats.html">Cats</a>
-      <a class="col underline-link" href="bunnies.html">Bunnies</a>
+    <div>
+      <a class="active underline-link" href="our-pets.html">Dogs</a>
+      <a class="underline-link" href="cats.html">Cats</a>
+      <a class="underline-link" href="bunnies.html">Bunnies</a>
     </div>
-  </nav> <!-- end of pet-nav -->
+  </nav> <!-- end of .pet-nav -->
+
+  <div class="listings grid-container" role="rowgroup" aria-label="pet listings">
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4>doggie 1</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 2</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 3</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 4</h4>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4>doggie 1</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 2</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 3</h4>
+    </div>
+    <div class="col product-card">
+      <h4>doggie 4</h4>
+    </div>
+  </div> <!-- end of .listings -->
 </body>
 </html>
