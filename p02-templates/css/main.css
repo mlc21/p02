@@ -20,8 +20,7 @@ h1, h2, h3, h4{
   font-family: termina, sans-serif;
   font-style: normal;
   line-height: 1.25em;
-    margin-bottom: 0;
-  padding-left: 10%;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -154,6 +153,12 @@ button:focus{
     z-index: 0;
 }
 
+.banner .textblock {
+    width: 40%;
+    min-width: 400px;
+    display: inline-block;
+}
+
 .hero.banner {
     height: 600px;
     background-color: lightgrey;
@@ -178,6 +183,7 @@ button:focus{
     padding-top: 60px;
     padding-bottom: 20px;
 }
+
 /* pet nav referenced from www.w3schools.com */
 .pet-nav {
   margin: 10%;
@@ -233,14 +239,6 @@ button:focus{
   margin: 4%;
 }
 
-/* media queries */
-@media(max-width: 600px){
-    .hero-text {
-        width: 82%;
-    }
-}
-
-@media (max-width: 768px){
 .banner .textblock {
     width: 40%;
     min-width: 400px;
@@ -307,6 +305,15 @@ button:focus{
     margin: 0 1.5%;
 }
 
+
+/* media queries */
+
+@media(max-width: 600px){
+    .hero .textblock {
+        width: 82%;
+    }
+}
+
 @media(max-width: 768px){
     .top-nav-right {
         display: none;
@@ -322,9 +329,6 @@ button:focus{
 
     .pet-nav {
       width: 80%;
-@media(max-width: 600px){
-    .hero .textblock {
-        width: 82%;
     }
 }
 
