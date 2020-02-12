@@ -229,8 +229,8 @@ input {
 #form button {
     margin-top: 35px;
     margin-left: 0;
-    background-color: #FFA000;
-    border: 1px solid #FFA000;
+    background-color: #8BC8E9;
+    border: 1px solid #8BC8E9;
     transition: background-color 0.4s ease;
     color: white;
     display: block;
@@ -238,8 +238,8 @@ input {
 }
 
 #form button:hover {
-  background-color: #FFC76E;
-  border: 1px solid #FFC76e;
+  background-color: #5A9EC4;
+  border: 1px solid #5A9EC4;
 }
 
 #last-row td {
@@ -268,14 +268,13 @@ table li {
     max-width: 225px;
 }
 
-#sample-listing h3 {
+#sample-listing h4 {
     display: block;
-    padding-left: 0;
-    padding-bottom: 20px;
+    margin-top: 1em;
 }
 
 #sample-listing p {
-    padding-left: 0;
+    margin-top: 0;
 }
 
 @media (max-width: 855px) {
