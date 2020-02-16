@@ -189,8 +189,17 @@ button:focus{
 }
 
 /* pet nav referenced from www.w3schools.com */
+.top-content div{
+  position: relative;
+}
+
+/* .absolute {
+  position: absolute;
+} */
+
 .our-pets-banner {
   z-index: 0;
+  width: 100%;
 }
 
 .pet-nav {
@@ -268,7 +277,7 @@ button:focus{
 
 /* footer */
 .footer {
-  
+
 }
 /* end of footer */
 
