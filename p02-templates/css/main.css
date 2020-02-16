@@ -72,6 +72,16 @@ button:focus{
   margin-left: 10%;
 }
 
+.top-padding {
+    padding-top: 10%;
+}
+
+.image-link {
+    margin: 0;
+    padding: 0;
+}
+
+
 /*------------------------TOP NAV--------------------------*/
 
 .top-nav {
@@ -136,7 +146,7 @@ button:focus{
 }
 
 #nav-logo {
-    padding: 15px 16px;
+    padding: 0px 0px;
 }
 
 #hamburger {
