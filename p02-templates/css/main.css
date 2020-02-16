@@ -12,10 +12,6 @@ body {
     color: #212121;
 }
 
-.left-align {
-    margin-left: 10%;
-}
-
 h1, h2, h3, h4{
   font-family: termina, sans-serif;
   font-style: normal;
@@ -77,8 +73,16 @@ button:focus{
 }
 
 .top-padding {
-  padding-top: 10%;
+    padding-top: 10%;
 }
+
+.image-link {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------------------TOP NAV--------------------------*/
 
 .top-nav {
     position: fixed;
@@ -110,6 +114,8 @@ button:focus{
     padding-right: 48px;
 }
 
+/*----------------------ANIMATED LINKS----------------------*/
+
 .underline-link {
     position: relative;
     font-family: termina;
@@ -140,7 +146,7 @@ button:focus{
 }
 
 #nav-logo {
-    padding: 15px 16px;
+    padding: 0px 0px;
 }
 
 #hamburger {
@@ -151,42 +157,7 @@ button:focus{
 }
 
 
-.banner {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-}
-
-.banner .textblock {
-    width: 40%;
-    min-width: 400px;
-    display: inline-block;
-}
-
-.hero.banner {
-    height: 600px;
-    background-color: lightgrey;
-}
-
-.hero .textblock {
-    position: absolute;
-    text-align: left;
-    top: 38%;
-    margin-right: 10%;
-    width: 48%;
-}
-
-.hero p {
-    font-size: 1.25em;
-    margin-top: 0.5em;
-    padding-bottom: 20px;
-}
-
-#home-about {
-    vertical-align: top;
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
+/*------------------------OUR PETS (NAV)------------------------*/
 
 /* pet nav referenced from www.w3schools.com */
 .top-content div{
@@ -247,14 +218,14 @@ button:focus{
 
 /* end of pet nav */
 
-/* listing page */
+/*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
   margin: 15% 10% 0 9%;
 }
 
 .product-card {
   border: 1px solid rgba(0,0,0,0.1);
-  height: 20em;
+/*  height: 20em;*/
   margin: 1.5%;
 }
 
@@ -267,9 +238,43 @@ button:focus{
   margin: 4% auto 0 auto;
   display: block;
 }
-/* end of listing page */
 
-.banner .textblock {
+/*------------------------HOME (HERO)---------------------------*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero.banner {
+    height: 600px;
+    background-color: lightgrey;
+}
+
+.hero .textblock {
+    position: absolute;
+    text-align: left;
+    top: 38%;
+    margin-right: 10%;
+    width: 48%;
+}
+
+.hero p {
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    padding-bottom: 20px;
+}
+
+/*------------------------HOME (ABOUT)---------------------------*/
+
+#home-about {
+    vertical-align: top;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#home-about .textblock {
     width: 40%;
     min-width: 400px;
     display: inline-block;
@@ -303,20 +308,20 @@ button:focus{
     opacity: 0.8;
 }
 
+/*----------------------HOME (BUNNY DAY)-------------------------*/
+
 #bunny-day {
     background-color: lightgrey;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-top: 75px;
+    text-align: center;
 }
 
 #bunny-day .textblock {
     display: block;
     margin: auto;
-}
-
-#bunny-day h3 {
-    text-align: center;
+    width: 60%;
 }
 
 #bunny-day button {
@@ -324,25 +329,30 @@ button:focus{
     margin: 25px auto;
 }
 
+/*-----------------------HOME (PRICING)--------------------------*/
+
 #home-pricing {
-    padding-top: 30px;
+    padding-top: 50px;
+    text-align: center;
 }
 
-#home-pricing .grid {
-    margin: auto;
+#home-pricing .grid-container {
     width: 80%;
-    background-color: lightblue;
-    height: 100px;
 }
 
 #home-pricing .col {
-    flex-grow: 1;
-    background-color: lightskyblue;
-    margin: 0 1.5%;
+    margin: 30px;
 }
 
+.price {
+    font-family: termina;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
 
-/* media queries */
+/*----------------------MEDIA QUERIES-------------------------*/
 
 @media(max-width: 600px){
     .hero .textblock {
