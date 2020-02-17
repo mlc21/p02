@@ -3,9 +3,7 @@
 
 <head>
   <title>Our Pets</title>
-
   <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-  <title>P01 Process</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
@@ -17,21 +15,27 @@
 <body>
 
   <nav class="top-nav" role="navigation" aria-label="main">
-    <a href="index.html" id="nav-logo"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+    <a href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
     <div class="top-nav-right">
-      <a href="our-pets.html" class="underline-link">Our Pets</a>
-      <a class="underline-link">Our Studio</a>
-      <a class="underline-link">Pricing</a>
+        <a href="our-pets.html" class="underline-link">Our Pets</a>
+        <a class="underline-link">Pricing</a>
+        <div class="studio-dropdown">
+          <button class="dropdown-button">Our Studio</button>
+          <div class="dropdown-content">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
     </div>
     <a id="hamburger" onclick="openNav()">
-      <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
     </a>
-  </nav>
+ </nav>
 
   <div class="top-content">
     <h1 class="left-align top-padding absolute">Our Pets</h1>
 
-    <nav class="pet-nav absolute" role="pet navigation" aria-label="secondary">
+    <nav class="pet-nav" role="pet navigation" aria-label="secondary">
       <div>
         <button id="dogs-button" class="pets-nav-button underline-link active-link" onclick="show('dogs'); underline('dogs-button');">Dogs</button>
         <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button');">Cats</button>
