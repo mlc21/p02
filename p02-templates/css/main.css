@@ -90,17 +90,17 @@ button:focus{
     width: 100%;
     height: 60px;
     background-color: white;
-    overflow: hidden;
+    overflow: visible;
     padding: 0 16px;
     z-index: 1;
-
+    box-shadow: 0px 5px 5px grey;
 }
 
 .top-nav a {
     float: left;
     color: black;
     opacity: 0.8;
-    text-align: centre;
+    text-align: center;
     margin: 20px 16px;
     text-decoration: none;
 }
@@ -112,6 +112,77 @@ button:focus{
 .top-nav-right {
     float: right;
     padding-right: 48px;
+    height: 60px;
+}
+
+.dropdown-button {
+  color: black;
+  border: none;
+  margin: 20px 16px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: termina;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.studio-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  padding: 7% 0 0 0;
+}
+
+.dropdown-content a {
+  background-color: white;
+  position: relative;
+  font-family: termina;
+  font-weight: 200;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+  display: block;
+  margin: 0 0 10% 13%;
+}
+
+.dropdown-content a:after {
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 3px;
+  right: 0;
+  background: #000;
+  opacity: 0.8;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.dropdown-content a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
+.dropdown-content a:hover {
+  opacity: 1;
+}
+
+.studio-dropdown:hover .dropdown-content{
+  display: block;
 }
 
 /*----------------------ANIMATED LINKS----------------------*/
@@ -158,26 +229,19 @@ button:focus{
 
 
 /*------------------------OUR PETS (NAV)------------------------*/
-
-/* pet nav referenced from www.w3schools.com */
-.top-content div{
-  position: relative;
-}
-
-/* .absolute {
-  position: absolute;
-} */
-
-.our-pets-banner {
-  z-index: 0;
-  width: 100%;
+/* referenced from www.w3schools.com */
+.top-content {
+  /* position: relative; */
+  background-image: url("../img/pet-banner.png");
+  background-position: top;
+  background-size: 100%;
 }
 
 .pet-nav {
   margin: 10%;
   width: 80%;
-  border-bottom: 2px solid rgba(0,0,0,0.8);
-  position: absolute;
+  /* border-bottom: 2px solid rgba(0,0,0,0.8); */
+  position: relative;
   padding-bottom: 5px;
 }
 
@@ -215,8 +279,6 @@ button:focus{
   background: #000;
   opacity: 0.8;
 }
-
-/* end of pet nav */
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
