@@ -28,21 +28,65 @@
     </a>
   </nav>
 
-  <div>
-<!--    <img class="our-pets-banner" src="img/petcetera-logo.jpg" alt="cute pet image">-->
-    <h1 class="left-align top-padding">Our Pets</h1>
+  <div class="top-content">
+    <h1 class="left-align top-padding absolute">Our Pets</h1>
 
-    <nav class="pet-nav" role="pet navigation" aria-label="secondary">
+    <nav class="pet-nav absolute" role="pet navigation" aria-label="secondary">
       <div>
-        <a class="active underline-link" href="our-pets.html">Dogs</a>
-        <a class="underline-link" href="cats.html">Cats</a>
-        <a class="underline-link" href="bunnies.html">Bunnies</a>
+        <button id="dogs-button" class="pets-nav-button underline-link active-link" onclick="show('dogs'); underline('dogs-button');">Dogs</button>
+        <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button');">Cats</button>
+        <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button');">Bunnies</button>
       </div>
     </nav> <!-- end of .pet-nav -->
   </div>
+    
+  <!---------------------- MAIN -------------------------->
 
-  <!-- PRODUCT LISTINGS -->
-  <div class="listings grid-container" role="rowgroup" aria-label="pet listings">
+  <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
+      <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 1</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 3</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 4</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 1</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 3</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">doggie 4</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+  </div>
+
+  <!---------------------- DOGS -------------------------->
+  <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">doggie 1</h4>
@@ -83,11 +127,90 @@
       <h4 class="left-align">doggie 4</h4>
       <p class="left-align">Enter breed here</p>
     </div>
-  </div> <!-- end of .listings -->
+  </div> <!-- end of #DOGS -->
+    
+    
+  <!---------------------- CATS -------------------------->
+  <div id="cats" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 1</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 3</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 4</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 1</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">kitty 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+  </div> <!-- end of #CATS -->
+    
+  <!--------------------- BUNNIES ------------------------->
+  <div id="bunnies" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">bunny 1</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">bunny 2</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+    <div class="col product-card">
+      <img src="img/dog-img.png" alt="Load image of pet here">
+      <h4 class="left-align">bunny 3</h4>
+      <p class="left-align">Enter breed here</p>
+    </div>
+  </div> <!-- end of #BUNNIES -->
 
 
   <footer class="footer">
-    
   </footer>
+    
+  <script>
+    function show(divID) {
+        document.getElementById('listing-space').innerHTML = document.getElementById(divID).innerHTML;
+    }
+    
+    var petsNavButtons = document.getElementsByClassName('pets-nav-button');
+      
+    function underline(buttonID){
+        var activeButton = document.getElementById(buttonID);
+        
+        for (var i = 0; i < petsNavButtons.length; i++) {
+            if(petsNavButtons[i] != activeButton){
+                petsNavButtons[i].classList.remove('active-link');
+            }
+        }
+        
+        activeButton.classList.add("active-link");
+    }
+      
+  </script>
 </body>
 </html>

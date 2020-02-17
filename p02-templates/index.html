@@ -12,17 +12,45 @@
     <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <nav class="top-nav" role="navigation" aria-label="main">
+      
+    <nav class="top-nav" role="navigation" aria-label="main">
         <a href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
         <div class="top-nav-right">
-            <a href="our-pets.html" class="underline-link">Our Pets</a>
+            <a class="underline-link">Our Pets</a>
             <a class="underline-link">Our Studio</a>
             <a class="underline-link">Pricing</a>
         </div>
         <a id="hamburger" onclick="openNav()">
             <i class="fas fa-bars"></i>
         </a>
-     </nav>
+    </nav>
+      
+    <div id="mobile-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="mobile-nav-content">
+            <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <section>
+                <a class="mobile-nav-heading" >Our Pets</a>
+                <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+            </section>
+            
+            <section>
+                <a class="mobile-nav-heading">Our Studio</a>
+                <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+            </section>
+
+            <section>
+                <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+            </section>
+        </div><!--end of .mobile-nav-content-->
+    </div><!--end of .mobile-nav-->
+      
+    <div class="sale-banner">
+        <a>Limited time: 50% off annual memberships</a>
+    </div>
 
     <div class="hero banner">
         <div class="textblock left-align" role="textblock">
@@ -69,10 +97,14 @@
             </div>
             <div class="col">
                 <h4>Yearly</h4>
-                <p class="price">$660</p>
+                <p class="price">$330</p>
                 <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="sale-badge">
+                    <p>Save 50%</p>
+                </div><!--end of sale-badge-->
             </div>
         </div>
     </div><!--end of banner-->
+    <script src="script/mobile-nav.js"></script>
   </body>
 </html>
