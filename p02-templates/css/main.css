@@ -42,13 +42,17 @@ h4 {
   text-transform: uppercase;
 }
 
+button {
+    background-color: none;
+  border: none;
+}
+
 button:focus{
   outline-style: none;
 }
 
 .button {
     margin: 0 1%;
-    border: none;
     border-radius: 3px;
     padding: 9px 18px;
     font-size: 0.95em;
@@ -82,7 +86,7 @@ button:focus{
 }
 
 
-/*------------------------TOP NAV--------------------------*/
+/*-------------------------TOP NAV---------------------------*/
 
 .top-nav {
     position: fixed;
@@ -185,6 +189,38 @@ button:focus{
   display: block;
 }
 
+
+
+
+/*------------------------SALE BANNER---------------------------*/
+
+.sale-banner {
+    background-color: rgb(213, 233, 243);
+    z-index: 2;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.sale-banner a {
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    font-family: termina;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: rgb(28, 79, 108);
+    opacity: 0.8;
+}
+
+.sale-banner a:hover {
+    opacity: 1;
+}
+
 /*----------------------ANIMATED LINKS----------------------*/
 
 .underline-link {
@@ -216,33 +252,122 @@ button:focus{
     opacity: 0.8;
 }
 
+.active-link:after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 2px;
+    display: block;
+    margin-top: 3px;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
 #nav-logo {
+    margin-top: -5px;
     padding: 0px 0px;
 }
 
 #hamburger {
     float: right;
     display: none;
-    margin: 13px 40px;
+    margin: 13px 10px;
     font-size: 1.5em;
 }
 
+/*------------------------MOBILE NAV------------------------*/
+
+#mobile-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.mobile-nav-content {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    text-align: left;
+    width: 80%;
+}
+
+.mobile-nav-content img {
+    width: 45%;
+}
+
+
+.mobile-nav-content a {
+    display: block;
+    position: relative;
+    font-family: termina;
+    font-size: 0.85em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: black;
+    margin-top: 18px;
+}
+
+.mobile-nav-heading {
+    padding-top: 18px;
+    border-top: 1px solid rgb(0, 0, 0, 0.25);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.mobile-nav-subheading {
+    padding-left: 5%;
+    font-weight: 200;
+    opacity: 0.7;
+    transition: 0.25s opacity ease;
+}
+
+.mobile-nav-subheading:hover {
+    opacity: 1;
+}
+
+.mobile-nav-content a:visited {
+    color: black;
+    opacity: 0;
+}
+
+#mobile-nav .closebtn {
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+    
+    font-family: termina;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration:none;
+}
 
 /*------------------------OUR PETS (NAV)------------------------*/
-/* referenced from www.w3schools.com */
+
+/* pet nav referenced from www.w3schools.com */
 .top-content {
-  /* position: relative; */
-  background-image: url("../img/pet-banner.png");
-  background-position: top;
-  background-size: 100%;
+        position: relative;
+    width: 100%;
+    z-index: 0;
+  background-image: url("../img/marnie.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+    margin-bottom: 0;
 }
 
 .pet-nav {
   margin: 10%;
   width: 80%;
-  /* border-bottom: 2px solid rgba(0,0,0,0.8); */
-  position: relative;
-  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(0,0,0,0.8);
+  position: absolute;
+  padding-bottom: 3px;
 }
 
 .pet-nav nav {
@@ -263,22 +388,13 @@ button:focus{
   font-size: 0.8em;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 0);
 }
 
 .pet-nav:hover a {
   opacity: 1;
 }
 
-.active::after {
-  opacity: 1;
-  content: '';
-  width: 0; height: 2px;
-  display: block;
-  margin-top: 3px;
-  right: 0;
-  background: #000;
-  opacity: 0.8;
-}
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
@@ -300,6 +416,7 @@ button:focus{
   margin: 4% auto 0 auto;
   display: block;
 }
+
 
 /*------------------------HOME (HERO)---------------------------*/
 
@@ -404,6 +521,7 @@ button:focus{
 
 #home-pricing .col {
     margin: 30px;
+    position: relative;
 }
 
 .price {
@@ -412,6 +530,27 @@ button:focus{
     font-size: 3em;
     margin-top: 25px;
     margin-bottom: 0;
+}
+
+.sale-badge {
+    background-color: rgb(213, 233, 243);
+    border: 1px solid rgb(139, 200, 233);
+    border-radius: 5px;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    padding: 1% 2%;
+    margin: 0;
+}
+
+.sale-badge p {
+    color: rgb(28, 79, 108, 0.8);
+    margin: 0;
+    text-transform: uppercase;
+    font-family: termina;
+    font-size: 0.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /*----------------------MEDIA QUERIES-------------------------*/
