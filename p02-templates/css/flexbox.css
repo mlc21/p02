@@ -18,6 +18,14 @@
   flex-grow: 1;
 }
 
+.col-half {
+  flex: 1 1 50%;
+}
+
+.col-full {
+  flex: 1 1 100%;
+}
+
 @media(max-width: 600px){
     .col {
         flex: 1 1 80%;

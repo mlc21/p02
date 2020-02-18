@@ -18,7 +18,7 @@
     <a href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
     <div class="top-nav-right">
         <a href="our-pets.html" class="underline-link">Our Pets</a>
-        <a class="underline-link">Pricing</a>
+        <a href="pricing.html" class="underline-link">Pricing</a>
         <div class="studio-dropdown">
           <button class="dropdown-button">Our Studio</button>
           <div class="dropdown-content">
@@ -30,7 +30,30 @@
     <a id="hamburger" onclick="openNav()">
         <i class="fas fa-bars"></i>
     </a>
- </nav>
+</nav>
+
+<div id="mobile-nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="mobile-nav-content">
+        <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+        <section>
+            <a class="mobile-nav-heading" >Our Pets</a>
+            <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+            <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+            <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+        </section>
+
+        <section>
+            <a class="mobile-nav-heading">Our Studio</a>
+            <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+            <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+        </section>
+
+        <section>
+            <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+        </section>
+    </div><!--end of .mobile-nav-content-->
+</div><!--end of .mobile-nav-->
 
   <div class="top-content">
     <h1 class="left-align top-padding absolute">Our Pets</h1>
@@ -43,7 +66,7 @@
       </div>
     </nav> <!-- end of .pet-nav -->
   </div>
-    
+
   <!---------------------- MAIN -------------------------->
 
   <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
@@ -132,8 +155,8 @@
       <p class="left-align">Enter breed here</p>
     </div>
   </div> <!-- end of #DOGS -->
-    
-    
+
+
   <!---------------------- CATS -------------------------->
   <div id="cats" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
     <div class="col product-card">
@@ -172,7 +195,7 @@
       <p class="left-align">Enter breed here</p>
     </div>
   </div> <!-- end of #CATS -->
-    
+
   <!--------------------- BUNNIES ------------------------->
   <div id="bunnies" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
     <div class="col product-card">
@@ -195,26 +218,26 @@
 
   <footer class="footer">
   </footer>
-    
+
   <script>
     function show(divID) {
         document.getElementById('listing-space').innerHTML = document.getElementById(divID).innerHTML;
     }
-    
+
     var petsNavButtons = document.getElementsByClassName('pets-nav-button');
-      
+
     function underline(buttonID){
         var activeButton = document.getElementById(buttonID);
-        
+
         for (var i = 0; i < petsNavButtons.length; i++) {
             if(petsNavButtons[i] != activeButton){
                 petsNavButtons[i].classList.remove('active-link');
             }
         }
-        
+
         activeButton.classList.add("active-link");
     }
-      
+
   </script>
 </body>
 </html>
