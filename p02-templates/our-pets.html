@@ -32,14 +32,13 @@
     </a>
  </nav>
 
-  <div class="top-content">
-    <h1 class="left-align top-padding absolute">Our Pets</h1>
-
-    <nav class="pet-nav" role="pet navigation" aria-label="secondary">
+  <div id="our-pets-banner">
+    <h1 class="left-align">Our Pets</h1>
+    <nav class="left-align pet-nav" role="pet navigation" aria-label="secondary">
       <div>
-        <button id="dogs-button" class="pets-nav-button underline-link active-link" onclick="show('dogs'); underline('dogs-button');">Dogs</button>
-        <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button');">Cats</button>
-        <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button');">Bunnies</button>
+        <button id="dogs-button" class="pets-nav-button underline-link active-link" onclick="show('dogs'); underline('dogs-button'); ">Dogs</button>
+        <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button'); ">Cats</button>
+        <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button'); ">Bunnies</button>
       </div>
     </nav> <!-- end of .pet-nav -->
   </div>
@@ -47,15 +46,17 @@
   <!---------------------- MAIN -------------------------->
 
   <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
-      <div class="col product-card">
+    <div href="dog-listing.html" class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">doggie 1</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">doggie 2</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
@@ -91,15 +92,17 @@
 
   <!---------------------- DOGS -------------------------->
   <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
-    <div class="col product-card">
+    <div href="dog-listing.html" class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">doggie 1</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">doggie 2</h4>
       <p class="left-align">Enter breed here</p>
+       <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
@@ -140,6 +143,7 @@
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">kitty 1</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
@@ -179,11 +183,13 @@
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">bunny 1</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">
       <h4 class="left-align">bunny 2</h4>
       <p class="left-align">Enter breed here</p>
+      <div class="new"><p>New</p></div>
     </div>
     <div class="col product-card">
       <img src="img/dog-img.png" alt="Load image of pet here">

@@ -53,12 +53,22 @@ button:focus{
 
 .button {
     margin: 0 1%;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 9px 18px;
     font-size: 0.95em;
     font-weight: 400;
     color: rgb(0,0,0,0.8);
     transition: background-color 0.4s ease;
+}
+
+.button.blue-bg{
+  background-color: #5A9EC4;
+    color: white;
+}
+
+.button.blue-bg:hover{
+  background-color: #488aaf;
+    color: white;
 }
 
 .button.whiteblue-bg{
@@ -76,9 +86,11 @@ button:focus{
   margin-left: 10%;
 }
 
+/*
 .top-padding {
     padding-top: 10%;
 }
+*/
 
 .image-link {
     margin: 0;
@@ -97,7 +109,7 @@ button:focus{
     overflow: visible;
     padding: 0 16px;
     z-index: 1;
-    box-shadow: 0px 5px 5px grey;
+/*    box-shadow: 0px 5px 5px grey;*/
 }
 
 .top-nav a {
@@ -351,23 +363,33 @@ button:focus{
 /*------------------------OUR PETS (NAV)------------------------*/
 
 /* pet nav referenced from www.w3schools.com */
-.top-content {
-        position: relative;
-    width: 100%;
-    z-index: 0;
-  background-image: url("../img/marnie.png");
+#our-pets-banner {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/unicorn-dog.jpg");
   background-size: cover;
-  background-position: center;
-  height: 400px;
-    margin-bottom: 0;
+  background-position: top;
+  height: 500px;
+  margin-bottom: 0;
+}
+
+#our-pets-banner h1 {
+    position: absolute;
+    top: 50%;
+}
+
+#our-pets-banner button {
+    background-color: rgb(0,0,0, 0);
 }
 
 .pet-nav {
-  margin: 10%;
+  display: block;
   width: 80%;
   border-bottom: 2px solid rgba(0,0,0,0.8);
   position: absolute;
   padding-bottom: 3px;
+  bottom: 0;
 }
 
 .pet-nav nav {
@@ -378,7 +400,6 @@ button:focus{
 
 .pet-nav a {
   float: left;
-  margin: 0 5% 0 0;
   display: block;
   color: black;
   opacity: 0.8;
@@ -388,6 +409,7 @@ button:focus{
   font-size: 0.8em;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  margin-right: 10%;
   background-color: rgb(0, 0, 0, 0);
 }
 
@@ -395,13 +417,19 @@ button:focus{
   opacity: 1;
 }
 
+#dogs-button, #cats-button, #bunnies-button {
+    margin-right: 3%;
+    padding: 2px 0;
+}
+
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
-  margin: 15% 10% 0 9%;
+  margin: 3% 10% 0 9%;
 }
 
 .product-card {
+    position: relative;
   border: 1px solid rgba(0,0,0,0.1);
 /*  height: 20em;*/
   margin: 1.5%;
@@ -415,6 +443,27 @@ button:focus{
   width: 90%;
   margin: 4% auto 0 auto;
   display: block;
+}
+
+.new {
+    background-color: rgb(213, 233, 243);
+    border: 1px solid rgb(139, 200, 233);
+    border-radius: 5px;
+    position: absolute;
+    top: 6%;
+    right: 8%;
+    padding: 1% 2%;
+    margin: 0;
+}
+
+.new p {
+    color: rgb(28, 79, 108, 0.8);
+    margin: 0;
+    text-transform: uppercase;
+    font-family: termina;
+    font-size: 0.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 
@@ -552,6 +601,110 @@ button:focus{
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+
+/*---------------------SINGLE LISTING------------------------*/
+
+img.single-listing {
+    width: 35%;
+    margin-top: 10px;
+    float: left;
+}
+
+div.single-listing {
+    position: relative;
+    left: 5%;
+    display: inline-block;
+    width: 37.5%;
+    line-height: 1.4em;
+}
+
+div.single-listing h1 {
+    margin-top: 30px;
+}
+
+div.single-listing button {
+    display: inline-block;
+    margin: 10px 5px 25px 0;
+}
+
+
+p.just-arrived {
+    opacity: 0.5;
+    font-family: termina;
+    font-weight: 600;
+}
+
+.review {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+.review .title {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.review .details {
+    opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: -7px;
+}
+
+.review-section {
+    position: relative;
+}
+
+#write-a-review {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -4px;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+#write-a-review:hover {
+    opacity: 1;
+}
+/*---------------------BREAD CRUMB------------------------*/
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px 16px 0;
+  list-style: none;
+  margin-top: 125px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+      font-size: 0.9em;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+        opacity: 0.5;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: black;
+    opacity: 0.5;
+  text-decoration: none;
+
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+
 
 /*----------------------MEDIA QUERIES-------------------------*/
 
