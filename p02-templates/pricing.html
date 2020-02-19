@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-  <title>P01 Process</title>
+  <title>Pricing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
@@ -29,9 +29,55 @@
     <a id="hamburger" onclick="openNav()">
         <i class="fas fa-bars"></i>
     </a>
- </nav>
+</nav>
+
+<div id="mobile-nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="mobile-nav-content">
+        <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+        <section>
+            <a class="mobile-nav-heading" >Our Pets</a>
+            <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+            <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+            <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+        </section>
+
+        <section>
+            <a class="mobile-nav-heading">Our Studio</a>
+            <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+            <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+        </section>
+
+        <section>
+            <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+        </section>
+    </div><!--end of .mobile-nav-content-->
+</div><!--end of .mobile-nav-->
 
 
  <h1 class="left-align top-padding">Pricing</h1>
+
+ <div class="banner" id="home-pricing">
+     <div class="grid-container left-align">
+         <div class="col">
+             <h4>Drop-in</h4>
+             <p class="price">$15</p>
+             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>
+         <div class="col">
+             <h4>Monthly</h4>
+             <p class="price">$60</p>
+             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>
+         <div class="col">
+             <h4>Yearly</h4>
+             <p class="price">$330</p>
+             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             <div class="sale-badge">
+                 <p>Save 50%</p>
+             </div><!--end of sale-badge-->
+         </div>
+     </div>
+ </div><!--end of banner-->
 </body>
 </html>

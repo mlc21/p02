@@ -43,7 +43,7 @@ h4 {
 }
 
 button {
-    background-color: none;
+  background-color: none;
   border: none;
 }
 
@@ -86,7 +86,10 @@ button:focus{
   margin-left: 10%;
 }
 
-/*
+.center {
+  text-align: center;
+}
+
 .top-padding {
     padding-top: 10%;
 }
@@ -95,6 +98,16 @@ button:focus{
 .image-link {
     margin: 0;
     padding: 0;
+}
+
+/*-------------------------COLOURS---------------------------*/
+
+.black {
+  color: #404040;
+}
+
+.blue-bg {
+  background-color: #D5E9F3;
 }
 
 
@@ -108,8 +121,8 @@ button:focus{
     background-color: white;
     overflow: visible;
     padding: 0 16px;
-    z-index: 1;
-/*    box-shadow: 0px 5px 5px grey;*/
+    z-index: 3;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .top-nav a {
@@ -130,6 +143,9 @@ button:focus{
     padding-right: 48px;
     height: 60px;
 }
+
+/*--------------------DROPDOWN TOP NAV-----------------------*/
+/* referenced from www.w3schools.com */
 
 .dropdown-button {
   color: black;
@@ -154,8 +170,9 @@ button:focus{
   display: none;
   position: absolute;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   padding: 7% 0 0 0;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .dropdown-content a {
@@ -199,38 +216,6 @@ button:focus{
 
 .studio-dropdown:hover .dropdown-content{
   display: block;
-}
-
-
-
-
-/*------------------------SALE BANNER---------------------------*/
-
-.sale-banner {
-    background-color: rgb(213, 233, 243);
-    z-index: 2;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-}
-
-.sale-banner a {
-    display: block;
-    text-align: center;
-    margin-top: 11px;
-    font-family: termina;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    color: rgb(28, 79, 108);
-    opacity: 0.8;
-}
-
-.sale-banner a:hover {
-    opacity: 1;
 }
 
 /*----------------------ANIMATED LINKS----------------------*/
@@ -353,15 +338,23 @@ button:focus{
     position: absolute;
     top: 1%;
     right: 6%;
-    
+
     font-family: termina;
     font-weight: 600;
     font-size: 2em;
     text-decoration:none;
 }
 
-/*------------------------OUR PETS (NAV)------------------------*/
+/*------------------------SALE BANNER---------------------------*/
 
+.sale-banner {
+    background-color: rgb(213, 233, 243);
+    z-index: 2;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 40px;
 /* pet nav referenced from www.w3schools.com */
 #our-pets-banner {
   position: relative;
@@ -374,6 +367,18 @@ button:focus{
   margin-bottom: 0;
 }
 
+.sale-banner a {
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    font-family: termina;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: rgb(28, 79, 108);
+    opacity: 0.8;
+    text-decoration: none;
 #our-pets-banner h1 {
     position: absolute;
     top: 50%;
@@ -392,10 +397,8 @@ button:focus{
   bottom: 0;
 }
 
-.pet-nav nav {
-  list-style-type: none;
-  overflow: hidden;
-  position: fixed;
+.sale-banner a:hover {
+    opacity: 1;
 }
 
 .pet-nav a {
@@ -506,34 +509,6 @@ button:focus{
     width: 40%;
     min-width: 400px;
     display: inline-block;
-}
-
-/* footer */
-.footer {
-
-}
-/* end of footer */
-
-#type-of-pets {
-    vertical-align: top;
-    padding-top: 9px;
-    display: inline-block;
-}
-
-#type-of-pets h3 {
-    padding-bottom: 10px;
-}
-
-#type-of-pets a {
-    display: block;
-    font-family: termina, sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    opacity: 0.6;
-}
-
-#type-of-pets a:hover {
-    opacity: 0.8;
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/
@@ -705,6 +680,173 @@ ul.breadcrumb li a:hover {
 }
 
 
+
+/*------------------------OUR PETS (NAV)------------------------*/
+
+/* referenced from www.w3schools.com */
+.top-content {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/marnie.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 0;
+}
+
+.pet-nav {
+  margin: 10%;
+  width: 80%;
+  border-bottom: 2px solid rgba(0,0,0,0.8);
+  position: absolute;
+  padding-bottom: 3px;
+}
+
+.pet-nav nav {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+.pet-nav a {
+  float: left;
+  margin: 0 5% 0 0;
+  display: block;
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  font-family: termina;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.pet-nav:hover a {
+  opacity: 1;
+}
+
+
+/*---------------------OUR PETS (CARDS)------------------------*/
+.listings {
+  margin: 15% 10% 0 9%;
+}
+
+.product-card {
+  border: 1px solid rgba(0,0,0,0.1);
+/*  height: 20em;*/
+  margin: 1.5%;
+}
+
+.product-card p {
+  margin-top: 2%;
+}
+
+.product-card img {
+  width: 90%;
+  margin: 4% auto 0 auto;
+  display: block;
+}
+
+/*---------------------------ABOUT-------------------------------*/
+.about h1 {
+  word-spacing: 0.3em;
+}
+
+.about h2 {
+  margin-top: 0.6em;
+}
+
+.about h4 {
+  color: #5A9EC4;
+  padding-top: 5%;
+}
+
+.about-top {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/about-banner.jpg"); /* Photo by Lum3n.com from Pexels */
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.about-center {
+  padding: 1% 25% 7% 25%;
+}
+
+.about-right {
+  padding-right: 20%;
+}
+
+.about-left {
+  padding-left: 20%;
+}
+
+.about .top-p {
+  padding-top: 5%;
+}
+
+.about .bottom-p {
+  padding-bottom: 10%;
+}
+
+.mission {
+  background-color: #eeeded;
+}
+
+#about-kitty {
+  width: 80%;
+}
+
+#about-bunny {
+  width: 90%;
+  padding: 7% 20% 0 0;
+}
+
+/*--------------------------CONTACT------------------------------*/
+.contact-top {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/contact-banner.jpg"); /* Photo by Lum3n.com from Pexels */
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+/*---------------------------FOOTER------------------------------*/
+.footer {
+  margin-top: 20%;
+}
+/* end of footer */
+
+#type-of-pets {
+    vertical-align: top;
+    padding-top: 9px;
+    display: inline-block;
+}
+
+#type-of-pets h3 {
+    padding-bottom: 10px;
+}
+
+#type-of-pets a {
+    display: block;
+    font-family: termina, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    opacity: 0.6;
+}
+
+#type-of-pets a:hover {
+    opacity: 0.8;
+}
 
 /*----------------------MEDIA QUERIES-------------------------*/
 
