@@ -824,21 +824,17 @@ ul.breadcrumb li a:hover {
 
 /*--------------------------CONTACT------------------------------*/
 .contact-top h1 {
-  padding-top: 50%;
-}
-
-#contact-us {
-  padding-right: 10%;
+  padding-top: 15%;
 }
 
 .contact-top {
   position: relative;
   width: 100%;
   z-index: 0;
-  background-image: url("../img/contact-puppy-v9.jpg");
-  background-size: cover;
-  background-position: top right;
-  height: 1200px;
+  background-image: url("../img/contact-puppy-v8.jpg");
+  background-size: 100%;
+  background-position: top;
+  height: 900px;
   background-repeat: no-repeat;
   margin-bottom: 0;
 }
@@ -848,7 +844,7 @@ ul.breadcrumb li a:hover {
 }
 
 .contact-info {
-  margin: 15% 3% 0 10%;
+  margin-right: 3%;
 }
 
 .contact-info h2 {
@@ -860,7 +856,7 @@ ul.breadcrumb li a:hover {
 }
 
 .contact-padding {
-  padding-top: 3%;
+  padding-top: 10%;
 }
 
 .contact-table {
