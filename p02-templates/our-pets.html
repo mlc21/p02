@@ -14,235 +14,404 @@
   <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+    <body>
 
-  <nav class="top-nav" role="navigation" aria-label="main">
-    <a id="logo-link" href="index.html"><img id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-    <div class="top-nav-right">
-        <a href="our-pets.html" class="underline-link">Our Pets</a>
-        <a href="pricing.html" class="underline-link">Pricing</a>
-        <div class="studio-dropdown">
-          <button class="dropdown-button">Our Studio</button>
-          <div class="dropdown-content">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <a href="our-pets.html" class="underline-link">Our Pets</a>
+                <a href="pricing.html" class="underline-link">Pricing</a>
+                <div class="studio-dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" >Our Pets</a>
+                    <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+        <div id="our-pets-banner">
+            <h1 class="left-align">Our Pets</h1>
+            <nav class="left-align pet-nav" role="pet navigation" aria-label="secondary">
+                <button id="all-pets-button" class="pets-nav-button underline-link active-link" onclick="show('all-pets'); underline('all-pets-button');">All</button>
+                <button id="dogs-button" class="pets-nav-button underline-link" onclick="show('dogs'); underline('dogs-button');">Dogs</button>
+                <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button'); ">Cats</button>
+                <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button'); ">Bunnies</button>
+            </nav> <!-- end of .pet-nav -->
         </div>
-    </div>
-    <a id="hamburger" onclick="openNav()">
-        <i class="fas fa-bars"></i>
-    </a>
-</nav>
 
-<div id="mobile-nav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="mobile-nav-content">
-        <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-        <section>
-            <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
-        </section>
+        <!---------------- LISTING SPACE ------------------------>
+        <!--  This is the div that switches content-->
 
-        <section>
-            <a class="mobile-nav-heading">Our Studio</a>
-            <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
-            <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
-        </section>
+        <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
+                <h4 class="left-align">Loofa</h4>
+                <p class="left-align">Pomeranian</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-1.jpg" alt="Netherland dwarf rabbit with flower on head">
+                <h4 class="left-align">Poopy</h4>
+                <p class="left-align">Netherland Dwarf Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-2.jpg" alt="Maltese puppy closeup">
+                <h4 class="left-align">Snickers</h4>
+                <p class="left-align">Maltese</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-1.jpg" alt="Grey, doll-like cat closeup">
+                <h4 class="left-align">Chesire</h4>
+                <p class="left-align">Scottish Fold</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-2.jpg" alt="European rabbit biting hand">
+                <h4 class="left-align">Roberta</h4>
+                <p class="left-align">European Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-2.jpg" alt="Dark, bright-eyed cat hiding in the dark">
+                <h4 class="left-align">Moose</h4>
+                <p class="left-align">Bombay Cat</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-5.jpg" alt="Stoic, white, blue-eyed cat closeup">
+                <h4 class="left-align">Mississippi</h4>
+                <p class="left-align">Turkish Angora</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-3.jpg" alt="Daschund puppy winking">
+                <h4 class="left-align">Unipug</h4>
+                <p class="left-align">Pug</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-4.jpg" alt="Miniature pinscher wearing scarf">
+                <h4 class="left-align">Fire Truck</h4>
+                <p class="left-align">Miniature Pinscher</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-5.jpg" alt="Beagador jumping">
+                <h4 class="left-align">Orange</h4>
+                <p class="left-align">Beagador</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-6.jpg" alt="White and black dog wearing sunglasses">
+                <h4 class="left-align">Tamago</h4>
+                <p class="left-align">Kuvasz</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-7.jpg" alt="Grey cat peeking out of box">
+                <h4 class="left-align">Steven</h4>
+                <p class="left-align">Manx Cat</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-7.jpg" alt="Border collie smiling">
+                <h4 class="left-align">Popo</h4>
+                <p class="left-align">Border Collie</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-4.jpg" alt="Tabby cat wrapped in blanket">
+                <h4 class="left-align">Lentil</h4>
+                <p class="left-align">Singapura Cat</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-3.jpg" alt="French lop closeup">
+                <h4 class="left-align">French Toast</h4>
+                <p class="left-align">French Lop</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-8.jpg" alt="Chipoo dog wearing reindeer ears">
+                <h4 class="left-align">Naruto</h4>
+                <p class="left-align">Chipoo</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-3.jpg" alt="Grey white cat hiding behind couch">
+                <h4 class="left-align">Scaredy</h4>
+                <p class="left-align">American Wirehair</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-6.jpg" alt="White cat looking shocked on a couch">
+                <h4 class="left-align">Firefox</h4>
+                <p class="left-align">American Shorthair</p>
+            </a>
+        </div>
 
-        <section>
-            <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
-        </section>
-    </div><!--end of .mobile-nav-content-->
-</div><!--end of .mobile-nav-->
+        <!---------------- ALL PETS ------------------------>
 
-  <div id="our-pets-banner">
-    <h1 class="left-align">Our Pets</h1>
-    <nav class="left-align pet-nav" role="pet navigation" aria-label="secondary">
-        <button id="dogs-button" class="pets-nav-button underline-link active-link" onclick="show('dogs'); underline('dogs-button'); ">Dogs</button>
-        <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button'); ">Cats</button>
-        <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button'); ">Bunnies</button>
-    </nav> <!-- end of .pet-nav -->
-  </div>
+        <div id="all-pets" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
+                <h4 class="left-align">Loofa</h4>
+                <p class="left-align">Pomeranian</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-1.jpg" alt="Netherland dwarf rabbit with flower on head">
+                <h4 class="left-align">Poopy</h4>
+                <p class="left-align">Netherland Dwarf Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-2.jpg" alt="Maltese puppy closeup">
+                <h4 class="left-align">Snickers</h4>
+                <p class="left-align">Maltese</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-1.jpg" alt="Grey, doll-like cat closeup">
+                <h4 class="left-align">Chesire</h4>
+                <p class="left-align">Scottish Fold</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-2.jpg" alt="European rabbit biting hand">
+                <h4 class="left-align">Roberta</h4>
+                <p class="left-align">European Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-2.jpg" alt="Dark, bright-eyed cat hiding in the dark">
+                <h4 class="left-align">Moose</h4>
+                <p class="left-align">Bombay Cat</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-5.jpg" alt="Stoic, white, blue-eyed cat closeup">
+                <h4 class="left-align">Mississippi</h4>
+                <p class="left-align">Turkish Angora</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-3.jpg" alt="Daschund puppy winking">
+               <h4 class="left-align">Unipug</h4>
+                <p class="left-align">Pug</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-4.jpg" alt="Miniature pinscher wearing scarf">
+                <h4 class="left-align">Fire Truck</h4>
+                <p class="left-align">Miniature Pinscher</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-5.jpg" alt="Beagador jumping">
+                <h4 class="left-align">Orange</h4>
+                <p class="left-align">Beagador</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-6.jpg" alt="White and black dog wearing sunglasses">
+                <h4 class="left-align">Tamago</h4>
+                <p class="left-align">Kuvasz</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-7.jpg" alt="Grey cat peeking out of box">
+                <h4 class="left-align">Steven</h4>
+                <p class="left-align">Manx Cat</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-7.jpg" alt="Border collie smiling">
+                <h4 class="left-align">Popo</h4>
+                <p class="left-align">Border Collie</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-4.jpg" alt="Tabby cat wrapped in blanket">
+                <h4 class="left-align">Lentil</h4>
+                <p class="left-align">Singapura Cat</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-3.jpg" alt="French lop closeup">
+                <h4 class="left-align">French Toast</h4>
+                <p class="left-align">French Lop</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-8.jpg" alt="Chipoo dog wearing reindeer ears">
+                <h4 class="left-align">Naruto</h4>
+                <p class="left-align">Chipoo</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-3.jpg" alt="Grey white cat hiding behind couch">
+                <h4 class="left-align">Scaredy</h4>
+                <p class="left-align">American Wirehair</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-6.jpg" alt="White cat looking shocked on a couch">
+                <h4 class="left-align">Firefox</h4>
+                <p class="left-align">American Shorthair</p>
+            </a>
+        </div>
 
-  <!---------------------- MAIN -------------------------->
-
-  <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
-    <a href="dog-listing.html" class="col product-card">
-          <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
-          <h4 class="left-align">Loofa</h4>
-          <p class="left-align">Pomeranian</p>
-          <div class="new"><p>New</p></div>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-2.jpg" alt="Maltese puppy closeup">
-      <h4 class="left-align">Snickers</h4>
-      <p class="left-align">Maltese</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-3.jpg" alt="Daschund puppy winking">
-      <h4 class="left-align">Weiner</h4>
-      <p class="left-align">Daschund</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-4.jpg" alt="Miniature pinscher wearing scarf">
-      <h4 class="left-align">Fire Truck</h4>
-      <p class="left-align">Miniature Pinscher</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-5.jpg" alt="Beagador jumping">
-      <h4 class="left-align">Orange</h4>
-      <p class="left-align">Beagador</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-6.jpg" alt="White and black dog wearing sunglasses">
-      <h4 class="left-align">Tamago</h4>
-      <p class="left-align">Kuvasz</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-7.jpg" alt="Border collie smiling">
-      <h4 class="left-align">Popo</h4>
-      <p class="left-align">Border Collie</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-8.jpg" alt="Chipoo dog wearing reindeer ears">
-      <h4 class="left-align">Naruto</h4>
-      <p class="left-align">Chipoo</p>
-    </a>
-  </div>
-
-  <!---------------------- DOGS -------------------------->
-    <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
-    <a href="dog-listing.html" class="col product-card">
-        <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
-        <h4 class="left-align">Loofa</h4>
-        <p class="left-align">Pomeranian</p>
-        <div class="new"><p>New</p></div>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-2.jpg" alt="Maltese puppy closeup">
-      <h4 class="left-align">Snickers</h4>
-      <p class="left-align">Maltese</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-3.jpg" alt="Daschund puppy winking">
-      <h4 class="left-align">Weiner</h4>
-      <p class="left-align">Daschund</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-4.jpg" alt="Miniature pinscher wearing scarf">
-      <h4 class="left-align">Fire Truck</h4>
-      <p class="left-align">Miniature Pinscher</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-5.jpg" alt="Beagador jumping">
-      <h4 class="left-align">Orange</h4>
-      <p class="left-align">Beagador</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-6.jpg" alt="White and black dog wearing sunglasses">
-      <h4 class="left-align">Tamago</h4>
-      <p class="left-align">Kuvasz</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-7.jpg" alt="Border collie smiling">
-      <h4 class="left-align">Popo</h4>
-      <p class="left-align">Border Collie</p>
-    </a>
-    <a href="dog-listing.html" class="col product-card">
-      <img src="img/product-card/dog-8.jpg" alt="Chipoo dog wearing reindeer ears">
-      <h4 class="left-align">Naruto</h4>
-      <p class="left-align">Chipoo</p>
-    </a>
-  </div>
-
-
-  <!---------------------- CATS -------------------------->
-  <div id="cats" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-1.jpg" alt="Grey, doll-like cat closeup">
-      <h4 class="left-align">Chesire</h4>
-      <p class="left-align">Scottish Fold</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-2.jpg" alt="Dark, bright-eyed cat hiding in the dark">
-      <h4 class="left-align">Moose</h4>
-      <p class="left-align">Bombay Cat</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-3.jpg" alt="Grey white cat hiding behind couch">
-      <h4 class="left-align">Scaredy</h4>
-      <p class="left-align">American Wirehair</p>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-4.jpg" alt="Tabby cat wrapped in blanket">
-      <h4 class="left-align">Lentil</h4>
-      <p class="left-align">Singapura Cat</p>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-5.jpg" alt="Stoic, white, blue-eyed cat closeup">
-      <h4 class="left-align">Mississippi</h4>
-      <p class="left-align">Turkish Angora</p>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-6.jpg" alt="White cat looking shocked on a couch">
-      <h4 class="left-align">Firefox</h4>
-      <p class="left-align">American Shorthair</p>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/cat-7.jpg" alt="Grey cat peeking out of box">
-      <h4 class="left-align">Steven</h4>
-      <p class="left-align">Manx Cat</p>
-    </a>
-  </div><!-- end of #cats -->
-
-  <!--------------------- BUNNIES ------------------------->
-  <div id="bunnies" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/bunny-1.jpg" alt="Netherland dwarf rabbit with flower on head">
-      <h4 class="left-align">Poopy</h4>
-      <p class="left-align">Netherland Dwarf Rabbit</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/bunny-2.jpg" alt="European rabbit biting hand">
-      <h4 class="left-align">Roberta</h4>
-      <p class="left-align">European Rabbit</p>
-      <div class="new"><p>New</p></div>
-    </a>
-    <a href="bunny-listing.html" class="col product-card">
-      <img src="img/product-card/bunny-3.jpg" alt="French lop closeup">
-      <h4 class="left-align">French Toast</h4>
-      <p class="left-align">French Lop</p>
-    </a>
-  </div> <!-- end of #BUNNIES -->
+        <!---------------------- DOGS -------------------------->
+        <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
+                <h4 class="left-align">Loofa</h4>
+                <p class="left-align">Pomeranian</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-2.jpg" alt="Maltese puppy closeup">
+                <h4 class="left-align">Snickers</h4>
+                <p class="left-align">Maltese</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-3.jpg" alt="Daschund puppy winking">
+               <h4 class="left-align">Unipug</h4>
+                <p class="left-align">Pug</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-4.jpg" alt="Miniature pinscher wearing scarf">
+                <h4 class="left-align">Fire Truck</h4>
+                <p class="left-align">Miniature Pinscher</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-5.jpg" alt="Beagador jumping">
+                <h4 class="left-align">Orange</h4>
+                <p class="left-align">Beagador</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-6.jpg" alt="White and black dog wearing sunglasses">
+                <h4 class="left-align">Tamago</h4>
+                <p class="left-align">Kuvasz</p>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-7.jpg" alt="Border collie smiling">
+                <h4 class="left-align">Popo</h4>
+                <p class="left-align">Border Collie</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="dog-listing.html" class="col product-card">
+                <img src="img/product-card/dog-8.jpg" alt="Chipoo dog wearing reindeer ears">
+                <h4 class="left-align">Naruto</h4>
+                <p class="left-align">Chipoo</p>
+            </a>
+        </div>
 
 
-  <footer class="footer">
-  </footer>
+        <!---------------------- CATS -------------------------->
+        <div id="cats" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-1.jpg" alt="Grey, doll-like cat closeup">
+                <h4 class="left-align">Chesire</h4>
+                <p class="left-align">Scottish Fold</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-2.jpg" alt="Dark, bright-eyed cat hiding in the dark">
+                <h4 class="left-align">Moose</h4>
+                <p class="left-align">Bombay Cat</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-3.jpg" alt="Grey white cat hiding behind couch">
+                <h4 class="left-align">Scaredy</h4>
+                <p class="left-align">American Wirehair</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-4.jpg" alt="Tabby cat wrapped in blanket">
+                <h4 class="left-align">Lentil</h4>
+                <p class="left-align">Singapura Cat</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-5.jpg" alt="Stoic, white, blue-eyed cat closeup">
+                <h4 class="left-align">Mississippi</h4>
+                <p class="left-align">Turkish Angora</p>
+                <div class="sick"><p>Sick</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-6.jpg" alt="White cat looking shocked on a couch">
+                <h4 class="left-align">Firefox</h4>
+                <p class="left-align">American Shorthair</p>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/cat-7.jpg" alt="Grey cat peeking out of box">
+                <h4 class="left-align">Steven</h4>
+                <p class="left-align">Manx Cat</p>
+            </a>
+        </div><!-- end of #cats -->
 
-  <script>
-    function show(divID) {
-        document.getElementById('listing-space').innerHTML = document.getElementById(divID).innerHTML;
-    }
+        <!--------------------- BUNNIES ------------------------->
+        <div id="bunnies" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-1.jpg" alt="Netherland dwarf rabbit with flower on head">
+                <h4 class="left-align">Poopy</h4>
+                <p class="left-align">Netherland Dwarf Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-2.jpg" alt="European rabbit biting hand">
+                <h4 class="left-align">Roberta</h4>
+                <p class="left-align">European Rabbit</p>
+                <div class="new"><p>New</p></div>
+            </a>
+            <a href="bunny-listing.html" class="col product-card">
+                <img src="img/product-card/bunny-3.jpg" alt="French lop closeup">
+                <h4 class="left-align">French Toast</h4>
+                <p class="left-align">French Lop</p>
+            </a>
+        </div> <!-- end of #BUNNIES -->
 
-    var petsNavButtons = document.getElementsByClassName('pets-nav-button');
 
-    function underline(buttonID){
-        var activeButton = document.getElementById(buttonID);
+        <footer class="footer">
+        </footer>
 
-        for (var i = 0; i < petsNavButtons.length; i++) {
-            if(petsNavButtons[i] != activeButton){
-                petsNavButtons[i].classList.remove('active-link');
+        <script>
+            function show(divID) {
+                document.getElementById('listing-space').innerHTML = document.getElementById(divID).innerHTML;
             }
-        }
 
-        activeButton.classList.add("active-link");
-    }
+            var petsNavButtons = document.getElementsByClassName('pets-nav-button');
 
-  </script>
-     <script src="script/mobile-nav.js"></script>
-</body>
+            function underline(buttonID){
+                var activeButton = document.getElementById(buttonID);
+
+                for (var i = 0; i < petsNavButtons.length; i++) {
+                    if(petsNavButtons[i] != activeButton){
+                        petsNavButtons[i].classList.remove('active-link');
+                    }
+                }
+
+                activeButton.classList.add("active-link");
+            }
+
+        </script>
+        <script src="script/mobile-nav.js"></script>  
+    </body>
 </html>
