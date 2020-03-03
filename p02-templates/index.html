@@ -1,113 +1,156 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-      <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-    <title>Petcetera</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/flexbox.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-    <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <title>Petcetera</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <a href="our-pets.html" class="underline-link">Our Pets</a>
+                <a href="pricing.html" class="underline-link">Pricing</a>
+                <div class="studio-dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
 
-      <nav class="top-nav" role="navigation" aria-label="main">
-        <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-        <div class="top-nav-right">
-            <a href="our-pets.html" class="underline-link">Our Pets</a>
-            <a href="pricing.html" class="underline-link">Pricing</a>
-            <div class="studio-dropdown">
-              <button class="dropdown-button">Our Studio</button>
-              <div class="dropdown-content">
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-              </div>
-            </div>
+        <!--------------------- MOBILE NAV --------------------->
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+        <!---------------------- MAIN -------------------------->
+        <div class="sale-banner">
+            <a href="pricing.html">Limited time: 50% off annual memberships</a>
         </div>
-        <a id="hamburger" onclick="openNav()">
-            <i class="fas fa-bars"></i>
-        </a>
-    </nav>
 
-    <div id="mobile-nav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="mobile-nav-content">
-            <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-            <section>
-                <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
-            </section>
+        <div class="hero banner">
+            <div class="textblock left-align" role="textblock">
+                <h1>Say hello to Unipug</h1>
+                <p class="hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="our-pets.html" class="underline-link black">Browse Pets</a>
+            </div><!--end of .textblock-->
+        </div><!--end of .hero-->
 
-            <section>
-                <a class="mobile-nav-heading">Our Studio</a>
-                <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
-                <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
-            </section>
+        <div class="banner" id="home-about">
+            <div class="textblock left-align" role="textblock">
+                <h2>The cutest animals in North America</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div><!--end of .textblock-->
+        </div><!--end of .banner-->
 
-            <section>
-                <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
-            </section>
-        </div><!--end of .mobile-nav-content-->
-    </div><!--end of .mobile-nav-->
-
-    <div class="sale-banner">
-        <a href="pricing.html">Limited time: 50% off annual memberships</a>
-    </div>
-
-    <div class="hero banner">
-        <div class="textblock left-align" role="textblock">
-            <h1>Say hello to Snowball</h1>
-            <p class="hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="underline-link">More dogs</a>
-        </div><!--end of textblock-->
-    </div><!--end of hero-->
-
-    <div class="banner" id="home-about">
-        <div class="textblock left-align" role="textblock">
-            <h2>The cutest animals in North America</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div><!--end of textblock-->
-        <div class="left-align" id="type-of-pets" >
-            <nav>
-                <h3>Our Pets</h3>
-                <a>Dogs</a>
-                <a>Cats</a>
-                <a>Bunnies</a>
-            </nav>
-        </div>
-    </div><!--end of banner-->
-
-    <div class="banner" id="bunny-day">
-        <div class="textblock">
-            <h2>Celebrate National Bunny Day on September 26, 2020</h2>
-            <button type="button" class="button whiteblue-bg">Learn more</button>
-        </div>
-    </div><!--end of banner-->
-
-    <div class="banner" id="home-pricing">
-        <h2>Join our community</h2>
-        <div class="grid-container left-align">
-            <div class="col">
-                <h4>Drop-in</h4>
-                <p class="price">$15</p>
-                <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="banner" id="bunny-day">
+            <div class="textblock">
+                <h2>Celebrate National Bunny Day</h2>
+                <h4>on september 26</h4>
             </div>
-            <div class="col">
-                <h4>Monthly</h4>
-                <p class="price">$60</p>
-                <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col">
-                <h4>Yearly</h4>
-                <p class="price">$330</p>
-                <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="sale-badge">
-                    <p>Save 50%</p>
-                </div><!--end of sale-badge-->
-            </div>
-        </div>
-    </div><!--end of banner-->
-    <script src="script/mobile-nav.js"></script>
-  </body>
+        </div><!--end of .banner-->
+
+        <div class="banner" id="home-pricing">
+            <h2>Join our community</h2>
+            <div class="grid-container left-align">
+                <div class="col">
+                    <h4>Drop-in</h4>
+                    <p class="price">$15</p>
+                    <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col">
+                    <h4>Monthly</h4>
+                    <p class="price">$60</p>
+                    <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col">
+                    <h4>Yearly</h4>
+                    <p class="price">$330</p>
+                    <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="sale-badge">
+                        <p>Save 50%</p>
+                    </div><!--end of .sale-badge-->
+                </div>
+            </div> <!-- end of .grid-container -->
+            <button class="button whiteblue-bg" onclick="document.location = 'pricing.html'">View Pricing</button>
+        </div><!--end of .banner-->
+        
+        <!--------------------- FOOTER ------------------------->
+        <footer>
+            <div id="footer-about">
+                <h4><a class="black" href="about.html">About</a></h4>
+                <div class="f-line dark-blue-bg"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- end of #footer-about -->
+            <div class="grid-container">
+                <div class="col">
+                    <h4><a class="black" href="contact.html">Contact</a></h4>
+                    <table>
+                        <tr>
+                            <th>Phone</th>
+                            <td>1+ (604) 098 7654</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>support@petcetera.ca</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>@petcetera</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>@petcetera_pets</td>
+                        </tr>
+                        <tr>
+                            <th>Youtube</th>
+                            <td>Petcetera</td>
+                        </tr>
+                    </table> <!-- end of table -->
+                </div> <!-- end of contact .col -->
+                <div class="col">
+                    <h4>Location</h4>
+                    <p>Surrey Central Mall &nbsp; <strong>250-13450 102 Ave, Surrey</strong></p>
+                </div>
+                <!-- end of location .col-->
+                <div class="col" id="terms">
+                    <h4><a class="black">Terms of use</a></h4>
+                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
+                </div> <!-- end of terms .col-->
+            </div> <!-- end of .grid-container -->
+            <img src="img/petcetera-logo.jpg" alt="logo">
+        </footer>
+        
+        <script src="script/mobile-nav.js"></script>
+    </body>
 </html>

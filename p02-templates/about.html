@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-<head>
-  <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-  <title>About</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/flexbox.css">
-  <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
 
-  <nav class="top-nav" role="navigation" aria-label="main">
-    <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-    <div class="top-nav-right">
-      <a href="our-pets.html" class="underline-link">Our Pets</a>
-      <a href="pricing.html" class="underline-link">Pricing</a>
-      <div class="studio-dropdown">
-        <button class="dropdown-button">Our Studio</button>
-        <div class="dropdown-content">
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-    <a id="hamburger" onclick="openNav()">
-      <i class="fas fa-bars"></i>
-    </a>
-  </nav>
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <a href="our-pets.html" class="underline-link">Our Pets</a>
+                <a href="pricing.html" class="underline-link">Pricing</a>
+                <div class="studio-dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
 
-  <div id="mobile-nav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="mobile-nav-content">
-      <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-      <section>
-        <a class="mobile-nav-heading" >Our Pets</a>
-        <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
-        <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
-        <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
-      </section>
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a href="our-pets.html" class="mobile-nav-heading">Our Pets</a>
+                </section>
 
-      <section>
-        <a class="mobile-nav-heading">Our Studio</a>
-        <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
-        <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
-      </section>
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
 
-      <section>
-        <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
-      </section>
-    </div><!--end of .mobile-nav-content-->
-  </div><!--end of .mobile-nav-->
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
 
 
-  <!---------------------------MAIN SECTION--------------------------->
-  <section class="about">
-    <!---------------------------ABOUT HEADER--------------------------->
-    <div class="about-top">
-      <h1 class="center top-padding black">About Petcetera</h1>
-    </div>
+        <!-- MAIN SECTION -->
+        <section class="about">
+            <!-- ABOUT HEADER -->
+            <div class="about-top">
+                <h1 class="center top-padding black">About Petcetera</h1>
+            </div>
 
-    <!-----------------------------ABOUT US----------------------------->
-    <div class="grid-container">
-      <div class="center col-full">
-        <h4>Who are we?</h4>
-        <h2 class="black">A little bit about us.</h2>
-        <p class="about-center black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
+            <!-- ABOUT US -->
+                <div class="center col-full">
+                    <h4>Who are we?</h4>
+                    <h2 class="black">A little bit about us.</h2>
+                    <p class="about-center black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
 
-      <!-------------------------MISSION + VALUES------------------------->
-      <div class="col-half top-p mission">
-        <img id="about-kitty" src="img/about-kitty.jpg">
-      </div>
+                <!-- MISSION + VALUES -->
+                <div class="mission grid-container">
+                <div class="col top-p left-align" id="mission-text">
+                    <h4>Why Petcetera?</h4>
+                    <h2 class="black">Our mission + values.</h2>
+                    <p class="black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                    <div class="col top-p">
+                    <img id="about-kitty" src="img/about-kitty.jpg">
+                </div>
 
-      <div class="col-half top-p mission">
-        <h4>Why Petcetera?</h4>
-        <h2 class="black">Our mission + values.</h2>
-        <p class="about-right black bottom-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
+                </div>
 
-      <!---------------------------HOW IT WORKS--------------------------->
-      <div class="col-half top-p bottom-p">
-        <h4 class="about-left">How it works</h4>
-        <h2 class="about-left black">Come visit us.</h2>
-        <p class="about-left black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
 
-      <div class="col-half top-p">
-        <img id="about-bunny" src="img/about-bunny.jpg" align="right">
-      </div>
-    </div>
+                <!-- HOW IT WORKS -->
+            <div class="grid-container">
+                <div class="col-half top-p bottom-p">
+                    <h4 class="about-left">How it works</h4>
+                    <h2 class="about-left black">Come visit us.</h2>
+                    <p class="about-left black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
 
-  </section>
+                <div class="col-half top-p">
+                    <img id="about-bunny" src="img/about-bunny.jpg" align="right">
+                </div>
+            </div>
 
-  <footer class="footer">
-    <h4>This is the footer</h4>
-  </footer>
-  <script src="script/mobile-nav.js"></script>
-</body>
+        </section>
+
+        <footer class="footer">
+            <h4>This is the footer</h4>
+        </footer>
+        <script src="script/mobile-nav.js"></script>
+    </body>
 </html>

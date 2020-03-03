@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/media-queries.css">
   <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
   <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
 </head>
@@ -36,28 +37,25 @@
     <div class="mobile-nav-content">
       <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
       <section>
-        <a class="mobile-nav-heading" >Our Pets</a>
-        <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
-        <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
-        <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+        <a href="our-pets.html" class="mobile-nav-heading" >Our Pets</a>
       </section>
 
       <section>
         <a class="mobile-nav-heading">Our Studio</a>
-        <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
-        <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+        <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+        <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
       </section>
 
       <section>
-        <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+        <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
       </section>
     </div><!--end of .mobile-nav-content-->
   </div><!--end of .mobile-nav-->
 
 
-  <!---------------------------MAIN SECTION--------------------------->
+  <!-- MAIN SECTION -->
   <section class="contact">
-    <!--------------------------CONTACT HEADER-------------------------->
+    <!-- CONTACT HEADER -->
     <div class="contact-top">
       <h1 class="left-align black">Contact Us</h1>
       <p id="contact-us" class="left-align black">1+ (604) 098 7654 &#183; support@petcetera.ca</p>
@@ -125,6 +123,6 @@
     </div>
   </section>
 
- <script src="script/mobile-nav.js"></script>  
+ <script src="script/mobile-nav.js"></script>
 </body>
 </html>

@@ -12,11 +12,11 @@ body {
     color: #212121;
 }
 
-h1, h2, h3, h4{
-  font-family: termina, sans-serif;
-  font-style: normal;
-  line-height: 1.25em;
-  margin-bottom: 0;
+h1, h2, h3, h4 {
+    font-family: termina, sans-serif;
+    font-style: normal;
+    line-height: 1.25em;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -25,30 +25,33 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 2.25em;
+    font-weight: 600;
+    font-size: 2.25em;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 1.75em;
+    font-weight: 400;
+    font-size: 1.75em;
 }
 
 h4 {
-  letter-spacing: 0.2rem;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
-  background-color: none;
-  border: none;
+    background-color: none;
+    border: none;
 }
 
 button:focus{
-  outline-style: none;
+    outline-style: none;
 }
 
 .button {
@@ -62,18 +65,18 @@ button:focus{
 }
 
 .button.blue-bg{
-  background-color: #5A9EC4;
+    background-color: #5A9EC4;
     color: white;
 }
 
 .button.blue-bg:hover{
-  background-color: #488aaf;
+    background-color: #488aaf;
     color: white;
 }
 
 .button.whiteblue-bg{
-  border: 1px solid #8BC8E9;
-  color: #67acd1;
+    border: 1px solid #8BC8E9;
+    color: #67acd1;
 }
 
 .button.whiteblue-bg:hover{
@@ -83,15 +86,15 @@ button:focus{
 }
 
 .left-align {
-  margin-left: 10%;
+    margin-left: 10%;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .top-padding {
-    padding-top: 10%;
+    padding-top: 13%;
 }
 
 .image-link {
@@ -102,23 +105,31 @@ button:focus{
 /*-------------------------COLOURS---------------------------*/
 
 .black {
-  color: #404040;
+    color: #404040;
+}
+
+.black-bg {
+    background-color: #404040;
 }
 
 .lt-blue {
-  color: #D5E9F3;
+    color: #D5E9F3;
 }
 
 .med-blue {
-  color: #8BC8E9;
+    color: #8BC8E9;
 }
 
 .dark-blue {
-  color: #5A9EC4;
+    color: #5A9EC4;
+}
+
+.dark-blue-bg {
+    background-color: #5A9EC4;
 }
 
 .blue-bg {
-  background-color: #D5E9F3;
+    background-color: #D5E9F3;
 }
 
 
@@ -159,59 +170,59 @@ button:focus{
 /* referenced from www.w3schools.com */
 
 .dropdown-button {
-  color: black;
-  border: none;
-  margin: 20px 16px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+    color: black;
+    border: none;
+    margin: 20px 16px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 .studio-dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  z-index: 3;
-  padding: 7% 0 0 0;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    padding: 7% 0 0 0;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .dropdown-content a {
-  background-color: white;
-  position: relative;
-  font-family: termina;
-  font-weight: 200;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  color: black;
-  opacity: 0.7;
-  text-decoration: none;
-  display: block;
-  margin: 0 0 10% 13%;
+    background-color: white;
+    position: relative;
+    font-family: termina;
+    font-weight: 200;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.7;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 10% 13%;
 }
 
 .dropdown-content a:after {
-  content: '';
-  position: absolute;
-  width: 0; height: 2px;
-  display: block;
-  margin-top: 3px;
-  right: 0;
-  background: #000;
-  opacity: 0.8;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 3px;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
 }
 
 .dropdown-content a:hover:after {
@@ -222,11 +233,11 @@ button:focus{
 }
 
 .dropdown-content a:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .studio-dropdown:hover .dropdown-content{
-  display: block;
+    display: block;
 }
 
 /*----------------------ANIMATED LINKS----------------------*/
@@ -360,6 +371,7 @@ button:focus{
     font-weight: 600;
     font-size: 2em;
     text-decoration:none;
+    color: black;
 }
 
 /*------------------------SALE BANNER---------------------------*/
@@ -372,17 +384,17 @@ button:focus{
     left: 0;
     width: 100%;
     height: 40px;
-/* pet nav referenced from www.w3schools.com */
+    /* pet nav referenced from www.w3schools.com */
 }
 #our-pets-banner {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/unicorn-dog.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 500px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/unicorn-dog.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    margin-bottom: 0;
 }
 
 .sale-banner a {
@@ -408,12 +420,12 @@ button:focus{
 }
 
 .pet-nav {
-  display: block;
-  width: 80%;
-  border-bottom: 2px solid rgba(0,0,0,0.8);
-  position: absolute;
-  padding-bottom: 3px;
-  bottom: 0;
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    position: absolute;
+    padding-bottom: 3px;
+    bottom: 0;
 }
 
 .sale-banner a:hover {
@@ -421,22 +433,22 @@ button:focus{
 }
 
 .pet-nav a {
-  float: left;
-  display: block;
-  color: black;
-  opacity: 0.8;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  margin-right: 10%;
-  background-color: rgb(0, 0, 0, 0);
+    float: left;
+    display: block;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-right: 10%;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .pet-nav:hover a {
-  opacity: 1;
+    opacity: 1;
 }
 
 #dogs-button, #cats-button, #bunnies-button {
@@ -447,24 +459,24 @@ button:focus{
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
-  margin: 3% 10% 0 9%;
+    margin: 3% 10% 0 9%;
 }
 
 .product-card {
-  position: relative;
-  border: 1px solid rgba(0,0,0,0.1);
-/*  height: 20em;*/
-  margin: 1.5%;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.1);
+    /*  height: 20em;*/
+    margin: 1.5%;
 }
 
 .product-card p {
-  margin-top: 2%;
+    margin-top: 2%;
 }
 
 .product-card img {
-  width: 90%;
-  margin: 4% auto 0 auto;
-  display: block;
+    width: 90%;
+    margin: 4% auto 0 auto;
+    display: block;
 }
 
 a.product-card {
@@ -473,7 +485,7 @@ a.product-card {
 }
 
 a.product-card:hover {
-  box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
     transform: scale(1.02);
 }
 
@@ -505,19 +517,23 @@ a.product-card:hover {
     position: relative;
     width: 100%;
     z-index: 0;
+    min-width: 500px;
 }
 
-.hero.banner {
+div.hero {
     height: 600px;
-    background-color: lightgrey;
+    background-image: url("../img/unicorn-dog-mobile.jpg");
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 0;
 }
 
 .hero .textblock {
     position: absolute;
     text-align: left;
-    top: 38%;
+    top: 30%;
     margin-right: 10%;
-    width: 48%;
+    width: 70%;
 }
 
 .hero p {
@@ -535,46 +551,66 @@ a.product-card:hover {
 }
 
 #home-about .textblock {
-    width: 40%;
-    min-width: 400px;
+    width: 70%;
     display: inline-block;
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/
 
 #bunny-day {
-    background-color: lightgrey;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-image: url("../img/bunny-day.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
     margin-top: 75px;
     text-align: center;
 }
 
+#bunny-day h4 {
+    margin-top: 70%;
+}
+
 #bunny-day .textblock {
     display: block;
-    margin: auto;
-    width: 60%;
+    margin: 0 10% 0 10%;
+    padding-top: 10%;
 }
 
 #bunny-day button {
     display: block;
-    margin: 25px auto;
+    margin: 65% auto 5% auto;
 }
 
 /*-----------------------HOME (PRICING)--------------------------*/
 
 #home-pricing {
-    padding-top: 50px;
+    padding-top: 20%;
     text-align: center;
+    cursor: default;
+}
+
+#home-pricing h2 {
+    padding: 0 10% 0 10%;
 }
 
 #home-pricing .grid-container {
     width: 80%;
+    padding-top: 5%;
 }
 
 #home-pricing .col {
-    margin: 30px;
+    margin: 5% 7%;
     position: relative;
+    border: 0.5px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 5% 10%;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.03);
+}
+
+#home-pricing button {
+    margin-top: 3%;
+    padding: 15px 0;
+    width: 70%;
 }
 
 .price {
@@ -590,8 +626,8 @@ a.product-card:hover {
     border: 1px solid rgb(139, 200, 233);
     border-radius: 5px;
     position: absolute;
-    top: 6%;
-    right: 0;
+    top: 3%;
+    right: 3%;
     padding: 1% 2%;
     margin: 0;
 }
@@ -676,36 +712,36 @@ p.just-arrived {
 
 /* Style the list */
 ul.breadcrumb {
-  padding: 10px 10px 16px 0;
-  list-style: none;
-  margin-top: 125px;
+    padding: 10px 10px 16px 0;
+    list-style: none;
+    margin-top: 125px;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
-  display: inline;
-      font-size: 0.9em;
+    display: inline;
+    font-size: 0.9em;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-        opacity: 0.5;
-  content: "/\00a0";
+    padding: 8px;
+    color: black;
+    opacity: 0.5;
+    content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: black;
+    color: black;
     opacity: 0.5;
-  text-decoration: none;
+    text-decoration: none;
 
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -714,60 +750,60 @@ ul.breadcrumb li a:hover {
 
 /* referenced from www.w3schools.com */
 .top-content {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/marnie.png");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/marnie.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 0;
 }
 
 .pet-nav {
-  margin-top: 10%;
-  width: 80%;
-  border-bottom: 2px solid rgba(0,0,0,0.8);
-  position: absolute;
-  padding-bottom: 3px;
-  bottom: 0;
+    margin-top: 10%;
+    width: 80%;
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    position: absolute;
+    padding-bottom: 3px;
+    bottom: 0;
 }
 
 .pet-nav nav {
-  list-style-type: none;
-  overflow: hidden;
-  position: fixed;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
 }
 
 .pet-nav a {
-  float: left;
-  margin: 0 5% 0 0;
-  display: block;
-  color: black;
-  opacity: 0.8;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  background-color: rgb(0, 0, 0, 0);
+    float: left;
+    margin: 0 5% 0 0;
+    display: block;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .pet-nav:hover a {
-  opacity: 1;
+    opacity: 1;
 }
 
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
-  margin: 2% 10% 0 9%;
+    margin: 2% 10% 0 9%;
 }
 
 .product-card {
-  border: 1px solid rgba(0,0,0,0.1);
-/*  height: 20em;*/
-  margin: 1.5%;
+    border: 1px solid rgba(0,0,0,0.1);
+    /*  height: 20em;*/
+    margin: 1.5%;
 }
 
 a.product-card {
@@ -776,129 +812,183 @@ a.product-card {
 }
 
 .product-card p {
-  margin-top: 2%;
+    margin-top: 2%;
 }
 
 .product-card img {
-  width: 90%;
-  margin: 4% auto 0 auto;
-  display: block;
+    width: 90%;
+    margin: 4% auto 0 auto;
+    display: block;
 }
 
 /*---------------------------ABOUT-------------------------------*/
+.about {
+    min-width: 500px;
+}
+
 .about h1 {
-  word-spacing: 0.3em;
+    word-spacing: 0.3em;
 }
 
 .about h2 {
-  margin-top: 0.6em;
+    margin-top: 0.6em;
 }
 
 .about h4 {
-  color: #5A9EC4;
-  padding-top: 5%;
+    color: #5A9EC4;
+    padding-top: 5%;
 }
 
 .about-top {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/about-banner.jpg"); /* Photo by Lum3n.com from Pexels */
-  background-size: cover;
-  background-position: top;
-  height: 800px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/about-banner.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 800px;
+    margin-bottom: 0;
 }
 
 .about-center {
-  padding: 1% 25% 7% 25%;
-}
-
-.about-right {
-  padding-right: 20%;
+    padding: 1% 25% 7% 25%;
 }
 
 .about-left {
-  padding-left: 20%;
+    padding-left: 20%;
 }
 
 .about .top-p {
-  padding-top: 5%;
+    padding-top: 5%;
 }
 
 .about .bottom-p {
-  padding-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 .mission {
-  background-color: #eeeded;
+    background-color: #eeeded;
+}
+
+.mission .col {
+    flex: 1 1 100%;
+}
+
+#mission-text {
+    max-width: 80%;
 }
 
 #about-kitty {
-  width: 80%;
+    width: 100%;
 }
 
 #about-bunny {
-  width: 90%;
-  padding: 7% 20% 0 0;
+    width: 90%;
+    padding: 7% 20% 0 0;
 }
 
 /*--------------------------CONTACT------------------------------*/
 .contact-top h1 {
-  padding-top: 50%;
+    padding-top: 50%;
 }
 
 #contact-us {
-  padding-right: 10%;
+    padding-right: 10%;
 }
 
 .contact-top {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/contact-puppy-v9.jpg");
-  background-size: cover;
-  background-position: top right;
-  height: 1200px;
-  background-repeat: no-repeat;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/contact-puppy-v9.jpg");
+    background-size: cover;
+    background-position: top right;
+    height: 1200px;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 .contact-container {
-  padding-top: 10%;
+    padding-top: 10%;
 }
 
 .contact-info {
-  margin: 15% 3% 0 10%;
+    margin: 15% 3% 0 10%;
 }
 
 .contact-info h2 {
-  padding-right: 5%;
+    padding-right: 5%;
 }
 
 .contact-info p {
-  margin: 0;
+    margin: 0;
 }
 
 .contact-padding {
-  padding-top: 3%;
+    padding-top: 3%;
 }
 
 .contact-table {
-  text-align: left;
+    text-align: left;
 }
 
 .contact-table th {
-  padding-right: 10%;
+    padding-right: 10%;
 }
 
 #address {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 /*---------------------------FOOTER------------------------------*/
-.footer {
-  margin-top: 20%;
+footer {
+    margin-top: 20%;
+    padding: 10% 10% 5% 10%;
+    background-color: #D5E9F3;
+    min-width: 500px;
+    cursor: default;
+}
+
+footer .grid-container {
+    margin-top: 5%;
+}
+
+footer .col {
+    flex: 1 1 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer table {
+    text-align: left;
+    padding-top: 3%;
+}
+
+footer th {
+    font-weight: 600;
+    padding-right: 8%;
+}
+
+.f-line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+    margin-top: 1%;
+}
+
+footer a:hover {
+    color: #5A9EC4;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 5%;
+}
+
+#terms a:hover {
+    cursor: pointer;
 }
 /* end of footer */
 
@@ -922,153 +1012,4 @@ a.product-card {
 
 #type-of-pets a:hover {
     opacity: 0.8;
-}
-
-/*----------------------MEDIA QUERIES-------------------------*/
-
-@media (max-width: 600px) {
-  .top-nav-right {
-    display: none;
-  }
-
-  .hero .textblock {
-      width: 82%;
-  }
-
-  .contact-top {
-    background-image: url("../img/contact-puppy-mobile3.jpg");
-    background-size: 100%;
-    height: 1500px;
-  }
-
-  #hamburger {
-      display: block;
-  }
-}
-
-@media (min-width: 600px) {
-    .top-nav-right {
-        display: none;
-    }
-
-    .hero .textblock {
-        width: 70%;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    .pet-nav {
-      width: 80%;
-    }
-
-    .about h1 {
-      margin: 0 10%;
-    }
-
-    .contact-top {
-      background-image: url("../img/contact-puppy-mobile3.jpg");
-      height: 1500px;
-    }
-
-    .contact-top h1 {
-      padding-top: 40%;
-    }
-
-    .contact-info {
-      margin-top: 10%;
-    }
-
-    .contact-container {
-      padding-top: 0;
-    }
-
-}
-
-@media (min-width: 768px) {
-  .top-nav-right {
-    display: block;
-  }
-
-  #hamburger {
-    display:none;
-  }
-
-  .about h1 {
-    padding-top: 12%;
-  }
-
-  .contact-top {
-    background-image: url("../img/contact-puppy-v9.jpg");
-    height: 1300px;
-  }
-
-  .contact-top h1 {
-    padding-top: 40%;
-  }
-
-  #location {
-    margin: 10% 13% 0 0;
-  }
-
-  #social-media {
-    padding-right: 10%;
-  }
-}
-
-@media (min-width: 900px) {
-  .contact-top {
-    height: 1200px;
-  }
-
-  .contact-top h1 {
-    padding-top: 25%;
-  }
-
-  .contact-info {
-    padding-right: 10%;
-  }
-
-  #social-media {
-    padding-right: 20%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .contact-top {
-    height: 900px;
-  }
-
-  .contact-top h1 {
-    padding-top: 15%;
-  }
-
-  #hours {
-    margin-right: 0;
-  }
-
-  #location {
-    margin: 10% 0 0 0;
-    padding-right: 5%;
-  }
-
-  #social-media {
-    margin-left: 0;
-    padding-right: 3%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact-top {
-    height: 1000px;
-  }
-
-  #location {
-    padding-right: 3%;
-  }
-
-  #social-media {
-    margin: 10% 0 0 5%;
-  }
 }

@@ -1,0 +1,243 @@
+/*----------------------MEDIA QUERIES-------------------------*/
+
+/*---------------MOBILE - SMALLER THAN 600px------------------*/
+@media (max-width: 600px) {
+    .top-padding {
+/*        padding-top: 20%;*/
+    }
+    
+    .top-nav-right {
+        display: none;
+    }
+
+    .sale-banner {
+        padding: 0 10% 0 10%;
+        height: 60px;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        background-size: 100%;
+        height: 1500px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+/*--------------------BIGGER THAN 600px-----------------------*/
+@media (min-width: 600px) {
+    .top-nav-right {
+        display: none;
+    }
+
+    .hero .textblock {
+        width: 60%;
+        top: 30%;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .pet-nav {
+        width: 80%;
+    }
+
+    .about h1 {
+        margin: 0 10%;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        height: 1500px;
+    }
+
+    .contact-top h1 {
+        padding-top: 40%;
+    }
+
+    .contact-info {
+        margin-top: 10%;
+    }
+
+    .contact-container {
+        padding-top: 0;
+    }
+
+    #bunny-day h4 {
+        margin-top: 5%;
+    }
+
+    #bunny-day .textblock {
+        margin: 0 15%;
+    }
+
+    #home-pricing {
+        padding-top: 10%;
+    }
+}
+
+/*--------------------BIGGER THAN 768px-----------------------*/
+@media (min-width: 768px) {
+    .top-nav-right {
+        display: block;
+    }
+
+    #hamburger {
+        display:none;
+    }
+
+    .about h1 {
+        padding-top: 12%;
+    }
+
+    .hero .textblock {
+        top: 35%;
+        width: 50%;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-v9.jpg");
+        height: 1300px;
+    }
+
+    .contact-top h1 {
+        padding-top: 40%;
+    }
+
+    #home-about .textblock {
+        width: 60%;
+    }
+
+    #bunny-day h4 {
+        margin-top: 2%;
+    }
+
+    #home-pricing .col {
+        margin: 1%;
+        padding: 4%;
+    }
+    
+    #home-pricing button {
+        width: 23%;
+        margin-top: 5%;
+    }
+
+    #location {
+        margin: 10% 13% 0 0;
+    }
+
+    #social-media {
+        padding-right: 10%;
+    }
+    
+    footer .col {
+        flex: 1 1 40%;
+        margin-right: 8%;
+    }
+    
+    #footer-about p {
+        width: 80%;
+    }
+}
+
+/*--------------------BIGGER THAN 900px-----------------------*/
+@media (min-width: 900px) {
+    div.hero {
+        background-image: url("../img/unicorn-dog.jpg");
+        background-position: top;
+    }
+
+    .hero .textblock {
+        top: 40%;
+        width: 40%;
+    }
+
+    #home-about {
+        width: 80%;
+    }
+
+    #bunny-day {
+        background-image: url("../img/bunny-day-large.jpg");
+        background-position: bottom;
+    }
+
+    #bunny-day .textblock {
+        margin: 0 10%;
+    }
+
+    .contact-top {
+        height: 1200px;
+    }
+
+    .contact-top h1 {
+        padding-top: 25%;
+    }
+
+    .contact-info {
+        padding-right: 10%;
+    }
+
+    #social-media {
+        padding-right: 20%;
+    }
+    
+    footer .col {
+        flex: 1 1 20%;
+        margin-right: 8%;
+    }
+}
+
+/*--------------------BIGGER THAN 1024px-----------------------*/
+@media (min-width: 1024px) {
+    #home-about {
+        padding: 7% 0 5% 0;
+    }
+    .contact-top {
+        height: 900px;
+    }
+
+    .contact-top h1 {
+        padding-top: 15%;
+    }
+
+    #bunny-day {
+        background-image: url("../img/bunny-day-xlarge.jpg");
+    }
+
+    #home-pricing .col {
+        margin: 2%;
+        padding: 4%;
+    }
+
+    #hours {
+        margin-right: 0;
+    }
+
+    #location {
+        margin: 10% 0 0 0;
+        padding-right: 5%;
+    }
+
+    #social-media {
+        margin-left: 0;
+        padding-right: 3%;
+    }
+}
+
+/*--------------------BIGGER THAN 1200px-----------------------*/
+@media (min-width: 1200px) {
+    .contact-top {
+        height: 1000px;
+    }
+
+    #location {
+        padding-right: 3%;
+    }
+
+    #social-media {
+        margin: 10% 0 0 5%;
+    }
+}
