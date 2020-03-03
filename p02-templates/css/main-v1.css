@@ -13,10 +13,10 @@ body {
 }
 
 h1, h2, h3, h4{
-  font-family: termina, sans-serif;
-  font-style: normal;
-  line-height: 1.25em;
-  margin-bottom: 0;
+    font-family: termina, sans-serif;
+    font-style: normal;
+    line-height: 1.25em;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -25,30 +25,30 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 2.25em;
+    font-weight: 600;
+    font-size: 2.25em;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 1.75em;
+    font-weight: 400;
+    font-size: 1.75em;
 }
 
 h4 {
-  letter-spacing: 0.2rem;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 button {
-  background-color: none;
-  border: none;
+    background-color: none;
+    border: none;
 }
 
 button:focus{
-  outline-style: none;
+    outline-style: none;
 }
 
 .button {
@@ -62,18 +62,18 @@ button:focus{
 }
 
 .button.blue-bg{
-  background-color: #5A9EC4;
+    background-color: #5A9EC4;
     color: white;
 }
 
 .button.blue-bg:hover{
-  background-color: #488aaf;
+    background-color: #488aaf;
     color: white;
 }
 
 .button.whiteblue-bg{
-  border: 1px solid #8BC8E9;
-  color: #67acd1;
+    border: 1px solid #8BC8E9;
+    color: #67acd1;
 }
 
 .button.whiteblue-bg:hover{
@@ -83,11 +83,11 @@ button:focus{
 }
 
 .left-align {
-  margin-left: 10%;
+    margin-left: 10%;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .top-padding {
@@ -102,23 +102,23 @@ button:focus{
 /*-------------------------COLOURS---------------------------*/
 
 .black {
-  color: #404040;
+    color: #404040;
 }
 
 .lt-blue {
-  color: #D5E9F3;
+    color: #D5E9F3;
 }
 
 .med-blue {
-  color: #8BC8E9;
+    color: #8BC8E9;
 }
 
 .dark-blue {
-  color: #5A9EC4;
+    color: #5A9EC4;
 }
 
 .blue-bg {
-  background-color: #D5E9F3;
+    background-color: #D5E9F3;
 }
 
 
@@ -159,59 +159,59 @@ button:focus{
 /* referenced from www.w3schools.com */
 
 .dropdown-button {
-  color: black;
-  border: none;
-  margin: 20px 16px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+    color: black;
+    border: none;
+    margin: 20px 16px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 .studio-dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  z-index: 3;
-  padding: 7% 0 0 0;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    padding: 7% 0 0 0;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .dropdown-content a {
-  background-color: white;
-  position: relative;
-  font-family: termina;
-  font-weight: 200;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  color: black;
-  opacity: 0.7;
-  text-decoration: none;
-  display: block;
-  margin: 0 0 10% 13%;
+    background-color: white;
+    position: relative;
+    font-family: termina;
+    font-weight: 200;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.7;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 10% 13%;
 }
 
 .dropdown-content a:after {
-  content: '';
-  position: absolute;
-  width: 0; height: 2px;
-  display: block;
-  margin-top: 3px;
-  right: 0;
-  background: #000;
-  opacity: 0.8;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 3px;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
 }
 
 .dropdown-content a:hover:after {
@@ -222,11 +222,11 @@ button:focus{
 }
 
 .dropdown-content a:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .studio-dropdown:hover .dropdown-content{
-  display: block;
+    display: block;
 }
 
 /*----------------------ANIMATED LINKS----------------------*/
@@ -366,17 +366,17 @@ button:focus{
     left: 0;
     width: 100%;
     height: 40px;
-/* pet nav referenced from www.w3schools.com */
+    /* pet nav referenced from www.w3schools.com */
 }
 #our-pets-banner {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/unicorn-dog.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 500px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/unicorn-dog.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    margin-bottom: 0;
 }
 
 .sale-banner a {
@@ -402,12 +402,12 @@ button:focus{
 }
 
 .pet-nav {
-  display: block;
-  width: 80%;
-  border-bottom: 2px solid rgba(0,0,0,0.8);
-  position: absolute;
-  padding-bottom: 3px;
-  bottom: 0;
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    position: absolute;
+    padding-bottom: 3px;
+    bottom: 0;
 }
 
 .sale-banner a:hover {
@@ -415,22 +415,22 @@ button:focus{
 }
 
 .pet-nav a {
-  float: left;
-  display: block;
-  color: black;
-  opacity: 0.8;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  margin-right: 10%;
-  background-color: rgb(0, 0, 0, 0);
+    float: left;
+    display: block;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-right: 10%;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .pet-nav:hover a {
-  opacity: 1;
+    opacity: 1;
 }
 
 #dogs-button, #cats-button, #bunnies-button {
@@ -441,24 +441,24 @@ button:focus{
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
-  margin: 3% 10% 0 9%;
+    margin: 3% 10% 0 9%;
 }
 
 .product-card {
     position: relative;
-  border: 1px solid rgba(0,0,0,0.1);
-/*  height: 20em;*/
-  margin: 1.5%;
+    border: 1px solid rgba(0,0,0,0.1);
+    /*  height: 20em;*/
+    margin: 1.5%;
 }
 
 .product-card p {
-  margin-top: 2%;
+    margin-top: 2%;
 }
 
 .product-card img {
-  width: 90%;
-  margin: 4% auto 0 auto;
-  display: block;
+    width: 90%;
+    margin: 4% auto 0 auto;
+    display: block;
 }
 
 .new {
@@ -660,36 +660,36 @@ p.just-arrived {
 
 /* Style the list */
 ul.breadcrumb {
-  padding: 10px 10px 16px 0;
-  list-style: none;
-  margin-top: 125px;
+    padding: 10px 10px 16px 0;
+    list-style: none;
+    margin-top: 125px;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
-  display: inline;
-      font-size: 0.9em;
+    display: inline;
+    font-size: 0.9em;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-        opacity: 0.5;
-  content: "/\00a0";
+    padding: 8px;
+    color: black;
+    opacity: 0.5;
+    content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: black;
+    color: black;
     opacity: 0.5;
-  text-decoration: none;
+    text-decoration: none;
 
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -698,182 +698,182 @@ ul.breadcrumb li a:hover {
 
 /* referenced from www.w3schools.com */
 .top-content {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/marnie.png");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/marnie.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 0;
 }
 
 .pet-nav {
-  margin-top: 10%;
-  width: 80%;
-  border-bottom: 2px solid rgba(0,0,0,0.8);
-  position: absolute;
-  padding-bottom: 3px;
-  bottom: 0;
+    margin-top: 10%;
+    width: 80%;
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    position: absolute;
+    padding-bottom: 3px;
+    bottom: 0;
 }
 
 .pet-nav nav {
-  list-style-type: none;
-  overflow: hidden;
-  position: fixed;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
 }
 
 .pet-nav a {
-  float: left;
-  margin: 0 5% 0 0;
-  display: block;
-  color: black;
-  opacity: 0.8;
-  text-decoration: none;
-  font-family: termina;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  background-color: rgb(0, 0, 0, 0);
+    float: left;
+    margin: 0 5% 0 0;
+    display: block;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-family: termina;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .pet-nav:hover a {
-  opacity: 1;
+    opacity: 1;
 }
 
 
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
-  margin: 2% 10% 0 9%;
+    margin: 2% 10% 0 9%;
 }
 
 .product-card {
-  border: 1px solid rgba(0,0,0,0.1);
-/*  height: 20em;*/
-  margin: 1.5%;
+    border: 1px solid rgba(0,0,0,0.1);
+    /*  height: 20em;*/
+    margin: 1.5%;
 }
 
 .product-card p {
-  margin-top: 2%;
+    margin-top: 2%;
 }
 
 .product-card img {
-  width: 90%;
-  margin: 4% auto 0 auto;
-  display: block;
+    width: 90%;
+    margin: 4% auto 0 auto;
+    display: block;
 }
 
 /*---------------------------ABOUT-------------------------------*/
 .about h1 {
-  word-spacing: 0.3em;
+    word-spacing: 0.3em;
 }
 
 .about h2 {
-  margin-top: 0.6em;
+    margin-top: 0.6em;
 }
 
 .about h4 {
-  color: #5A9EC4;
-  padding-top: 5%;
+    color: #5A9EC4;
+    padding-top: 5%;
 }
 
 .about-top {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/about-banner.jpg"); /* Photo by Lum3n.com from Pexels */
-  background-size: cover;
-  background-position: top;
-  height: 800px;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/about-banner.jpg"); /* Photo by Lum3n.com from Pexels */
+    background-size: cover;
+    background-position: top;
+    height: 800px;
+    margin-bottom: 0;
 }
 
 .about-center {
-  padding: 1% 25% 7% 25%;
+    padding: 1% 25% 7% 25%;
 }
 
 .about-right {
-  padding-right: 20%;
+    padding-right: 20%;
 }
 
 .about-left {
-  padding-left: 20%;
+    padding-left: 20%;
 }
 
 .about .top-p {
-  padding-top: 5%;
+    padding-top: 5%;
 }
 
 .about .bottom-p {
-  padding-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 .mission {
-  background-color: #eeeded;
+    background-color: #eeeded;
 }
 
 #about-kitty {
-  width: 80%;
+    width: 80%;
 }
 
 #about-bunny {
-  width: 90%;
-  padding: 7% 20% 0 0;
+    width: 90%;
+    padding: 7% 20% 0 0;
 }
 
 /*--------------------------CONTACT------------------------------*/
 .contact-top h1 {
-  padding-top: 15%;
+    padding-top: 15%;
 }
 
 .contact-top {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  background-image: url("../img/contact-puppy-v8.jpg");
-  background-size: 100%;
-  background-position: top;
-  height: 900px;
-  background-repeat: no-repeat;
-  margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/contact-puppy-v8.jpg");
+    background-size: 100%;
+    background-position: top;
+    height: 900px;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 .contact-container {
-  padding-top: 10%;
+    padding-top: 10%;
 }
 
 .contact-info {
-  margin-right: 3%;
+    margin-right: 3%;
 }
 
 .contact-info h2 {
-  padding-right: 5%;
+    padding-right: 5%;
 }
 
 .contact-info p {
-  margin: 0;
+    margin: 0;
 }
 
 .contact-padding {
-  padding-top: 10%;
+    padding-top: 10%;
 }
 
 .contact-table {
-  text-align: left;
+    text-align: left;
 }
 
 .contact-table th {
-  padding-right: 10%;
+    padding-right: 10%;
 }
 
 #address {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 /*---------------------------FOOTER------------------------------*/
 .footer {
-  margin-top: 20%;
+    margin-top: 20%;
 }
 /* end of footer */
 
@@ -902,23 +902,23 @@ ul.breadcrumb li a:hover {
 /*----------------------MEDIA QUERIES-------------------------*/
 
 @media (max-width: 600px) {
-  .top-nav-right {
-    display: none;
-  }
+    .top-nav-right {
+        display: none;
+    }
 
-  .hero .textblock {
-      width: 82%;
-  }
+    .hero .textblock {
+        width: 82%;
+    }
 
-  .contact-top {
-    background-image: url("../img/contact-puppy-mobile3.jpg");
-    background-size: 100%;
-    height: 1500px;
-  }
+    .contact-top {
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        background-size: 100%;
+        height: 1500px;
+    }
 
-  #hamburger {
-      display: block;
-  }
+    #hamburger {
+        display: block;
+    }
 }
 
 @media (min-width: 600px) {
@@ -935,115 +935,115 @@ ul.breadcrumb li a:hover {
     }
 
     .pet-nav {
-      width: 80%;
+        width: 80%;
     }
 
     .about h1 {
-      margin: 0 10%;
+        margin: 0 10%;
     }
 
     .contact-top {
-      background-image: url("../img/contact-puppy-mobile3.jpg");
-      height: 1500px;
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        height: 1500px;
     }
 
     .contact-top h1 {
-      padding-top: 40%;
+        padding-top: 40%;
     }
 
     .contact-info {
-      margin-top: 10%;
+        margin-top: 10%;
     }
 
     .contact-container {
-      padding-top: 0;
+        padding-top: 0;
     }
 
 }
 
 @media (min-width: 768px) {
-  .top-nav-right {
-    display: block;
-  }
+    .top-nav-right {
+        display: block;
+    }
 
-  #hamburger {
-    display:none;
-  }
+    #hamburger {
+        display:none;
+    }
 
-  .about h1 {
-    padding-top: 12%;
-  }
+    .about h1 {
+        padding-top: 12%;
+    }
 
-  .contact-top {
-    background-image: url("../img/contact-puppy-v9.jpg");
-    height: 1300px;
-  }
+    .contact-top {
+        background-image: url("../img/contact-puppy-v9.jpg");
+        height: 1300px;
+    }
 
-  .contact-top h1 {
-    padding-top: 40%;
-  }
+    .contact-top h1 {
+        padding-top: 40%;
+    }
 
-  #location {
-    margin: 10% 13% 0 0;
-  }
+    #location {
+        margin: 10% 13% 0 0;
+    }
 
-  #social-media {
-    padding-right: 10%;
-  }
+    #social-media {
+        padding-right: 10%;
+    }
 }
 
 @media (min-width: 900px) {
-  .contact-top {
-    height: 1200px;
-  }
+    .contact-top {
+        height: 1200px;
+    }
 
-  .contact-top h1 {
-    padding-top: 25%;
-  }
+    .contact-top h1 {
+        padding-top: 25%;
+    }
 
-  .contact-info {
-    padding-right: 10%;
-  }
+    .contact-info {
+        padding-right: 10%;
+    }
 
-  #social-media {
-    padding-right: 20%;
-  }
+    #social-media {
+        padding-right: 20%;
+    }
 }
 
 @media (min-width: 1024px) {
-  .contact-top {
-    height: 900px;
-  }
+    .contact-top {
+        height: 900px;
+    }
 
-  .contact-top h1 {
-    padding-top: 15%;
-  }
+    .contact-top h1 {
+        padding-top: 15%;
+    }
 
-  #hours {
-    margin-right: 0;
-  }
+    #hours {
+        margin-right: 0;
+    }
 
-  #location {
-    margin: 10% 0 0 0;
-    padding-right: 5%;
-  }
+    #location {
+        margin: 10% 0 0 0;
+        padding-right: 5%;
+    }
 
-  #social-media {
-    margin-left: 0;
-    padding-right: 3%;
-  }
+    #social-media {
+        margin-left: 0;
+        padding-right: 3%;
+    }
 }
 
 @media (min-width: 1200px) {
-  .contact-top {
-    height: 1000px;
-  }
+    .contact-top {
+        height: 1000px;
+    }
 
-  #location {
-    padding-right: 3%;
-  }
+    #location {
+        padding-right: 3%;
+    }
 
-  #social-media {
-    margin: 10% 0 0 5%;
-  }
+    #social-media {
+        margin: 10% 0 0 5%;
+    }
 }

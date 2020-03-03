@@ -12,7 +12,7 @@ body {
     color: #212121;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
     font-family: termina, sans-serif;
     font-style: normal;
     line-height: 1.25em;
@@ -38,6 +38,7 @@ h4 {
     letter-spacing: 0.2rem;
     font-weight: 600;
     font-size: 0.8em;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 
@@ -102,6 +103,9 @@ button:focus{
     padding: 0;
 }
 
+p.grey-text {
+    color: dimgrey;
+}
 /*-------------------------COLOURS---------------------------*/
 
 .black {
@@ -283,10 +287,10 @@ button:focus{
 }
 
 #nav-logo {
-    width: 10%;
+    width: 120px;
     position: absolute;
     left: 10%;
-    padding: 0px 0px;
+    top: 35%;
 }
 
 #logo-link {
@@ -451,7 +455,7 @@ button:focus{
     opacity: 1;
 }
 
-#dogs-button, #cats-button, #bunnies-button {
+#all-pets-button, #dogs-button, #cats-button, #bunnies-button {
     margin-right: 3%;
     padding: 2px 0;
 }
@@ -502,6 +506,27 @@ a.product-card:hover {
 
 .new p {
     color: rgb(28, 79, 108, 0.8);
+    margin: 0;
+    text-transform: uppercase;
+    font-family: termina;
+    font-size: 0.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sick {
+    background-color: rgb(243, 213, 213);
+    border: 1px solid rgb(244, 140, 140);
+    border-radius: 5px;
+    position: absolute;
+    top: 6%;
+    right: 8%;
+    padding: 1% 2%;
+    margin: 0;
+}
+
+.sick p {
+    color: rgb(216, 63, 63);
     margin: 0;
     text-transform: uppercase;
     font-family: termina;
@@ -646,21 +671,18 @@ div.hero {
 /*---------------------SINGLE LISTING------------------------*/
 
 img.single-listing {
-    width: 35%;
     margin-top: 10px;
-    float: left;
+    width: 80%;
 }
 
 div.single-listing {
-    position: relative;
-    left: 5%;
-    display: inline-block;
-    width: 37.5%;
     line-height: 1.4em;
+    clear: both;
+    margin: 0 10%;
 }
 
 div.single-listing h1 {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 div.single-listing button {
@@ -673,6 +695,7 @@ p.just-arrived {
     opacity: 0.5;
     font-family: termina;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .review {
@@ -696,7 +719,7 @@ p.just-arrived {
     position: relative;
 }
 
-#write-a-review {
+#review-button {
     position: absolute;
     right: 0;
     top: 0;
@@ -705,9 +728,110 @@ p.just-arrived {
     text-decoration: underline;
 }
 
-#write-a-review:hover {
+#review-button:hover {
     opacity: 1;
 }
+
+/*---------------------REVIEW MODAL------------------------*/
+
+#thank-you-message {
+    display: none;
+}
+
+#review-pending {
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto; /* 15% from the top and centered */
+    padding: 30px 40px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content section {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.input-sm, .input-lg {
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.input-sm {
+
+    height: 40px;
+    margin-bottom: 10px;
+
+}
+
+.input-lg {
+    width: 100%;
+    height: 150px;
+    border: 1px solid lightgrey;
+}
+
+
+.modal-content p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#review-name {
+    display: inline-block;
+    width: 70%;
+}
+
+#visit-date {
+    right: 0;
+    display: inline-block;
+    max-width: 25%;
+    margin-left: 3%;
+    margin-right: 0;
+}
+
+#submit-review {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /*---------------------BREAD CRUMB------------------------*/
 
 /* Style the list */
@@ -843,7 +967,7 @@ a.product-card {
     position: relative;
     width: 100%;
     z-index: 0;
-    background-image: url("../img/about-banner.jpg");
+    background-image: url("../img/about-banner.jpg"); /* Photo by Lum3n.com from Pexels */
     background-size: cover;
     background-position: top;
     height: 800px;
@@ -852,6 +976,10 @@ a.product-card {
 
 .about-center {
     padding: 1% 25% 7% 25%;
+}
+
+.about-right {
+    padding-right: 20%;
 }
 
 .about-left {
@@ -879,7 +1007,7 @@ a.product-card {
 }
 
 #about-kitty {
-    width: 100%;
+    width: 80%;
 }
 
 #about-bunny {
@@ -939,6 +1067,51 @@ a.product-card {
 #address {
     padding-top: 0.5rem;
 }
+
+/*--------------------------PAYMENT------------------------------*/
+
+#checkout-header {
+    margin-top: 0;
+}
+
+.payment-summary {
+    background-color: #efefef;
+    margin-right: 10%;
+    border-radius: 3px;
+    padding: 25px;
+    height: 400px;
+}
+
+.payment-form, .payment-summary {
+    margin-top: 12.5%;
+}
+
+.payment-form {
+    margin-right: 5%:
+}
+
+.half-width-field {
+    display: inline-block;
+}
+
+.full-width-field {
+}
+
+.justified-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+
+/*
+.justified-row>p {
+    display: inline-block;
+}
+
+.right-align {
+    right: 0;
+}
+*/
 
 /*---------------------------FOOTER------------------------------*/
 footer {

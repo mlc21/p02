@@ -15,77 +15,151 @@
 
 </head>
 
-<body>
+    <body>
 
-  <nav class="top-nav" role="navigation" aria-label="main">
-    <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-    <div class="top-nav-right">
-        <a href="our-pets.html" class="underline-link">Our Pets</a>
-        <a class="underline-link">Pricing</a>
-        <div class="studio-dropdown">
-          <button class="dropdown-button">Our Studio</button>
-          <div class="dropdown-content">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <a href="our-pets.html" class="underline-link">Our Pets</a>
+                <a class="underline-link">Pricing</a>
+                <div class="studio-dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" >Our Pets</a>
+                    <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+        <ul class="breadcrumb left-align">
+            <li><a href="our-pets.html">Our Pets</a></li>
+            <li>Poopy</li>
+        </ul>
+
+        <img class="single-listing left-align" src="img/flower-bunny.jpg">
+
+        <div class="single-listing">
+            <p class="just-arrived">New to Petcetera</p>
+            <h1>Poopy</h1>
+            <p>Trust us. You'll never see another rabbit so cute but so full of shit. Poopy is a new member of the Petcetera family, having only been born three weeks ago. Come play with her while she still fits in your palm. Sanitizer's on us.</p>
+            <ul>
+                <li>Breed: Netherland Dwarf Rabbit</li>
+                <li>Age: 3 weeks</li>
+            </ul>
+            <!--     <p>Visit Petcetera today or purchase a membership to play with Loofa any day of the year!</p>-->
+            <button class="button blue-bg">Visit Today</button>
+            <button class="button whiteblue-bg">Become a Member</button>
+            <div class="review-section">
+                <button id="review-button">Write a review</button>
+                <p id="review-pending">Review pending</p>
+                <h4>Reviews (1)</h4>
+
+                <div class="review">
+                    <p class="title">A relaxing playdate</p>
+                    <p class="details">paulbroketheshire - Feb 20, 2020</p>
+                    <p>Poopy is the perfect, furry remedy to a stressful week of homework-wrangling. Make sure to visit Petcetera around sunset if your goal is to play with the rabbits. That's when they're most awake.</p>
+                </div><!--end of review-->
+            </div>
+            
+            <!-- The Modal -->
+            <div id="review-modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="review-form">
+                    <span class="close">&times;</span>
+                    <section>
+                        <h4>Write a Review</h4>
+                        <p class="grey-text">Did you play with Poopy during your last visit? We'd love to hear from you.</p>
+                    </section>
+                    <form id="review-name">
+                        <p class="form-label">Name</p>
+                        <input class="input-sm" type="text">
+                    </form>
+                    <form  id="visit-date">
+                        <p class="form-label">Date of Visit</p>
+                        <input class="input-sm" type="date">
+                    </form>
+
+                    <p class="form-label">Review Title (required)</p>
+                    <input class="input-sm" type="text">
+                    <p class="form-label">Review (required)</p>
+                    <textarea class="input-lg" placeholder="Tell the Petcetera family what you loved about this pet."></textarea>
+                    <button id="submit-review">Submit</button>
+                </div>
+                <div class="modal-content" id="thank-you-message">
+                    <p>Thank you for writing about your visit! Our team will review your comment shortly.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <a id="hamburger" onclick="openNav()">
-        <i class="fas fa-bars"></i>
-    </a>
- </nav>
+        <script src="script/mobile-nav.js"></script>  
+        <script>
+            var modal = document.getElementById("review-modal");
+            var reviewForm = document.getElementById("review-form");
+            var modalContent = document.getElementById("review-form");
+            var thankYouMessage = document.getElementById("thank-you-message");
+            var reviewButton = document.getElementById("review-button");
+            var reviewPending = document.getElementById("review-pending");
 
-    <div id="mobile-nav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="mobile-nav-content">
-      <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-      <section>
-        <a href="our-pets.html" class="mobile-nav-heading" >Our Pets</a>
-      </section>
+            // Get the button that opens the modal
+            var btn = document.getElementById("review-button");
+            
+            var submit = document.getElementById("submit-review");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
-      <section>
-        <a class="mobile-nav-heading">Our Studio</a>
-        <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
-        <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
-      </section>
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() { 
+//                modalContent.innerHTML = reviewForm.innerHTML;
+                modal.style.display = "block";
+            }
+            
+            submit.onclick = function() {
+                modalContent.innerHTML = thankYouMessage.innerHTML;
+                modalContent.style.marginTop = "15%";
+                reviewButton.innerHTML = reviewPending.innerHTML;
+                reviewButton.disabled = true;
+                reviewButton.style.textDecoration = "none";
+                reviewButton.style.opacity = "1";
+            }
 
-      <section>
-        <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
-      </section>
-    </div><!--end of .mobile-nav-content-->
-  </div><!--end of .mobile-nav-->
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
 
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            } </script>   
 
- <ul class="breadcrumb left-align">
-  <li><a href="#">Our Pets</a></li>
-  <li><a href="#">Dogs</a></li>
-  <li>Loofa</li>
-</ul>
-
- <img class="single-listing left-align" src="img/flower-bunny.jpg">
-
- <div class="single-listing">
-     <p class="just-arrived">New to Petcetera</p>
-     <h1>Poopy</h1>
-    <p>Trust us. You'll never see another rabbit so cute but so full of shit. Poopy is a new member of the Petcetera family, having only been born three weeks ago. Come play with her while she still fits in your palm. Sanitizer's on us.</p>
-    <ul>
-        <li>Breed: Netherland Dwarf Rabbit</li>
-        <li>Age: 3 weeks</li>
-    </ul>
-<!--     <p>Visit Petcetera today or purchase a membership to play with Loofa any day of the year!</p>-->
-     <button class="button blue-bg">Visit Today</button>
-    <button class="button whiteblue-bg">Become a Member</button>
-     <div class="review-section">
-                 <a id="write-a-review">Write a review</a>
-        <h4>Reviews (1)</h4>
-
-        <div class="review">
-            <p class="title">A relaxing playdate</p>
-            <p class="details">paulbroketheshire - Feb 20, 2020</p>
-            <p>Poopy is the perfect, furry remedy to a stressful week of homework-wrangling. Make sure to visit Petcetera around sunset if your goal is to play with the rabbits. That's when they're most awake.</p>
-        </div><!--end of review-->
-    </div>
- </div>
- <script src="script/mobile-nav.js"></script>
-</body>
+    </body> 
 </html>
