@@ -13,7 +13,7 @@
         <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
+        <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
@@ -26,18 +26,19 @@
                         <a href="contact.html">Contact</a>
                     </div>
                 </div>
-            </div>
+            </div> <!-- end of .top-nav-right -->
             <a id="hamburger" onclick="openNav()">
                 <i class="fas fa-bars"></i>
             </a>
-        </nav>
+        </nav> <!-- end of .top-nav -->
 
+        <!--------------------- MOBILE NAV --------------------->
         <div id="mobile-nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="mobile-nav-content">
                 <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
-                    <a href="our-pets.html" class="mobile-nav-heading">Our Pets</a>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
                 </section>
 
                 <section>
@@ -52,53 +53,92 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-
-        <!-- MAIN SECTION -->
+        <!---------------------- MAIN -------------------------->
         <section class="about">
             <!-- ABOUT HEADER -->
             <div class="about-top">
                 <h1 class="center top-padding black">About Petcetera</h1>
             </div>
 
-            <!-- ABOUT US -->
-                <div class="center col-full">
-                    <h4>Who are we?</h4>
-                    <h2 class="black">A little bit about us.</h2>
-                    <p class="about-center black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
+            <!---------------------- ABOUT US ---------------------->
+            <div class="center col-full">
+                <h4>Who are we?</h4>
+                <h2 class="black">A little bit about us.</h2>
+                <p class="about-center black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div> <!-- end of about us -->
 
-                <!-- MISSION + VALUES -->
-                <div class="mission grid-container">
+            <!------------------ MISSION + VALUES ------------------>
+            <div class="mission grid-container">
                 <div class="col top-p left-align" id="mission-text">
                     <h4>Why Petcetera?</h4>
                     <h2 class="black">Our mission + values.</h2>
                     <p class="black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                    <div class="col top-p">
+                </div> <!-- end of #mission-text -->
+                <div class="col top-p">
                     <img id="about-kitty" src="img/about-kitty.jpg">
-                </div>
+                </div> <!-- end of kitty image -->
+            </div> <!-- end of .grid-container -->
 
-                </div>
-
-
-                <!-- HOW IT WORKS -->
+            <!--------------------HOW IT WORKS -------------------->
             <div class="grid-container">
                 <div class="col-half top-p bottom-p">
                     <h4 class="about-left">How it works</h4>
                     <h2 class="about-left black">Come visit us.</h2>
                     <p class="about-left black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-
+                </div> <!-- end of how it works text -->
                 <div class="col-half top-p">
                     <img id="about-bunny" src="img/about-bunny.jpg" align="right">
-                </div>
-            </div>
+                </div> <!-- end of bunny image -->
+            </div> <!-- end of .grid-container -->
 
         </section>
 
-        <footer class="footer">
-            <h4>This is the footer</h4>
+        <!--------------------- FOOTER ------------------------->
+        <footer>
+            <div id="footer-about">
+                <h4><a class="black" href="about.html">About</a></h4>
+                <div class="f-line dark-blue-bg"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- end of #footer-about -->
+            <div class="grid-container">
+                <div class="col">
+                    <h4><a class="black" href="contact.html">Contact</a></h4>
+                    <table>
+                        <tr>
+                            <th>Phone</th>
+                            <td>1+ (604) 098 7654</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>support@petcetera.ca</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>@petcetera</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>@petcetera_pets</td>
+                        </tr>
+                        <tr>
+                            <th>Youtube</th>
+                            <td>Petcetera</td>
+                        </tr>
+                    </table> <!-- end of table -->
+                </div> <!-- end of contact .col -->
+                <div class="col">
+                    <h4>Location</h4>
+                    <p>Surrey Central Mall &nbsp; <strong>250-13450 102 Ave, Surrey</strong></p>
+                </div>
+                <!-- end of location .col-->
+                <div class="col" id="terms">
+                    <h4><a class="black">Terms of use</a></h4>
+                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
+                </div> <!-- end of terms .col-->
+            </div> <!-- end of .grid-container -->
+            <img src="img/petcetera-logo.jpg" alt="logo">
         </footer>
+
         <script src="script/mobile-nav.js"></script>
     </body>
 </html>
