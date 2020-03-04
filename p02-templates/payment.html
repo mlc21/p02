@@ -57,6 +57,10 @@
         </div><!--end of .mobile-nav-->
 
         <!--        <div class="grid-container" role="rowgroup">-->
+        <ul class="breadcrumb left-align">
+            <li><a href="pricing.html">Pricing</a></li>
+            <li>Checkout</li>
+        </ul>
         <div class="payment-form left-align">
             <h2 id="checkout-header">Checkout</h2>
             <section>
@@ -109,18 +113,31 @@
                         <input class="input-sm" type="text">
                     </div>
                 </form>
+                <div class="justified-row">
+                    <a href="pricing.html" class="cancel-button inline-block">Cancel</a>
+                    <button id="payment-button" class="button blue-bg inline-block">Confirm Payment</button>
+                </div>
+
             </section>
         </div>
 
         <div class="payment-summary">
             <h4>Order Summary</h4>
-            <div class="justified-row">
+            <div class="justified-row border-bottom">
                 <p>1x Drop-in</p> 
                 <p>$15.00</p>
             </div>
-            <div class="justified-row">
+            <div class="justified-row less-margin-bottom">
                 <p>Subtotal</p> 
                 <p>$15.00</p>
+            </div>
+            <div class="justified-row border-bottom">
+                <p>GST</p> 
+                <p>$0.75</p>
+            </div>
+            <div class="justified-row">
+                <p><strong>Total</strong></p> 
+                <p>$15.75</p>
             </div>
         </div>
 

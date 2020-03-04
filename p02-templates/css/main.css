@@ -1083,7 +1083,7 @@ a.product-card {
 }
 
 .payment-form {
-    margin-top: 175px;
+    margin-top: 25px;
     margin-left: 10%;
     width: 50%;
 }
@@ -1115,6 +1115,10 @@ a.product-card {
 }
 */
 
+.payment-summary h4 {
+    margin-bottom: 10px;
+}
+
 .asterix {
     color: #5A9EC4;
 }
@@ -1126,9 +1130,35 @@ a.product-card {
 .justified-row {
     display: flex;
     justify-content: space-between;
+}
+
+.less-margin-bottom {
+    margin-bottom: -15px;
+}
+
+.border-bottom {
     border-bottom: 1px solid lightgrey;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
+#payment-button {
+    margin-right: 5%;
+        margin-top: 3%;
+}
+
+.cancel-button {
+    color: darkgrey;
+    transition: 0.5s color;
+    text-decoration: underline;
+        margin-top: 3%;
+}
+
+.cancel-button:hover {
+    color: grey;
+}
 /*
 .justified-row>p {
     display: inline-block;
