@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-<head>
-  <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-  <title>Pricing</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/flexbox.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <title>Pricing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
@@ -65,74 +65,48 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
+        <section class="pricing">
+            <h1 class="center">Pricing</h1>
 
-        <h1 class="left-align top-padding">Pricing</h1>
-
- <div class="banner" id="home-pricing">
-     <div class="grid-container left-align">
-         <div class="col">
-             <h4>Drop-in</h4>
-             <p class="price">$15</p>
-             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         </div>
-         <div class="col">
-             <h4>Monthly</h4>
-             <p class="price">$60</p>
-             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         </div>
-         <div class="col">
-             <h4>Yearly</h4>
-             <p class="price">$330</p>
-             <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-             <div class="sale-badge">
-                 <p>Save 50%</p>
-             </div><!--end of sale-badge-->
-         </div>
-     </div>
- </div><!--end of banner-->
-    
-    <!--------------------- FOOTER ------------------------->
-        <footer>
-            <div class="grid-container">
-                <div class="col" id="terms">
-                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
-                    <h4><a class="black" href="about.html">How It Works</a></h4>
-                    <h4><a class="black" href="">Styleguide</a></h4>
-                    <h4><a class="black" href="">Citations</a></h4>
-                </div> <!-- end of terms .col-->
+            <div class="banner pricing-cards">
+                <div class="grid-container left-align">
+                    <a class="col black" href="payment.html">
+                        <h4>Drop-in</h4>
+                        <p class="price">$15</p>
+                        <p class="price-details">Stop by for a 60 minute playdate with a pet of your choice.</p>
+                        <p>* Limited selection of pets are available for drop-ins *</p>
+                    </a>
+                    <a class="col black" href="payment.html">
+                        <h4>Monthly</h4>
+                        <p class="price">$60</p>
+                        <p class="price-details">Enjoy unlimited amounts of playdates with our pets for an entire month.</p>
+                    </a>
+                    <a class="col black" href="payment.html">
+                        <h4>Yearly</h4>
+                        <p class="price">$330</p>
+                        <p class="price-details">Get extra access to VIP pet rooms, and unlimited amounts of playdates with our pets for the whole year.</p>
+                        <div class="sale-badge">
+                            <p>Save 50%</p>
+                        </div><!--end of .sale-badge-->
+                    </a>
+                </div> <!-- end of .grid-container -->
+            </div><!--end of .banner-->
+            
+            <div class="grid-container left-align pricing-text">
                 <div class="col">
-                    <h4><a class="black" href="contact.html">Contact</a></h4>
-                    <table>
-                        <tr>
-                            <th>Phone</th>
-                            <td>1+ (604) 098 7654</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>support@petcetera.ca</td>
-                        </tr>
-                        <tr>
-                            <th>Facebook</th>
-                            <td>@petcetera</td>
-                        </tr>
-                        <tr>
-                            <th>Instagram</th>
-                            <td>@petcetera_pets</td>
-                        </tr>
-                        <tr>
-                            <th>Youtube</th>
-                            <td>Petcetera</td>
-                        </tr>
-                    </table> <!-- end of table -->
-                </div> <!-- end of contact .col -->
-                <div class="col">
-                    <h4 class="black">Location</h4>
-                    <p>Surrey Central Mall &nbsp;<br><strong>250-13450 102 Ave, Surrey</strong></p>
+                    <h4 class="med-blue">New to Petcetera?</h4>
+                    <h2 class="black">Drop-In</h2>
+                    <p class="pricing-width">Try a 60-minute drop-in session to play with one pet of your choice. Please keep in mind that drop-in sessions happen on a first-come, first-served basis and our maximum occupancy is one guest per animal (18). </p>
                 </div>
-                <!-- end of location .col-->
-            </div> <!-- end of .grid-container -->
-            <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
-        </footer>
-     <script src="script/mobile-nav.js"></script>
-</body>
+
+                <div class="col pricing-text" id="membership">
+                    <h4 class="med-blue">Regular visitor?</h4>
+                    <h2 class="black">Memberships</h2>
+                    <p class="pricing-width">Monthly and yearly memberships let you play with your favourite pets, any day of the week. In addition to unlimited visits, members also have special access to monthly VIP events and three luxury playrooms, separate from other guests. </p>
+                </div>
+            </div>
+
+        </section>
+        <script src="script/mobile-nav.js"></script>
+    </body>
 </html>

@@ -71,11 +71,11 @@
     }
     
 
-/*
+    /*
     #home-pricing {
-        padding-top: 5%;
-    }
-*/
+    padding-top: 5%;
+}
+    */
 }
 
 /*--------------------BIGGER THAN 768px-----------------------*/
@@ -106,22 +106,41 @@
         padding-top: 40%;
     }
 
+    .pricing .grid-container {
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .pricing-text .col {
+        flex-basis: 50%:
+    }
+
+    #membership {
+        margin-left: 0;
+    }
+
+    .pricing-cards .col {
+        flex-basis: 27%;
+    }
+
+    .pricing h1 {
+        padding-top: 10%;
+    }
+
+    .pricing h4 {
+        margin-top: 5%;
+    }
+
     #home-about .textblock {
         width: 60%;
     }
 
-/*
-    #bunny-day h4 {
-        margin-top: 2%;
-    }
-*/
-
-    #home-pricing .col {
+    .pricing-cards .col {
         margin: 1%;
         padding: 4%;
     }
 
-    #home-pricing button {
+    .pricing-cards button {
         width: 23%;
         margin-top: 5%;
     }
@@ -291,14 +310,14 @@
         background-image: url("../img/bunny-day-xlarge.jpg");
     }
 
-    #home-pricing .col {
+    .pricing-cards .col {
         margin: 2%;
         padding: 4%;
     }
-    
+
     #our-pets-banner {
-    background-image: url("../img/our-pets-banner-L.jpg");
-}
+        background-image: url("../img/our-pets-banner-L.jpg");
+    }
 
 
     #hours {

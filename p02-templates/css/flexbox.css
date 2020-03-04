@@ -13,10 +13,10 @@
     display: flex;
 }
 
-/*------------------------- 1/5 PAGE ----------------------------*/
+
 .col {
-  flex: 1 1 20%;
-justify-content: center;
+    flex: 1 1 20%;
+    justify-content: center;
 }
 
 #listing-space .col {
@@ -24,12 +24,18 @@ justify-content: center;
 
 }
 
-/*-------------------------HALF PAGE-----------------------------*/
+#pricing-text .col {
+    flex-basis: 100%;
+}
+
+.pricing-cards .col {
+    flex-basis: 80%;
+}
+
 .col-half {
     flex: 1 1 50%;
 }
 
-/*--------------------------FULL PAGE----------------------------*/
 .col-full {
     flex: 1 1 100%;
 }
