@@ -167,6 +167,48 @@
     #bunny-day .textblock {
         margin: 0 10%;
     }
+    
+    .mission {
+        flex-direction: row-reverse;
+        padding-bottom: 5%;
+    }
+    
+    .mission .left-align {
+        margin-left: 0;
+    }
+    
+    .about-width {
+        width: 60%;
+    }
+    
+    .mission .about-width {
+        width: 80%;
+    }
+    
+    .mission .col-full {
+        flex-basis: 40%;
+    }
+    
+    #about-kitty {
+        margin-top: 10%;
+        width: 100%;
+    }
+    
+    #works .col-full{
+        flex-basis: 40%;
+    }
+    
+    #works .about-width {
+        width: 80%;
+    }
+    
+    #about-bunny-div {
+        margin-left: 0;
+    }
+    
+    #about-bunny {
+        padding-top: 5%;
+    }
 
     .contact-top {
         height: 1200px;

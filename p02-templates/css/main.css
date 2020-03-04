@@ -10,6 +10,7 @@ body {
     font-size: 1em;
     letter-spacing: 0.02em;
     color: #212121;
+    min-width: 500px;
 }
 
 h1, h2, h3, h4{
@@ -629,7 +630,15 @@ div.hero {
     border: 0.5px solid #e8e8e8;
     border-radius: 10px;
     padding: 5% 10%;
+    transition: 0.3s box-shadow ease;
+    transition: 0.3s transform ease;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.03);
+    flex-shrink: 0;
+}
+
+#home-pricing .col:hover {
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
+    transform: scale(1.02);
 }
 
 #home-pricing button {
@@ -946,10 +955,6 @@ a.product-card {
 }
 
 /*---------------------------ABOUT-------------------------------*/
-.about {
-    min-width: 500px;
-}
-
 .about h1 {
     word-spacing: 0.3em;
 }
@@ -974,12 +979,8 @@ a.product-card {
     margin-bottom: 0;
 }
 
-.about-center {
-    padding: 1% 25% 7% 25%;
-}
-
-.about-right {
-    padding-right: 20%;
+.about-width {
+    max-width: 80%;
 }
 
 .about-left {
@@ -998,21 +999,15 @@ a.product-card {
     background-color: #eeeded;
 }
 
-.mission .col {
-    flex: 1 1 100%;
-}
-
-#mission-text {
-    max-width: 80%;
-}
-
 #about-kitty {
-    width: 80%;
+    width: 50%;
 }
 
 #about-bunny {
-    width: 90%;
-    padding: 7% 20% 0 0;
+    width: 80%;
+    margin: auto;
+    float: left;
+/*    padding: 7% 20% 0 0;*/
 }
 
 /*--------------------------CONTACT------------------------------*/
@@ -1038,6 +1033,10 @@ a.product-card {
 
 .contact-container {
     padding-top: 10%;
+}
+
+.contact col {
+    flex-shrink: 0;
 }
 
 .contact-info {
@@ -1124,10 +1123,6 @@ footer {
 
 footer .grid-container {
     margin-top: 5%;
-}
-
-footer .col {
-    flex: 1 1 100%;
 }
 
 footer p {
