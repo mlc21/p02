@@ -69,6 +69,7 @@
     #bunny-day .textblock {
         margin: 0 15%;
     }
+    
 
 /*
     #home-pricing {
@@ -133,21 +134,22 @@
         padding-right: 10%;
     }
 
-    footer .col {
-        flex: 1 1 40%;
-        margin-right: 8%;
-    }
 
+
+/*
     #footer-about p {
         width: 80%;
     }
 }
+*/
 
 /*--------------------SMALLER THAN 800px-----------------------*/
 @media (max-width: 800px) {
     #listing-space .col {
         flex: 1 0 40%;
     }
+    
+
 }
 
 /*--------------------BIGGER THAN 900px-----------------------*/
@@ -232,11 +234,31 @@
     #social-media {
         padding-right: 20%;
     }
+    
+    footer .col {
+        flex-basis: 30%;
+        flex-grow: 1;
+        margin-left: 2%;
+        margin-bottom: 0;
+    }
+    
+    #footer-logo {
+    margin-left: 2%;
+}
+/*
+        footer .col {
+        flex: 1 1 30%;
+        margin-right: 8%;
+    }
+*/
+
+/*
 
     footer .col {
         flex: 1 1 20%;
         margin-right: 8%;
     }
+*/
 }
 
 /*--------------------LESS THAN 1024px-----------------------*/
@@ -307,4 +329,7 @@
     #social-media {
         margin: 10% 0 0 5%;
     }
+    
+        
+
 }
