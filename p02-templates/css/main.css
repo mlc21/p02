@@ -1,5 +1,4 @@
 html {
-    height: 2000px;
     position: relative;
 }
 
@@ -1066,6 +1065,22 @@ a.product-card {
 
 #address {
     padding-top: 0.5rem;
+}
+
+/*--------------------------PRICING------------------------------*/
+.pricing h1 {
+    padding-top: 20%;
+}
+.pricing h4 {
+    margin-top: 10%;
+}
+
+.pricing h2 {
+    margin-top: 2%;
+}
+
+.pricing-width {
+    width: 80%;
 }
 
 /*--------------------------PAYMENT------------------------------*/
