@@ -9,8 +9,11 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
         <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
@@ -53,39 +56,75 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-        <div class="grid-container" role="rowgroup">
-            <div class="payment-form left-align">
-                <h2 id="checkout-header">Checkout</h2>
-                <form class="full-width-field">
-                    <p class="form-label">First Name</p>
+        <!--        <div class="grid-container" role="rowgroup">-->
+        <div class="payment-form left-align">
+            <h2 id="checkout-header">Checkout</h2>
+            <section>
+                <h4>1. Personal Information</h4>
+                <form>
+                    <div class="inline-block margin-right-sm">
+                        <label>First Name<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <div class="inline-block">
+                        <label>Last Name<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <label>Email Address<span class="asterix">&#42;</span></label>
+                    <input class="input-sm" type="text">
+                    <label>Confirm Email Address<span class="asterix">&#42;</span></label>
                     <input class="input-sm" type="text">
                 </form>
-                <form class="full-width-field">
-                    <p class="form-label">Last Name</p>
-                    <input class="input-sm" type="text">
-                </form>
-                <form class="full-width-field">
-                    <p class="form-label">Email Address</p>
-                    <input class="input-sm" type="text">
-                </form>
-                <form class="full-width-field">
-                    <p class="form-label">Confirm Email Address</p>
-                    <input class="input-sm" type="text">
-                </form>
-            </div>
+            </section>
 
-            <div class="payment-summary">
-                <h4>Order Summary</h4>
-                <div class="justified-row">
-                    <p>1x Drop-in</p> 
-                    <p>$15.00</p>
-                </div>
-                <div class="justified-row">
-                    <p>Subtotal</p> 
-                    <p>$15.00</p>
-                </div>
-            </div>
-
+            <section>
+                <h4>2. Payment Information</h4>
+                <form>
+                    <label>Credit Card Number<span class="asterix">&#42;</span></label>
+                    <input class="input-sm" type="text">
+                    <div class="inline-block margin-right-sm">
+                        <label>Expiry Date<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <div class="inline-block">
+                        <label>CVV<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <label>Name on Card<span class="asterix">&#42;</span></label>
+                    <input class="input-sm" type="text">
+                    <label>Address Line 1<span class="asterix">&#42;</span></label>
+                    <input class="input-sm" type="text">
+                    <label>Address Line 2<span class="asterix">&#42;</span></label>
+                    <input class="input-sm" type="text">
+                    <div class="inline-block third margin-right-sm">
+                        <label>City<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <div class="inline-block third margin-right-sm">
+                        <label>Country<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                    <div class="inline-block third">
+                        <label>Postal Code<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </div>
+                </form>
+            </section>
         </div>
+
+        <div class="payment-summary">
+            <h4>Order Summary</h4>
+            <div class="justified-row">
+                <p>1x Drop-in</p> 
+                <p>$15.00</p>
+            </div>
+            <div class="justified-row">
+                <p>Subtotal</p> 
+                <p>$15.00</p>
+            </div>
+        </div>
+
+        <!--        </div>-->
+        <script src="script/mobile-nav.js"></script>  
     </body>
 </html>

@@ -232,6 +232,17 @@
     }
 }
 
+/*--------------------LESS THAN 1024px-----------------------*/
+@media (max-width: 1080px) {
+    form .inline-block{
+        width: 100%;
+    }
+    
+    .inline-block.third {
+    width: 100%;
+}
+}
+
 /*--------------------BIGGER THAN 1024px-----------------------*/
 @media (min-width: 1024px) {
     #home-about {
