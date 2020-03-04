@@ -1066,6 +1066,7 @@ a.product-card {
 .pricing h1 {
     padding-top: 20%;
 }
+
 .pricing h4 {
     margin-top: 10%;
 }
@@ -1076,6 +1077,11 @@ a.product-card {
 
 .pricing-width {
     width: 80%;
+}
+
+.pricing .pricing-cards {
+    margin-top: 3%;
+    padding-top: 0;
 }
 
 /*--------------------------PAYMENT------------------------------*/
