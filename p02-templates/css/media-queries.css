@@ -3,9 +3,9 @@
 /*---------------MOBILE - SMALLER THAN 600px------------------*/
 @media (max-width: 600px) {
     .top-padding {
-/*        padding-top: 20%;*/
+        /*        padding-top: 20%;*/
     }
-    
+
     .top-nav-right {
         display: none;
     }
@@ -119,7 +119,7 @@
         margin: 1%;
         padding: 4%;
     }
-    
+
     #home-pricing button {
         width: 23%;
         margin-top: 5%;
@@ -132,14 +132,21 @@
     #social-media {
         padding-right: 10%;
     }
-    
+
     footer .col {
         flex: 1 1 40%;
         margin-right: 8%;
     }
-    
+
     #footer-about p {
         width: 80%;
+    }
+}
+
+/*--------------------SMALLER THAN 800px-----------------------*/
+@media (max-width: 800px) {
+    #listing-space .col {
+        flex: 1 0 40%;
     }
 }
 
@@ -155,8 +162,8 @@
         width: 40%;
     }
 
-    #home-about {
-        width: 80%;
+    #home-about .textblock {
+        width: 60%;
     }
 
     #bunny-day {
@@ -166,6 +173,48 @@
 
     #bunny-day .textblock {
         margin: 0 10%;
+    }
+
+    .mission {
+        flex-direction: row-reverse;
+        padding-bottom: 5%;
+    }
+
+    .mission .left-align {
+        margin-left: 0;
+    }
+
+    .about-width {
+        width: 60%;
+    }
+
+    .mission .about-width {
+        width: 80%;
+    }
+
+    .mission .col-full {
+        flex-basis: 40%;
+    }
+
+    #about-kitty {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    #works .col-full{
+        flex-basis: 40%;
+    }
+
+    #works .about-width {
+        width: 80%;
+    }
+
+    #about-bunny-div {
+        margin-left: 0;
+    }
+
+    #about-bunny {
+        padding-top: 5%;
     }
 
     .contact-top {
@@ -183,7 +232,7 @@
     #social-media {
         padding-right: 20%;
     }
-    
+
     footer .col {
         flex: 1 1 20%;
         margin-right: 8%;
@@ -195,10 +244,10 @@
     form .inline-block{
         width: 100%;
     }
-    
+
     .inline-block.third {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 /*--------------------BIGGER THAN 1024px-----------------------*/
@@ -206,6 +255,11 @@
     #home-about {
         padding: 7% 0 5% 0;
     }
+
+    #home-about .textblock {
+        width: 50%;
+    }
+
     .contact-top {
         height: 900px;
     }
@@ -222,6 +276,11 @@
         margin: 2%;
         padding: 4%;
     }
+    
+    #our-pets-banner {
+    background-image: url("../img/our-pets-banner-L.jpg");
+}
+
 
     #hours {
         margin-right: 0;
