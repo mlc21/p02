@@ -574,9 +574,7 @@ div.hero {
 /*------------------------HOME (ABOUT)---------------------------*/
 
 #home-about {
-    vertical-align: top;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 #home-about .textblock {
@@ -584,8 +582,15 @@ div.hero {
     margin: auto;
 }
 
+#home-about .button {
+    display: block;
+    margin: auto;
+    width: 25%;
+    margin-top: 30px;
+}
+
 #home-about .banner {
-    margin: 0;
+    
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/
@@ -594,32 +599,23 @@ div.hero {
     background-image: url("../img/bunny-day.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 350px;
     margin-top: 75px;
     text-align: center;
-}
-
-#bunny-day h4 {
-    margin-top: 70%;
-}
-
-#bunny-day .textblock {
-    display: block;
-    margin: 0 10% 0 10%;
-    padding-top: 10%;
-}
-
-#bunny-day button {
-    display: block;
-    margin: 65% auto 5% auto;
+    padding: 7.5% 0;
 }
 
 /*-----------------------HOME (PRICING)--------------------------*/
 
 #home-pricing {
-    padding-top: 20%;
+    padding-top: 5%;
     text-align: center;
     cursor: default;
+    padding-bottom: 0;
+}
+
+#home-pricing .button {
+    margin-bottom: 0;
 }
 
 #home-pricing h2 {
@@ -628,11 +624,11 @@ div.hero {
 
 #home-pricing .grid-container {
     width: 80%;
-    padding-top: 5%;
+    margin-top: 3%;
 }
 
 #home-pricing .col {
-    margin: 5% 7%;
+    margin: 5% 3%;
     position: relative;
     border: 0.5px solid #e8e8e8;
     border-radius: 10px;
@@ -649,7 +645,6 @@ div.hero {
 }
 
 #home-pricing button {
-    margin-top: 3%;
     padding: 15px 0;
     width: 70%;
 }
@@ -1193,7 +1188,7 @@ a.product-card {
 
 /*---------------------------FOOTER------------------------------*/
 footer {
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 10% 10% 5% 10%;
     background-color: #D5E9F3;
     min-width: 500px;

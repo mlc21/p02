@@ -66,17 +66,15 @@
         padding-top: 0;
     }
 
-    #bunny-day h4 {
-        margin-top: 5%;
-    }
-
     #bunny-day .textblock {
         margin: 0 15%;
     }
 
+/*
     #home-pricing {
-        padding-top: 10%;
+        padding-top: 5%;
     }
+*/
 }
 
 /*--------------------BIGGER THAN 768px-----------------------*/
@@ -116,9 +114,11 @@
         width: 60%;
     }
 
+/*
     #bunny-day h4 {
         margin-top: 2%;
     }
+*/
 
     #home-pricing .col {
         margin: 1%;
@@ -257,9 +257,6 @@
 
 /*--------------------BIGGER THAN 1024px-----------------------*/
 @media (min-width: 1024px) {
-    #home-about {
-        padding: 7% 0 5% 0;
-    }
 
     #home-about .textblock {
         width: 50%;
