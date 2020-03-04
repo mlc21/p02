@@ -69,6 +69,7 @@
     #bunny-day .textblock {
         margin: 0 15%;
     }
+    
 
     /*
     #home-pricing {
@@ -144,21 +145,30 @@
         margin-top: 5%;
     }
 
-    footer .col {
-        flex: 1 1 40%;
-        margin-right: 8%;
+    #location {
+        margin: 10% 13% 0 0;
     }
 
+    #social-media {
+        padding-right: 10%;
+    }
+
+
+
+/*
     #footer-about p {
         width: 80%;
     }
 }
+*/
 
 /*--------------------SMALLER THAN 800px-----------------------*/
 @media (max-width: 800px) {
     #listing-space .col {
         flex: 1 0 40%;
     }
+    
+
 }
 
 /*--------------------BIGGER THAN 900px-----------------------*/
@@ -240,6 +250,7 @@
         flex: 1 1 20%;
         margin-right: 8%;
     }
+*/
 }
 
 /*--------------------LESS THAN 1024px-----------------------*/
