@@ -759,10 +759,10 @@ p.just-arrived {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 4% auto; /* 15% from the top and centered */
+    margin: 5% auto; 
     padding: 30px 40px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 70%; /* Could be more or less, depending on screen size */
 }
 
 .modal-content section {
@@ -778,35 +778,23 @@ p.just-arrived {
 }
 
 .input-sm {
-
     height: 40px;
-    margin-bottom: 10px;
-
+    margin-bottom: 15px;
 }
 
 .input-lg {
-    width: 100%;
     height: 150px;
     border: 1px solid lightgrey;
 }
 
+form .inline-block {
+    display: inline-block;
+    width: 48.25%;
+}
 
 .modal-content p {
     margin-bottom: 5px;
     margin-top: 10px;
-}
-
-#review-name {
-    display: inline-block;
-    width: 70%;
-}
-
-#visit-date {
-    right: 0;
-    display: inline-block;
-    max-width: 25%;
-    margin-left: 3%;
-    margin-right: 0;
 }
 
 #submit-review {
@@ -814,6 +802,11 @@ p.just-arrived {
     height: 50px;
     background-color: black;
     color: white;
+    margin-top: 20px;
+}
+
+#name-field {
+    margin-right: 3%;
 }
 
 /* The Close Button */
@@ -1075,26 +1068,59 @@ a.product-card {
 }
 
 .payment-summary {
-    background-color: #efefef;
-    margin-right: 10%;
-    border-radius: 3px;
-    padding: 25px;
-    height: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #eaeff2;
+    padding: 180px 10% 5% 5%;
+    height: 100%;
+    width: 35%;
 }
 
 .payment-form, .payment-summary {
-    margin-top: 12.5%;
+/*    margin-top: 175px;*/
+    margin-left: 5%;
 }
 
 .payment-form {
-    margin-right: 5%:
+    margin-top: 175px;
+    margin-left: 10%;
+    width: 50%;
 }
 
-.half-width-field {
-    display: inline-block;
+.payment-form form {
+    margin-right: 5%;
+    margin-top: 20px;
 }
 
-.full-width-field {
+.payment-form section {
+    margin-top: 25px;
+}
+
+.payment-form input {
+    margin-top: 10px;
+}
+.input-sm:focus{
+    outline-style: none;
+    border-color: #5A9EC4;
+}
+
+.inline-block.third {
+    width: 31%;
+}
+
+/*
+.half-field {
+    width: 48%;
+}
+*/
+
+.asterix {
+    color: #5A9EC4;
+}
+
+.margin-right-sm {
+    margin-right: 2.75%;
 }
 
 .justified-row {

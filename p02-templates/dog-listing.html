@@ -1,19 +1,19 @@
 <!Doctype html>
 <html lang="en">
 
-<head>
-  <title>Our Pets</title>
-  <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/flexbox.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    <head>
+        <title>Our Pets</title>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
 
-</head>
+    </head>
 
     <body>
 
@@ -104,19 +104,24 @@
                         <h4>Write a Review</h4>
                         <p class="grey-text">Did you play with Loofa during your last visit? We'd love to hear from you.</p>
                     </section>
-                    <form id="review-name">
-                        <p class="form-label">Name</p>
-                        <input class="input-sm" type="text">
+                    <form>
+                        <!--                    <form id="review-name">-->
+                        <div id="name-field" class="inline-block">
+                            <label>Name</label>
+                            <input class="input-sm" type="text">
+                        </div>
+                        <!--                    </form>-->
+                        <div class="inline-block">
+                            <label>Date of Visit</label>
+                            <input class="input-sm" type="date">
+                        </div>
+                        <div>
+                            <label>Review Title (required)</label>
+                            <input class="input-sm" type="text">
+                            <label>Review (required)</label>
+                            <textarea class="input-lg" placeholder="Tell the Petcetera family what you loved about this pet."></textarea>
+                        </div>
                     </form>
-                    <form  id="visit-date">
-                        <p class="form-label">Date of Visit</p>
-                        <input class="input-sm" type="date">
-                    </form>
-
-                    <p class="form-label">Review Title (required)</p>
-                    <input class="input-sm" type="text">
-                    <p class="form-label">Review (required)</p>
-                    <textarea class="input-lg" placeholder="Tell the Petcetera family what you loved about this pet."></textarea>
                     <button id="submit-review">Submit</button>
                 </div>
                 <div class="modal-content" id="thank-you-message">
@@ -135,18 +140,18 @@
 
             // Get the button that opens the modal
             var btn = document.getElementById("review-button");
-            
+
             var submit = document.getElementById("submit-review");
-            
+
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
 
             // When the user clicks on the button, open the modal
             btn.onclick = function() { 
-//                modalContent.innerHTML = reviewForm.innerHTML;
+                //                modalContent.innerHTML = reviewForm.innerHTML;
                 modal.style.display = "block";
             }
-            
+
             submit.onclick = function() {
                 modalContent.innerHTML = thankYouMessage.innerHTML;
                 modalContent.style.marginTop = "15%";
