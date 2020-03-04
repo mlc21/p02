@@ -590,7 +590,7 @@ div.hero {
 }
 
 #home-about .banner {
-    
+
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/
@@ -607,27 +607,27 @@ div.hero {
 
 /*-----------------------HOME (PRICING)--------------------------*/
 
-#home-pricing {
+.pricing-cards {
     padding-top: 5%;
     text-align: center;
     cursor: default;
     padding-bottom: 0;
 }
 
-#home-pricing .button {
+.pricing-cards .button {
     margin-bottom: 0;
 }
 
-#home-pricing h2 {
+.pricing-cards h2 {
     padding: 0 10% 0 10%;
 }
 
-#home-pricing .grid-container {
+.pricing-cards .grid-container {
     width: 80%;
     margin-top: 3%;
 }
 
-#home-pricing .col {
+.pricing-cards .col {
     margin: 5% 3%;
     position: relative;
     border: 0.5px solid #e8e8e8;
@@ -639,12 +639,12 @@ div.hero {
     flex-shrink: 0;
 }
 
-#home-pricing .col:hover {
+.pricing-cards .col:hover {
     box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
     transform: scale(1.02);
 }
 
-#home-pricing button {
+pricing-cards button {
     padding: 15px 0;
     width: 70%;
 }
@@ -1002,7 +1002,7 @@ a.product-card {
     width: 80%;
     margin: auto;
     float: left;
-/*    padding: 7% 20% 0 0;*/
+    /*    padding: 7% 20% 0 0;*/
 }
 
 /*--------------------------CONTACT------------------------------*/
@@ -1095,7 +1095,7 @@ a.product-card {
 }
 
 .payment-form, .payment-summary {
-/*    margin-top: 175px;*/
+    /*    margin-top: 175px;*/
     margin-left: 5%;
 }
 
@@ -1128,7 +1128,7 @@ a.product-card {
 
 /*
 .half-field {
-    width: 48%;
+width: 48%;
 }
 */
 
@@ -1163,14 +1163,14 @@ a.product-card {
 
 #payment-button {
     margin-right: 5%;
-        margin-top: 3%;
+    margin-top: 3%;
 }
 
 .cancel-button {
     color: darkgrey;
     transition: 0.5s color;
     text-decoration: underline;
-        margin-top: 3%;
+    margin-top: 3%;
 }
 
 .cancel-button:hover {
@@ -1178,11 +1178,11 @@ a.product-card {
 }
 /*
 .justified-row>p {
-    display: inline-block;
+display: inline-block;
 }
 
 .right-align {
-    right: 0;
+right: 0;
 }
 */
 

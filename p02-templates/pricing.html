@@ -66,42 +66,46 @@
         </div><!--end of .mobile-nav-->
 
         <section class="pricing">
-            <h1 class="left-align">Pricing</h1>
+            <h1 class="center">Pricing</h1>
 
-            <div class="left-align">
-                <h4 class="med-blue">New to Petcetera?</h4>
-                <h2>Drop-In</h2>
-                <p class="pricing-width">Try a 60-minute drop-in session to play with one pet of your choice. Please keep in mind that drop-in sessions happen on a first-come, first-served basis and our maximum occupancy is one guest per animal (18). </p>
-            </div>
-            
-            <div class="left-align pricing-width">
-                <h4 class="med-blue">Regular visitor?</h4>
-                <h2>Memberships</h2>
-                <p>Monthly and yearly memberships let you play with your favourite pets, any day of the week. In addition to unlimited visits, members also have special access to monthly VIP events and three luxury playrooms, separate from other guests. </p>
-            </div>
-
-            <div class="banner" id="home-pricing">
+            <div class="banner pricing-cards">
                 <div class="grid-container left-align">
-                    <div class="col">
+                    <a class="col black" href="payment.html">
                         <h4>Drop-in</h4>
                         <p class="price">$15</p>
-                        <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col">
+                        <p class="price-details">Stop by for a 60 minute playdate with a pet of your choice.</p>
+                        <p>* Limited selection of pets are available for drop-ins *</p>
+                    </a>
+                    <a class="col black" href="payment.html">
                         <h4>Monthly</h4>
                         <p class="price">$60</p>
-                        <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col">
+                        <p class="price-details">Enjoy unlimited amounts of playdates with our pets for an entire month.</p>
+                    </a>
+                    <a class="col black" href="payment.html">
                         <h4>Yearly</h4>
                         <p class="price">$330</p>
-                        <p class="price-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price-details">Get extra access to VIP pet rooms, and unlimited amounts of playdates with our pets for the whole year.</p>
                         <div class="sale-badge">
                             <p>Save 50%</p>
-                        </div><!--end of sale-badge-->
-                    </div>
+                        </div><!--end of .sale-badge-->
+                    </a>
+                </div> <!-- end of .grid-container -->
+            </div><!--end of .banner-->
+            
+            <div class="grid-container left-align pricing-text">
+                <div class="col">
+                    <h4 class="med-blue">New to Petcetera?</h4>
+                    <h2 class="black">Drop-In</h2>
+                    <p class="pricing-width">Try a 60-minute drop-in session to play with one pet of your choice. Please keep in mind that drop-in sessions happen on a first-come, first-served basis and our maximum occupancy is one guest per animal (18). </p>
                 </div>
-            </div><!--end of banner-->
+
+                <div class="col pricing-text" id="membership">
+                    <h4 class="med-blue">Regular visitor?</h4>
+                    <h2 class="black">Memberships</h2>
+                    <p class="pricing-width">Monthly and yearly memberships let you play with your favourite pets, any day of the week. In addition to unlimited visits, members also have special access to monthly VIP events and three luxury playrooms, separate from other guests. </p>
+                </div>
+            </div>
+
         </section>
         <script src="script/mobile-nav.js"></script>
     </body>
