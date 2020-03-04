@@ -188,9 +188,13 @@ p.grey-text {
     text-transform: uppercase;
 }
 
-.studio-dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
+}
+
+.nav-cursor {
+    cursor: pointer;
 }
 
 .dropdown-content {
@@ -241,7 +245,7 @@ p.grey-text {
     opacity: 1;
 }
 
-.studio-dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content{
     display: block;
 }
 
@@ -395,9 +399,9 @@ p.grey-text {
     position: relative;
     width: 100%;
     z-index: 0;
-    background-image: url("../img/unicorn-dog.jpg");
+    background-image: url("../img/our-pets-banner.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     height: 500px;
     margin-bottom: 0;
 }
@@ -417,7 +421,7 @@ p.grey-text {
 }
 #our-pets-banner h1 {
     position: absolute;
-    top: 50%;
+    top: 80%;
 }
 
 #our-pets-banner button {
@@ -578,7 +582,11 @@ div.hero {
 
 #home-about .textblock {
     width: 70%;
-    display: inline-block;
+    margin: auto;
+}
+
+#home-about .banner {
+    margin: 0;
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/

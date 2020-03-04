@@ -15,32 +15,42 @@
 </head>
 
     <body>
-
+        <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
-            <a id="logo-link" href="index.html"><img id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
-                <a href="our-pets.html" class="underline-link">Our Pets</a>
-                <a href="pricing.html" class="underline-link">Pricing</a>
-                <div class="studio-dropdown">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
                     <button class="dropdown-button">Our Studio</button>
                     <div class="dropdown-content">
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact</a>
                     </div>
-                </div>
-            </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
             <a id="hamburger" onclick="openNav()">
                 <i class="fas fa-bars"></i>
             </a>
-        </nav>
+        </nav> <!-- end of .top-nav -->
 
+        <!--------------------- MOBILE NAV --------------------->
         <div id="mobile-nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="mobile-nav-content">
                 <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
-                    <a class="mobile-nav-heading" >Our Pets</a>
-                    <a href="our-pets.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
                     <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
                     <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
                 </section>
@@ -52,10 +62,11 @@
                 </section>
 
                 <section>
-                    <a onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
                 </section>
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
+
 
         <div id="our-pets-banner">
             <h1 class="left-align">Our Pets</h1>

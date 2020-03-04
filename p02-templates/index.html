@@ -17,15 +17,24 @@
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
-                <a href="our-pets.html" class="underline-link">Our Pets</a>
-                <a href="pricing.html" class="underline-link">Pricing</a>
-                <div class="studio-dropdown">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
                     <button class="dropdown-button">Our Studio</button>
                     <div class="dropdown-content">
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact</a>
                     </div>
-                </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
             </div> <!-- end of .top-nav-right -->
             <a id="hamburger" onclick="openNav()">
                 <i class="fas fa-bars"></i>
@@ -39,6 +48,9 @@
                 <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
                     <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
                 </section>
 
                 <section>
@@ -67,9 +79,9 @@
         </div><!--end of .hero-->
 
         <div class="banner" id="home-about">
-            <div class="textblock left-align" role="textblock">
+            <div class="textblock center" role="textblock">
+                <h2>Furry friends for everyone!</h2>
                 <p>At Petcetera, we take joy in hosting daily group playdates with the most adorable dogs, cats, and bunnies in Surrey, BC. Drop in to spend an afternoon at our playcentre, or become a member for endless cuddles, all year-round.</p>
-                <h2>Furry Friends for everyone!</h2>
             </div><!--end of .textblock-->
         </div><!--end of .banner-->
 
