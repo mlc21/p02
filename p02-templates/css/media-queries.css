@@ -24,7 +24,7 @@
     .contact-container .col {
         flex-basis: 100%;
     }
-    
+
     .product-card {
         flex-basis: 100%;
     }
@@ -47,6 +47,10 @@
     .hero .textblock {
         width: 60%;
         top: 30%;
+    }
+
+    .product-card {
+        flex-basis: 45%;
     }
 
     #hamburger {
@@ -123,6 +127,10 @@
         margin-top: 5%;
     }
 
+    .product-card {
+        flex-basis: 22%;
+    }
+    
     #pricing-text .col {
         flex-basis: 40%;
     }
@@ -167,10 +175,6 @@
     @media (max-width: 800px) {
         #listing-space .col {
             flex: 1 0 40%;
-        }
-        
-        .product-card {
-            flex-basis: 50%;
         }
     }
 
@@ -233,7 +237,7 @@
         }
 
         #about-bunny {
-            padding-top: 5%;
+            padding-top: 10%;
         }
 
         .contact-top {
@@ -253,6 +257,10 @@
             flex-grow: 1;
             margin-left: 2%;
             margin-bottom: 0;
+        }
+        
+        .pricing .grid-container {
+            margin-bottom: 5%;
         }
 
         #footer-logo {
@@ -335,5 +343,21 @@
 
         .pricing .grid-container {
             margin-top: 0;
+        }
+        
+        .about-top {
+            background-position: center;
+        }
+        
+        .about-top h1 {
+            padding-top: 7%;
+        }
+    }
+    
+    /*--------------------BIGGER THAN 1700px-----------------------*/
+    @media (min-width: 1700px) {
+        .about-top h1 {
+            text-align: left;
+            width: 200px;
         }
     }
