@@ -470,6 +470,10 @@ p.grey-text {
     margin: 3% 10% 0 9%;
 }
 
+#listing-space {
+    margin-bottom: 100px;
+}
+
 .product-card {
     position: relative;
     border: 1px solid rgba(0,0,0,0.1);
