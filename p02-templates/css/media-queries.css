@@ -281,6 +281,19 @@
     }
         */
     }
+    
+    .single-listing img {
+        align-self: center;
+        width: 45%;
+        flex-basis: 45%;
+        margin-right: 5%;
+        margin-left: 0;
+    }
+
+    div.info {
+        flex-basis 40%;
+    }
+    
 
     /*--------------------LESS THAN 1024px-----------------------*/
     @media (max-width: 1080px) {

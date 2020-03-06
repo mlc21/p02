@@ -470,6 +470,10 @@ p.grey-text {
     margin: 3% 10% 0 9%;
 }
 
+#listing-space {
+    margin-bottom: 100px;
+}
+
 .product-card {
     position: relative;
     border: 1px solid rgba(0,0,0,0.1);
@@ -682,14 +686,19 @@ div.hero {
 
 /*---------------------SINGLE LISTING------------------------*/
 
-img.single-listing {
+.single-listing {
+    display: flex;
+}
+
+.single-listing img {
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
+    float: none;
+    margin-left: 0;
 }
 
 div.single-listing {
     line-height: 1.4em;
-    clear: both;
     margin: 0 10%;
 }
 
@@ -702,6 +711,10 @@ div.single-listing button {
     margin: 10px 5px 25px 0;
 }
 
+
+div.info {
+    min-width: 300px;
+}
 
 p.just-arrived {
     opacity: 0.5;
@@ -819,7 +832,7 @@ form .inline-block {
 }
 
 #submit-review:hover {
-        background-color: #488aaf;
+    background-color: #488aaf;
 }
 
 .pointer {
@@ -1056,7 +1069,7 @@ section.about {
 }
 
 .contact-info {
-/*    margin: 15% 0 0 0;*/
+    /*    margin: 15% 0 0 0;*/
 }
 
 .contact-info h2 {
@@ -1222,6 +1235,17 @@ display: inline-block;
 right: 0;
 }
 */
+
+/*--------------------------PAYMENT------------------------------*/
+
+.order-confirmation {
+    margin-top: 185px;
+    width: 45%;
+}
+
+.order-confirmation p {
+    margin-bottom: 30px;
+}
 
 /*---------------------------FOOTER------------------------------*/
 footer {
