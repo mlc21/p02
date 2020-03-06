@@ -623,7 +623,7 @@ div.hero {
 }
 
 .pricing-cards h2 {
-    padding: 0 10% 0 10%;
+    padding: 0 10% 0 5%;
 }
 
 .pricing-cards .grid-container {
@@ -677,6 +677,13 @@ div.hero {
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+.pricing-cards button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 25%;
+}
+
 /*---------------------SINGLE LISTING------------------------*/
 
 img.single-listing {
