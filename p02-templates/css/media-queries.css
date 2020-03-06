@@ -28,6 +28,7 @@
     #hamburger {
         display: block;
     }
+
 }
 
 /*--------------------BIGGER THAN 600px-----------------------*/
@@ -73,17 +74,11 @@
     #bunny-day .textblock {
         margin: 0 15%;
     }
-    
+
     #pricing-text .col {
         flex-basis: 100%;
     }
-
-
-    /*
-    #home-pricing {
-    padding-top: 5%;
-}
-    */
+    
 }
 
 /*--------------------BIGGER THAN 768px-----------------------*/
@@ -151,7 +146,18 @@
     .pricing-card-content {
         height: 350px;
     }
+    
+    .single-listing .col-1 {
+        flex: 1 1 45%;
+    }
 
+    .single-listing .col-2 {
+        flex: 1 1 50%;
+    }
+    
+    p.just-arrived {
+    margin-top: 0;
+}
     /*
     #footer-about p {
     width: 80%;
@@ -164,8 +170,6 @@
         #listing-space .col {
             flex: 1 0 40%;
         }
-
-
     }
 
     /*--------------------BIGGER THAN 900px-----------------------*/
@@ -276,19 +280,9 @@
     }
         */
     }
-    
-    .single-listing img {
-        align-self: center;
-        width: 45%;
-        flex-basis: 45%;
-        margin-right: 5%;
-        margin-left: 0;
-    }
 
-    div.info {
-        flex-basis 40%;
-    }
-    
+
+
 
     /*--------------------LESS THAN 1024px-----------------------*/
     @media (max-width: 1080px) {
@@ -325,9 +319,9 @@
             background-image: url("../img/our-pets-banner-L.jpg");
         }
 
-    #hours {
-        margin-right: 0;
-    }
+        #hours {
+            margin-right: 0;
+        }
 
         #hours {
             margin-right: 0;

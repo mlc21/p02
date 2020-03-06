@@ -690,15 +690,12 @@ div.hero {
 
 /*---------------------SINGLE LISTING------------------------*/
 
-.single-listing {
-    display: flex;
-}
 
 .single-listing img {
     margin-top: 10px;
     width: 100%;
-    float: none;
     margin-left: 0;
+    margin-top: 0;
 }
 
 div.single-listing {
@@ -724,7 +721,7 @@ p.just-arrived {
     opacity: 0.5;
     font-family: termina;
     font-weight: 600;
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 .review {
@@ -746,6 +743,7 @@ p.just-arrived {
 
 .review-section {
     position: relative;
+        margin-bottom: 100px;
 }
 
 #review-button {

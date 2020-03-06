@@ -19,6 +19,18 @@
     justify-content: center;
 }
 
+
+.single-listing .col-1 {
+    flex: 1 1 100%;
+    margin-right: 5%;
+    margin-left: 0;
+}
+
+.single-listing .col-2 {
+    flex: 1 1 100%;
+}
+
+
 #listing-space .col {
     flex-grow: 0;
 }
