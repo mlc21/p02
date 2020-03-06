@@ -88,7 +88,7 @@
             <button class="button blue-bg">Visit Today</button>
             <button class="button whiteblue-bg">Become a Member</button>
             <div class="review-section">
-                <button id="review-button">Write a review</button>
+                <button id="review-button" class="pointer">Write a review</button>
                 <p id="review-pending">Review pending</p>
                 <h4>Reviews (1)</h4>
 
@@ -117,12 +117,12 @@
                         <!--                    </form>-->
                         <div class="inline-block">
                             <label>Date of Visit</label>
-                            <input class="input-sm" type="date">
+                            <input class="input-sm pointer" type="date">
                         </div>
                         <div>
-                            <label>Review Title (required)</label>
+                            <label>Review Title <span class="asterix">&#42;</span></label>
                         <input class="input-sm" type="text">
-                        <label>Review (required)</label>
+                        <label>Review <span class="asterix">&#42;</span></label>
                         <textarea class="input-lg" placeholder="Tell the Petcetera family what you loved about this pet."></textarea>
                         </div>
                         
@@ -205,6 +205,8 @@
                 modalContent.innerHTML = thankYouMessage.innerHTML;
                 modalContent.style.marginTop = "15%";
                 reviewButton.innerHTML = reviewPending.innerHTML;
+                reviewButton.classList.remove("pointer");
+                reviewButton.classList.add("not-allowed");
                 reviewButton.disabled = true;
                 reviewButton.style.textDecoration = "none";
                 reviewButton.style.opacity = "1";

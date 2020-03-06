@@ -69,7 +69,7 @@
     #bunny-day .textblock {
         margin: 0 15%;
     }
-    
+
 
     /*
     #home-pricing {
@@ -153,202 +153,225 @@
         padding-right: 10%;
     }
 
+    img.single-listing {
+        width: 35%;
+        margin-top: 10px;
+        float: left;
+    }
+
+    div.single-listing {
+        position: relative;
+        left: 5%;
+        display: inline-block;
+        width: 37.5%;
+        line-height: 1.4em;
+        clear: none;
+    }
+
+    div.single-listing h1 {
+        margin-top: 30px;
+    }
+
+    div.single-listing button {
+        display: inline-block;
+        margin: 10px 5px 25px 0;
+    }
 
 
-/*
+    /*
     #footer-about p {
-        width: 80%;
-    }
+    width: 80%;
 }
-*/
-
-/*--------------------SMALLER THAN 800px-----------------------*/
-@media (max-width: 800px) {
-    #listing-space .col {
-        flex: 1 0 40%;
-    }
-    
-
 }
+    */
 
-/*--------------------BIGGER THAN 900px-----------------------*/
-@media (min-width: 900px) {
-    div.hero {
-        background-image: url("../img/unicorn-dog.jpg");
-        background-position: top;
-    }
+    /*--------------------SMALLER THAN 800px-----------------------*/
+    @media (max-width: 800px) {
+        #listing-space .col {
+            flex: 1 0 40%;
+        }
 
-    .hero .textblock {
-        top: 40%;
-        width: 40%;
+
     }
 
-    #home-about .textblock {
-        width: 60%;
-    }
+    /*--------------------BIGGER THAN 900px-----------------------*/
+    @media (min-width: 900px) {
+        div.hero {
+            background-image: url("../img/unicorn-dog.jpg");
+            background-position: top;
+        }
 
-    #bunny-day {
-        background-image: url("../img/bunny-day-large.jpg");
-        background-position: bottom;
-    }
+        .hero .textblock {
+            top: 40%;
+            width: 40%;
+        }
 
-    #bunny-day .textblock {
-        margin: 0 10%;
-    }
+        #home-about .textblock {
+            width: 60%;
+        }
 
-    .mission {
-        flex-direction: row-reverse;
-        padding-bottom: 5%;
-    }
+        #bunny-day {
+            background-image: url("../img/bunny-day-large.jpg");
+            background-position: bottom;
+        }
 
-    .mission .left-align {
-        margin-left: 0;
-    }
+        #bunny-day .textblock {
+            margin: 0 10%;
+        }
 
-    .about-width {
-        width: 60%;
-    }
+        .mission {
+            flex-direction: row-reverse;
+            padding-bottom: 5%;
+        }
 
-    .mission .about-width {
-        width: 80%;
-    }
+        .mission .left-align {
+            margin-left: 0;
+        }
 
-    .mission .col-full {
-        flex-basis: 40%;
-    }
+        .about-width {
+            width: 60%;
+        }
 
-    #about-kitty {
-        margin-top: 10%;
-        width: 100%;
-    }
+        .mission .about-width {
+            width: 80%;
+        }
 
-    #works .col-full{
-        flex-basis: 40%;
-    }
+        .mission .col-full {
+            flex-basis: 40%;
+        }
 
-    #works .about-width {
-        width: 80%;
-    }
+        #about-kitty {
+            margin-top: 10%;
+            width: 100%;
+        }
 
-    #about-bunny-div {
-        margin-left: 0;
-    }
+        #works .col-full{
+            flex-basis: 40%;
+        }
 
-    #about-bunny {
-        padding-top: 5%;
-    }
+        #works .about-width {
+            width: 80%;
+        }
 
-    .contact-top {
-        height: 1200px;
-    }
+        #about-bunny-div {
+            margin-left: 0;
+        }
 
-    .contact-top h1 {
-        padding-top: 25%;
-    }
+        #about-bunny {
+            padding-top: 5%;
+        }
 
-    .contact-info {
-        padding-right: 10%;
-    }
+        .contact-top {
+            height: 1200px;
+        }
 
-    #social-media {
-        padding-right: 20%;
-    }
-    
-    footer .col {
-        flex-basis: 30%;
-        flex-grow: 1;
-        margin-left: 2%;
-        margin-bottom: 0;
-    }
-    
-    #footer-logo {
-    margin-left: 2%;
-}
-/*
+        .contact-top h1 {
+            padding-top: 25%;
+        }
+
+        .contact-info {
+            padding-right: 10%;
+        }
+
+        #social-media {
+            padding-right: 20%;
+        }
+
+        footer .col {
+            flex-basis: 30%;
+            flex-grow: 1;
+            margin-left: 2%;
+            margin-bottom: 0;
+        }
+
+        #footer-logo {
+            margin-left: 2%;
+        }
+        /*
         footer .col {
         flex: 1 1 30%;
         margin-right: 8%;
     }
-*/
+        */
 
-/*
+        /*
 
-    footer .col {
+        footer .col {
         flex: 1 1 20%;
         margin-right: 8%;
     }
-*/
-}
-
-/*--------------------LESS THAN 1024px-----------------------*/
-@media (max-width: 1080px) {
-    form .inline-block{
-        width: 100%;
+        */
     }
 
-    .inline-block.third {
-        width: 100%;
-    }
-}
+    /*--------------------LESS THAN 1024px-----------------------*/
+    @media (max-width: 1080px) {
+        form .inline-block{
+            width: 100%;
+        }
 
-/*--------------------BIGGER THAN 1024px-----------------------*/
-@media (min-width: 1024px) {
-
-    #home-about .textblock {
-        width: 50%;
-    }
-
-    .contact-top {
-        height: 900px;
+        .inline-block.third {
+            width: 100%;
+        }
     }
 
-    .contact-top h1 {
-        padding-top: 15%;
+    /*--------------------BIGGER THAN 1024px-----------------------*/
+    @media (min-width: 1024px) {
+
+        #home-about .textblock {
+            width: 50%;
+        }
+
+        .contact-top {
+            height: 900px;
+        }
+
+        .contact-top h1 {
+            padding-top: 15%;
+        }
+
+        #bunny-day {
+            background-image: url("../img/bunny-day-xlarge.jpg");
+        }
+
+        .pricing-cards .col {
+            margin: 2%;
+            padding: 4%;
+        }
+
+        #our-pets-banner {
+            background-image: url("../img/our-pets-banner-L.jpg");
+        }
+
+
+        #hours {
+            margin-right: 0;
+        }
+
+        #location {
+            margin: 10% 0 0 0;
+            padding-right: 5%;
+        }
+
+        #social-media {
+            margin-left: 0;
+            padding-right: 3%;
+        }
     }
 
-    #bunny-day {
-        background-image: url("../img/bunny-day-xlarge.jpg");
+    /*--------------------BIGGER THAN 1200px-----------------------*/
+    @media (min-width: 1200px) {
+        .contact-top {
+            height: 1000px;
+        }
+
+        #location {
+            padding-right: 3%;
+        }
+
+        #social-media {
+            margin: 10% 0 0 5%;
+        }
+
+
+
     }
-
-    .pricing-cards .col {
-        margin: 2%;
-        padding: 4%;
-    }
-
-    #our-pets-banner {
-        background-image: url("../img/our-pets-banner-L.jpg");
-    }
-
-
-    #hours {
-        margin-right: 0;
-    }
-
-    #location {
-        margin: 10% 0 0 0;
-        padding-right: 5%;
-    }
-
-    #social-media {
-        margin-left: 0;
-        padding-right: 3%;
-    }
-}
-
-/*--------------------BIGGER THAN 1200px-----------------------*/
-@media (min-width: 1200px) {
-    .contact-top {
-        height: 1000px;
-    }
-
-    #location {
-        padding-right: 3%;
-    }
-
-    #social-media {
-        margin: 10% 0 0 5%;
-    }
-    
-        
-
-}
