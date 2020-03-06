@@ -15,7 +15,7 @@
     </head>
 
     <body>
-         <!---------------------- MAIN NAV ---------------------->
+        <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
@@ -124,33 +124,35 @@
                         <input class="input-sm" type="text">
                     </div>
                 </form>
-                <div class="justified-row">
-                    <a href="pricing.html" class="cancel-button inline-block">Cancel</a>
-                    <button id="payment-button" class="button blue-bg inline-block" onclick="document.location = 'order-confirmation.html'">Confirm Payment</button>
-                </div>
-
             </section>
+
+            <div class="payment-summary">
+                <h4>Order Summary</h4>
+                <div class="justified-row border-bottom">
+                    <p>1x Drop-in</p> 
+                    <p>$15.00</p>
+                </div>
+                <div class="justified-row less-margin-bottom">
+                    <p>Subtotal</p> 
+                    <p>$15.00</p>
+                </div>
+                <div class="justified-row border-bottom">
+                    <p>GST</p> 
+                    <p>$0.75</p>
+                </div>
+                <div class="justified-row">
+                    <p><strong>Total</strong></p> 
+                    <p>$15.75</p>
+                </div>
+            </div>
+
+            <div class="justified-row">
+                <a href="pricing.html" class="cancel-button inline-block">Cancel</a>
+                <button id="payment-button" class="button blue-bg inline-block" onclick="document.location = 'order-confirmation.html'">Confirm Payment</button>
+            </div>
         </div>
 
-        <div class="payment-summary">
-            <h4>Order Summary</h4>
-            <div class="justified-row border-bottom">
-                <p>1x Drop-in</p> 
-                <p>$15.00</p>
-            </div>
-            <div class="justified-row less-margin-bottom">
-                <p>Subtotal</p> 
-                <p>$15.00</p>
-            </div>
-            <div class="justified-row border-bottom">
-                <p>GST</p> 
-                <p>$0.75</p>
-            </div>
-            <div class="justified-row">
-                <p><strong>Total</strong></p> 
-                <p>$15.75</p>
-            </div>
-        </div>
+
 
         <!--        </div>-->
 

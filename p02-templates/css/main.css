@@ -614,6 +614,7 @@ div.hero {
     padding-top: 5%;
     text-align: center;
     cursor: default;
+    margin-bottom: 100px;
 }
 
 .pricing-card-content {
@@ -811,8 +812,7 @@ p.just-arrived {
 }
 
 form .inline-block {
-    display: inline-block;
-    width: 48.25%;
+    width: 100%;
 }
 
 .modal-content p {
@@ -1133,28 +1133,22 @@ section.about {
 }
 
 .payment-summary {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: relative;
     background-color: #eaeff2;
-    padding: 180px 10% 5% 5%;
+    padding: 5% 10% 5% 10%;
     height: 100%;
-    width: 35%;
-}
-
-.payment-form, .payment-summary {
-    /*    margin-top: 175px;*/
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0;
 }
 
 .payment-form {
-    margin-top: 25px;
+    margin: 25px 5% 10% 10%;
     margin-left: 10%;
-    width: 50%;
+    width: 80%;
+    margin-bottom: 10%;
 }
 
 .payment-form form {
-    margin-right: 5%;
     margin-top: 20px;
 }
 
@@ -1165,6 +1159,7 @@ section.about {
 .payment-form input {
     margin-top: 10px;
 }
+
 .input-sm:focus{
     outline-style: none;
     border-color: #5A9EC4;
@@ -1210,8 +1205,8 @@ width: 48%;
 }
 
 #payment-button {
-    margin-right: 5%;
     margin-top: 3%;
+    margin-right: 0;
 }
 
 .cancel-button {
@@ -1238,13 +1233,24 @@ right: 0;
 
 .order-confirmation {
     margin-top: 185px;
-    width: 45%;
+    width: 80%;
 }
 
 .order-confirmation p {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
+/*--------------------------PAYMENT------------------------------*/
+
+.citations {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+.citations li {
+    margin-top: 10px;
+}
 /*---------------------------FOOTER------------------------------*/
 footer {
     padding: 0.5% 5% 5% 10%;

@@ -180,6 +180,39 @@
         margin-top: 0;
     }
 
+    .payment-summary {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #eaeff2;
+        padding: 180px 10% 5% 5%;
+        height: 100%;
+        width: 35%;
+    }
+
+    .payment-form {
+        margin-top: 25px;
+        margin-left: 10%;
+        width: 50%;
+    }
+
+    .payment-form, .payment-summary {
+        margin-left: 10%;
+    }
+
+    .payment-form button {
+        margin-right: 5%;
+    }
+
+    form .inline-block {
+        display: inline-block;
+        width: 48%;
+    }
+
+    .order-confirmation {
+        width: 45%;
+    }
+
     /*--------------------BIGGER THAN 900px-----------------------*/
     @media (min-width: 900px) {
         div.hero {
