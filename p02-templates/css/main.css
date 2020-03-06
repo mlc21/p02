@@ -1226,6 +1226,17 @@ right: 0;
 }
 */
 
+/*--------------------------PAYMENT------------------------------*/
+
+.order-confirmation {
+    margin-top: 185px;
+    width: 45%;
+}
+
+.order-confirmation p {
+    margin-bottom: 30px;
+}
+
 /*---------------------------FOOTER------------------------------*/
 footer {
     padding: 0.5% 5% 5% 10%;

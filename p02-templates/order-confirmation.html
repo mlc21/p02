@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <title>Thank you</title>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
+
+        <!--------------------- MOBILE NAV --------------------->
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+        <!--        <div class="grid-container" role="rowgroup">-->
+        <main>
+            <div class="order-confirmation left-align">
+                <h2>Your order has been confirmed</h2>
+                <p>Thank you for choosing to visit Petcetera! A drop-in pass been emailed to <strong>joey@gmail.com</strong>. Please show this pass to our front desk when you arrive. We hope you have a paw-some time!</p>
+                <hr>
+
+                <h3>Before your visit</h3>
+                <p>Before arriving at Petcetera, we encourage you to take a look at <a href="our-pets.html">our pets</a> online! Each guest can play with one pet per visit, as long as our pets permit.</p>
+
+            </div>
+            <div class="payment-summary">
+                <h4>Order Summary</h4>
+                <div class="justified-row border-bottom">
+                    <p>1x Drop-in</p> 
+                    <p>$15.00</p>
+                </div>
+                <div class="justified-row less-margin-bottom">
+                    <p>Subtotal</p> 
+                    <p>$15.00</p>
+                </div>
+                <div class="justified-row border-bottom">
+                    <p>GST</p> 
+                    <p>$0.75</p>
+                </div>
+                <div class="justified-row">
+                    <p><strong>Total</strong></p> 
+                    <p>$15.75</p>
+                </div>
+            </div>
+
+
+        </main>
+        <!--        </div>-->
+
+        <script src="script/mobile-nav.js"></script>  
+    </body>
+</html>
