@@ -16,7 +16,7 @@
 
     <div class="side-bar">
         <div class="content">
-        <img id="logo" src="img/logo.png" alt="AUX Logo">
+        <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
         <section id="foundations">
             <p>Foundations</p>
             <ul>
@@ -47,6 +47,37 @@
     <div class="main">
 
         <h1>Navigation</h1>
+        
+                <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
+        
+        
+        
         <nav id="top-nav">
             <a id="active-nav">Our Pets</a>
             <a>Our Studio</a>

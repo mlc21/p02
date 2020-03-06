@@ -49,16 +49,12 @@ h3 {
 
 h4 {
   font-family: termina, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-style: normal;
-  font-size: 1em;
+  font-size: 0.8em;
   letter-spacing: 0.2rem;
   padding: 0;
   margin: 0;
-}
-
-p {
-
 }
 
 nav {
@@ -84,12 +80,13 @@ nav > a:active{
 }
 
 a {
-    color: #F0453A;
+    color: #8BC8E9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #F98981;
+    color: #5A9EC4;
+    cursor: pointer;
 }
 
 button:focus{
@@ -148,7 +145,7 @@ input {
     box-sizing: border-box;
 }
 
-.container {
+.grid-container {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -212,7 +209,8 @@ input {
 .grid-demo > .col {
     margin: 30px 0;
     border: 10px solid #D5E9F3;
-    background-color: #8BC8E9;
+    background-color: #5A9EC4;
+    color: #D5E9F3;
 }
 
 #active-nav {
