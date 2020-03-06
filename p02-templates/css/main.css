@@ -47,7 +47,7 @@ a {
 }
 
 button {
-    background-color: none;
+    background-color: rgba(0,0,0,0);
     border: none;
 }
 
@@ -546,7 +546,7 @@ a.product-card:hover {
     position: relative;
     width: 100%;
     z-index: 0;
-    min-width: 500px;
+    min-width: 320px;
 }
 
 div.hero {
@@ -596,7 +596,7 @@ div.hero {
 /*----------------------HOME (BUNNY DAY)-------------------------*/
 
 #bunny-day {
-    background-image: url("../img/bunny-day.jpg");
+    background-image: url("../img/bunnies.jpg");
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -606,17 +606,20 @@ div.hero {
 }
 
 /*-----------------------HOME (PRICING)--------------------------*/
-
 .pricing-cards {
     padding-top: 5%;
     text-align: center;
     cursor: default;
-    padding-bottom: 5%;
 }
 
-.pricing-cards .button {
-    margin-bottom: 0;
-    margin-top: 2%;
+.pricing-card-content {
+    height: 250px;
+}
+
+.pricing-cards button {
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600;
 }
 
 .pricing-cards h2 {
@@ -626,10 +629,11 @@ div.hero {
 .pricing-cards .grid-container {
     width: 80%;
     margin-top: 3%;
+    justify-content: space-between;
 }
 
 .pricing-cards .col {
-    margin: 5% 3%;
+    margin-top: 5%;
     position: relative;
     border: 0.5px solid #e8e8e8;
     border-radius: 10px;
@@ -643,11 +647,6 @@ div.hero {
 .pricing-cards .col:hover {
     box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
     transform: scale(1.02);
-}
-
-pricing-cards button {
-    padding: 15px 0;
-    width: 70%;
 }
 
 .price {
@@ -678,8 +677,6 @@ pricing-cards button {
     font-weight: 600;
     letter-spacing: 2px;
 }
-
-
 /*---------------------SINGLE LISTING------------------------*/
 
 img.single-listing {
@@ -1046,14 +1043,17 @@ section.about {
 
 .contact-container {
     padding-top: 10%;
+    width: 80%;
+    justify-content: space-between;
 }
 
-.contact col {
+.contact-info col {
     flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .contact-info {
-    margin: 15% 3% 0 10%;
+/*    margin: 15% 0 0 0;*/
 }
 
 .contact-info h2 {
@@ -1084,6 +1084,7 @@ section.about {
 .pricing h1 {
     padding-top: 20%;
 }
+
 .pricing h4 {
     margin-top: 10%;
 }
@@ -1094,6 +1095,20 @@ section.about {
 
 .pricing-width {
     width: 80%;
+}
+
+.pricing .pricing-cards {
+    margin-top: 3%;
+    padding-top: 0;
+}
+
+.pricing-text {
+    margin-top: 10%;
+    width: 80%;
+}
+
+.pricing .grid-container {
+    margin-bottom: 10%;
 }
 
 /*--------------------------PAYMENT------------------------------*/

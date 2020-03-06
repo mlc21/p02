@@ -21,6 +21,10 @@
         height: 1500px;
     }
 
+    #pricing-text .col {
+        flex-basis: 100%;
+    }
+
     #hamburger {
         display: block;
     }
@@ -69,6 +73,10 @@
     #bunny-day .textblock {
         margin: 0 15%;
     }
+    
+    #pricing-text .col {
+        flex-basis: 100%;
+    }
 
 
     /*
@@ -111,8 +119,8 @@
         margin-top: 5%;
     }
 
-    .pricing-text .col {
-        flex-basis: 50%:
+    #pricing-text .col {
+        flex-basis: 40%;
     }
 
     #membership {
@@ -123,10 +131,6 @@
         flex-basis: 27%;
     }
 
-    .pricing h1 {
-        padding-top: 10%;
-    }
-
     .pricing h4 {
         margin-top: 5%;
     }
@@ -135,48 +139,18 @@
         width: 60%;
     }
 
+    .pricing h1 {
+        padding-top: 15%;
+    }
+
     .pricing-cards .col {
         margin: 1%;
         padding: 4%;
     }
 
-    .pricing-cards button {
-        width: 23%;
-        margin-top: 5%;
+    .pricing-card-content {
+        height: 350px;
     }
-
-    #location {
-        margin: 10% 13% 0 0;
-    }
-
-    #social-media {
-        padding-right: 10%;
-    }
-
-    img.single-listing {
-        width: 35%;
-        margin-top: 10px;
-        float: left;
-    }
-
-    div.single-listing {
-        position: relative;
-        left: 5%;
-        display: inline-block;
-        width: 37.5%;
-        line-height: 1.4em;
-        clear: none;
-    }
-
-    div.single-listing h1 {
-        margin-top: 30px;
-    }
-
-    div.single-listing button {
-        display: inline-block;
-        margin: 10px 5px 25px 0;
-    }
-
 
     /*
     #footer-about p {
@@ -198,7 +172,7 @@
     @media (min-width: 900px) {
         div.hero {
             background-image: url("../img/unicorn-dog.jpg");
-            background-position: top;
+            background-position: center;
         }
 
         .hero .textblock {
@@ -329,10 +303,6 @@
             padding-top: 15%;
         }
 
-        #bunny-day {
-            background-image: url("../img/bunny-day-xlarge.jpg");
-        }
-
         .pricing-cards .col {
             margin: 2%;
             padding: 4%;
@@ -342,19 +312,12 @@
             background-image: url("../img/our-pets-banner-L.jpg");
         }
 
+    #hours {
+        margin-right: 0;
+    }
 
         #hours {
             margin-right: 0;
-        }
-
-        #location {
-            margin: 10% 0 0 0;
-            padding-right: 5%;
-        }
-
-        #social-media {
-            margin-left: 0;
-            padding-right: 3%;
         }
     }
 
@@ -364,14 +327,16 @@
             height: 1000px;
         }
 
-        #location {
-            padding-right: 3%;
+        div.hero {
+            background-image: url("../img/unicorn-dog-L.jpg");
+            background-position: center;
         }
 
-        #social-media {
-            margin: 10% 0 0 5%;
+        .pricing h1 {
+            padding-top: 7%;
         }
 
-
-
+        .pricing .grid-container {
+            margin-top: 0;
+        }
     }
