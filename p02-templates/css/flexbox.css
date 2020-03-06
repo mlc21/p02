@@ -21,11 +21,11 @@
 
 #listing-space .col {
     flex-grow: 0;
-
 }
 
-#pricing-text .col {
-    flex-basis: 100%;
+#pricing-text {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .pricing-cards .col {

@@ -21,6 +21,10 @@
         height: 1500px;
     }
 
+    #pricing-text .col {
+        flex-basis: 100%;
+    }
+
     #hamburger {
         display: block;
     }
@@ -70,6 +74,10 @@
         margin: 0 15%;
     }
     
+    #pricing-text .col {
+        flex-basis: 100%;
+    }
+
 
     /*
     #home-pricing {
@@ -111,8 +119,8 @@
         margin-top: 5%;
     }
 
-    .pricing-text .col {
-        flex-basis: 50%:
+    #pricing-text .col {
+        flex-basis: 40%;
     }
 
     #membership {
@@ -123,10 +131,6 @@
         flex-basis: 27%;
     }
 
-    .pricing h1 {
-        padding-top: 10%;
-    }
-
     .pricing h4 {
         margin-top: 5%;
     }
@@ -135,172 +139,177 @@
         width: 60%;
     }
 
+    .pricing h1 {
+        padding-top: 15%;
+    }
+
     .pricing-cards .col {
         margin: 1%;
         padding: 4%;
     }
 
-    .pricing-cards button {
-        width: 23%;
-        margin-top: 5%;
+    .pricing-card-content {
+        height: 350px;
     }
 
-    #location {
-        margin: 10% 13% 0 0;
-    }
-
-    #social-media {
-        padding-right: 10%;
-    }
-
-
-
-/*
+    /*
     #footer-about p {
-        width: 80%;
-    }
+    width: 80%;
 }
-*/
-
-/*--------------------SMALLER THAN 800px-----------------------*/
-@media (max-width: 800px) {
-    #listing-space .col {
-        flex: 1 0 40%;
-    }
-    
-
 }
+    */
 
-/*--------------------BIGGER THAN 900px-----------------------*/
-@media (min-width: 900px) {
-    div.hero {
-        background-image: url("../img/unicorn-dog.jpg");
-        background-position: top;
+    /*--------------------SMALLER THAN 800px-----------------------*/
+    @media (max-width: 800px) {
+        #listing-space .col {
+            flex: 1 0 40%;
+        }
+
+
     }
 
-    .hero .textblock {
-        top: 40%;
-        width: 40%;
+    /*--------------------BIGGER THAN 900px-----------------------*/
+    @media (min-width: 900px) {
+        div.hero {
+            background-image: url("../img/unicorn-dog.jpg");
+            background-position: center;
+        }
+
+        .hero .textblock {
+            top: 40%;
+            width: 40%;
+        }
+
+        #home-about .textblock {
+            width: 60%;
+        }
+
+        #bunny-day .textblock {
+            margin: 0 10%;
+        }
+
+        .mission {
+            flex-direction: row-reverse;
+            padding-bottom: 5%;
+        }
+
+        .mission .left-align {
+            margin-left: 0;
+        }
+
+        .about-width {
+            width: 60%;
+        }
+
+        .mission .about-width {
+            width: 80%;
+        }
+
+        .mission .col-full {
+            flex-basis: 40%;
+        }
+
+        #about-kitty {
+            margin-top: 10%;
+            width: 100%;
+        }
+
+        #works .col-full{
+            flex-basis: 40%;
+        }
+
+        #works .about-width {
+            width: 80%;
+        }
+
+        #about-bunny-div {
+            margin-left: 0;
+        }
+
+        #about-bunny {
+            padding-top: 5%;
+        }
+
+        .contact-top {
+            height: 1200px;
+        }
+
+        .contact-top h1 {
+            padding-top: 25%;
+        }
+
+        .pricing h1 {
+            padding-top: 10%;
+        }
+
+        .pricing-card-content {
+            height: 275px;
+        }
+
+        footer .col {
+            flex: 1 1 20%;
+            margin-right: 8%;
+        }
+        */
     }
 
-    #home-about .textblock {
-        width: 60%;
+    /*--------------------LESS THAN 1024px-----------------------*/
+    @media (max-width: 1080px) {
+        form .inline-block{
+            width: 100%;
+        }
+
+        .inline-block.third {
+            width: 100%;
+        }
     }
 
-    #bunny-day {
-        background-image: url("../img/bunny-day-large.jpg");
-        background-position: bottom;
+    /*--------------------BIGGER THAN 1024px-----------------------*/
+    @media (min-width: 1024px) {
+
+        #home-about .textblock {
+            width: 50%;
+        }
+
+        .contact-top {
+            height: 900px;
+        }
+
+        .contact-top h1 {
+            padding-top: 15%;
+        }
+
+        .pricing-cards .col {
+            margin: 2%;
+            padding: 4%;
+        }
+
+        #our-pets-banner {
+            background-image: url("../img/our-pets-banner-L.jpg");
+        }
+
+
+        #hours {
+            margin-right: 0;
+        }
     }
 
-    #bunny-day .textblock {
-        margin: 0 10%;
+    /*--------------------BIGGER THAN 1200px-----------------------*/
+    @media (min-width: 1200px) {
+        .contact-top {
+            height: 1000px;
+        }
+
+        div.hero {
+            background-image: url("../img/unicorn-dog-L.jpg");
+            background-position: center;
+        }
+
+        .pricing h1 {
+            padding-top: 7%;
+        }
+
+        .pricing .grid-container {
+            margin-top: 0;
+        }
     }
-
-    .mission {
-        flex-direction: row-reverse;
-        padding-bottom: 5%;
-    }
-
-    .mission .left-align {
-        margin-left: 0;
-    }
-
-    .about-width {
-        width: 60%;
-    }
-
-    .mission .about-width {
-        width: 80%;
-    }
-
-    .mission .col-full {
-        flex-basis: 40%;
-    }
-
-    #about-kitty {
-        margin-top: 10%;
-        width: 100%;
-    }
-
-    #works .col-full{
-        flex-basis: 40%;
-    }
-
-    #works .about-width {
-        width: 80%;
-    }
-
-    #about-bunny-div {
-        margin-left: 0;
-    }
-
-    #about-bunny {
-        padding-top: 5%;
-    }
-
-    .contact-top {
-        height: 1200px;
-    }
-
-    .contact-top h1 {
-        padding-top: 25%;
-    }
-
-    footer .col {
-        flex: 1 1 20%;
-        margin-right: 8%;
-    }
-*/
-}
-
-/*--------------------LESS THAN 1024px-----------------------*/
-@media (max-width: 1080px) {
-    form .inline-block{
-        width: 100%;
-    }
-
-    .inline-block.third {
-        width: 100%;
-    }
-}
-
-/*--------------------BIGGER THAN 1024px-----------------------*/
-@media (min-width: 1024px) {
-
-    #home-about .textblock {
-        width: 50%;
-    }
-
-    .contact-top {
-        height: 900px;
-    }
-
-    .contact-top h1 {
-        padding-top: 15%;
-    }
-
-    #bunny-day {
-        background-image: url("../img/bunny-day-xlarge.jpg");
-    }
-
-    .pricing-cards .col {
-        margin: 2%;
-        padding: 4%;
-    }
-
-    #our-pets-banner {
-        background-image: url("../img/our-pets-banner-L.jpg");
-    }
-
-
-    #hours {
-        margin-right: 0;
-    }
-}
-
-/*--------------------BIGGER THAN 1200px-----------------------*/
-@media (min-width: 1200px) {
-    .contact-top {
-        height: 1000px;
-    }
-}
