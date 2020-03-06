@@ -682,11 +682,7 @@ div.hero {
     letter-spacing: 2px;
 }
 
-.pricing-cards button {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    width: 25%;
-}
+
 
 /*---------------------SINGLE LISTING------------------------*/
 
@@ -1065,9 +1061,9 @@ section.about {
     justify-content: space-between;
 }
 
-.contact-info col {
-    flex-shrink: 0;
-    flex-grow: 0;
+.contact-container .col {
+    flex: 0 0 45%;
+    margin-top: 10%;
 }
 
 .contact-info {
@@ -1076,6 +1072,7 @@ section.about {
 
 .contact-info h2 {
     padding-right: 5%;
+    margin-top: 2%;
 }
 
 .contact-info p {
