@@ -50,9 +50,11 @@
         top: 30%;
     }
 
+    /*
     .product-card {
-        flex-basis: 45%;
-    }
+    flex-basis: 45%;
+}
+    */
 
     #hamburger {
         display: block;
@@ -86,7 +88,14 @@
     #pricing-text .col {
         flex-basis: 100%;
     }
-    
+
+
+    .col.product-card {
+        flex: 1 1 40%;
+        justify-content: center;
+    }
+
+
 }
 
 /*--------------------BIGGER THAN 768px-----------------------*/
@@ -122,10 +131,10 @@
         margin-top: 5%;
     }
 
-    .product-card {
+    .col.product-card {
         flex-basis: 22%;
     }
-    
+
     #pricing-text .col {
         flex-basis: 40%;
     }
@@ -158,7 +167,7 @@
     .pricing-card-content {
         height: 350px;
     }
-    
+
     .single-listing .col-1 {
         flex: 1 1 45%;
     }
@@ -166,22 +175,9 @@
     .single-listing .col-2 {
         flex: 1 1 50%;
     }
-    
-    p.just-arrived {
-    margin-top: 0;
-}
-    /*
-    #footer-about p {
-    width: 80%;
-}
-}
-    */
 
-    /*--------------------SMALLER THAN 800px-----------------------*/
-    @media (max-width: 800px) {
-        #listing-space .col {
-            flex: 1 0 40%;
-        }
+    p.just-arrived {
+        margin-top: 0;
     }
 
     /*--------------------BIGGER THAN 900px-----------------------*/
@@ -264,7 +260,7 @@
             margin-left: 2%;
             margin-bottom: 0;
         }
-        
+
         .pricing .grid-container {
             margin-bottom: 5%;
         }
@@ -353,16 +349,16 @@
         .pricing .grid-container {
             margin-top: 0;
         }
-        
+
         .about-top {
             background-position: center;
         }
-        
+
         .about-top h1 {
             padding-top: 7%;
         }
     }
-    
+
     /*--------------------BIGGER THAN 1700px-----------------------*/
     @media (min-width: 1700px) {
         .about-top h1 {
