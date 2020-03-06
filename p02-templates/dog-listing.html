@@ -90,7 +90,7 @@
             <button class="button blue-bg">Visit Today</button>
             <button class="button whiteblue-bg">Become a Member</button>
             <div class="review-section">
-                <button id="review-button">Write a review</button>
+                <button id="review-button" class="pointer">Write a review</button>
                 <p id="review-pending">Review pending</p>
                 <h4>Reviews (2)</h4>
 
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!--------------------- FOOTER ------------------------->
         <footer>
             <div class="grid-container">
@@ -184,7 +184,7 @@
             </div> <!-- end of .grid-container -->
             <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
         </footer>
-        
+
         <script src="script/mobile-nav.js"> </script>  
         <script>
             var modal = document.getElementById("review-modal");
@@ -212,6 +212,8 @@
                 modalContent.innerHTML = thankYouMessage.innerHTML;
                 modalContent.style.marginTop = "15%";
                 reviewButton.innerHTML = reviewPending.innerHTML;
+                reviewButton.classList.remove("pointer");
+                reviewButton.classList.add("not-allowed");
                 reviewButton.disabled = true;
                 reviewButton.style.textDecoration = "none";
                 reviewButton.style.opacity = "1";

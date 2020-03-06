@@ -623,7 +623,7 @@ div.hero {
 }
 
 .pricing-cards h2 {
-    padding: 0 10% 0 10%;
+    padding: 0 10% 0 5%;
 }
 
 .pricing-cards .grid-container {
@@ -677,6 +677,13 @@ div.hero {
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+.pricing-cards button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 25%;
+}
+
 /*---------------------SINGLE LISTING------------------------*/
 
 img.single-listing {
@@ -809,9 +816,22 @@ form .inline-block {
 #submit-review {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #5A9EC4;
     color: white;
     margin-top: 20px;
+    transition: 0.2s background-color;
+}
+
+#submit-review:hover {
+        background-color: #488aaf;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-allowed {
+    cursor: not-allowed;
 }
 
 #name-field {
