@@ -1150,7 +1150,8 @@ section.about {
     color: #5A9EC4;
 }
 
-/*--------------------------CITATIONS------------------------------*/
+/*------------------------CITATIONS------------------------------*/
+
 .citations {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -1159,6 +1160,14 @@ section.about {
 
 .citations li {
     margin-top: 10px;
+}
+
+.citations a {
+    color: #8BC8E9;
+}
+
+.citations a:hover {
+    color: #5A9EC4;
 }
 
 /*---------------------------FOOTER------------------------------*/

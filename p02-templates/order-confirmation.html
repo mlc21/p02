@@ -19,7 +19,7 @@
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo" src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
-                <div class="dropdown">
+                <div class="dropdown"><!--Source: Dropdown Navbar by W3Schools-->
                     <button class="dropdown-button underline-link pointer" onclick="window.location.href='our-pets.html'">Our Pets</button>
                     <div class="dropdown-content">
                         <a href="dogs.html">Dogs</a>
@@ -27,14 +27,14 @@
                         <a href="bunnies.html">Bunnies</a>
                     </div>
                 </div> <!-- end of our pets -->
-                <div class="dropdown">
+                <div class="dropdown"><!--Source: Dropdown Navbar by W3Schools-->
                     <button class="dropdown-button">Our Studio</button>
                     <div class="dropdown-content">
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact</a>
                     </div>
                 </div> <!-- end of our studio -->
-                <div class="dropdown">
+                <div class="dropdown"><!--Source: Dropdown Navbar by W3Schools-->
                     <button class="dropdown-button underline-link pointer" onclick="window.location.href='pricing.html'">Pricing</button>
                 </div> <!-- end of pricing -->
             </div> <!-- end of .top-nav-right -->
@@ -44,8 +44,8 @@
         </nav> <!-- end of .top-nav -->
 
         <!--------------------- MOBILE NAV --------------------->
-        <div id="mobile-nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mobile-nav"><!--Source: Mobile Nav by W3Schools-->
+            <a href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()">&times;</a>
             <div class="mobile-nav-content">
                 <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
@@ -67,17 +67,19 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-        <!--        <div class="grid-container" role="rowgroup">-->
+        <!----------------- ORDER CONFIRMATION ----------------->
         <main>
+        
             <div class="order-confirmation left-align">
                 <h2>Your order has been confirmed</h2>
-                <p>Thank you for choosing to visit Petcetera! A drop-in pass been emailed to <strong>joey@gmail.com</strong>. Please show this pass to our front desk when you arrive. We hope you have a paw-some time!</p>
+                <p>Thank you for choosing to visit Petcetera! A drop-in pass has been emailed to <strong>joey@gmail.com</strong>. Please show this pass to our front desk when you arrive. We hope you have a paw-some time!</p>
                 <hr>
 
                 <h3>Before your visit</h3>
-                <p>Before arriving at Petcetera, we encourage you to take a look at <a href="our-pets.html" class="med-blue">our pets</a> online! Each guest can play with one pet per visit, as long as our pets permit.</p>
-
-            </div>
+                <p>Before arriving at Petcetera, we encourage you to take a look at our pets online! Each guest can play with one pet per visit, as long as our pets permit.</p>
+            </div><!-- end of .order-confirmation -->
+            
+        <!------------------- ORDER SUMMARY --------------------->
             <div class="payment-summary">
                 <h4>Order Summary</h4>
                 <div class="justified-row border-bottom">
@@ -96,12 +98,10 @@
                     <p><strong>Total</strong></p> 
                     <p>$15.75</p>
                 </div>
-            </div>
-
-
+            </div><!-- end of .payment-summary -->
+            
         </main>
-        <!--        </div>-->
-
+        
         <script src="script/mobile-nav.js"></script>  
     </body>
 </html>
