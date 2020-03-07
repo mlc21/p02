@@ -18,7 +18,7 @@
 
         <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
-            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <a id="logo-link" href="index.html"><img  id="nav-logo" src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
                 <div class="dropdown"><!--Source: Dropdown Navbar by W3Schools-->
                     <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
@@ -71,7 +71,7 @@
         <!---------------- PETS BANNER ------------------------>
         <div id="our-pets-banner">
             <h1 class="left-align">Our Pets</h1>
-            <nav class="left-align pet-nav" role="tabpanel" aria-label="secondary">
+            <nav class="left-align pet-nav" role="tablist" aria-label="secondary">
                 <button id="all-pets-button" class="pets-nav-button underline-link" onclick="show('all-pets'); underline('all-pets-button');" role="tab" aria-selected="false">All</button>
                 <button id="dogs-button" class="pets-nav-button underline-link  active-link" onclick="show('dogs'); underline('dogs-button');" role="tab" aria-selected="true">Dogs</button>
                 <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button'); " role="tab" aria-selected="false">Cats</button>
@@ -82,7 +82,7 @@
         <!---------------- LISTING SPACE ------------------------>
         <!--  This is the div that switches content-->
 
-        <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
+        <div id="listing-space" class="listings grid-container" aria-label="pet listings">
             <a href="dog-listing.html" class="col product-card">
                 <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
                 <h4 class="left-align">Loofa</h4>
@@ -131,7 +131,7 @@
 
         <!---------------- ALL PETS ------------------------>
 
-        <div id="all-pets" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+        <div id="all-pets" class="listings grid-container" aria-label="pet listings" style="display:none">
             <a href="dog-listing.html" class="col product-card">
                 <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
                 <h4 class="left-align">Loofa</h4>
@@ -234,7 +234,7 @@
         </div><!--end of #all-pets-->
 
         <!---------------------- DOGS -------------------------->
-        <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+        <div id="dogs" class="listings grid-container" aria-label="pet listings" style="display:none">
             <a href="dog-listing.html" class="col product-card">
                 <img src="img/product-card/dog-1.jpg" alt="Pomeranian puppy closeup">
                 <h4 class="left-align">Loofa</h4>
@@ -325,7 +325,7 @@
         </div><!-- end of #cats -->
 
         <!--------------------- BUNNIES ------------------------->
-        <div id="bunnies" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
+        <div id="bunnies" class="listings grid-container" aria-label="pet listings" style="display:none">
             <a href="bunny-listing.html" class="col product-card">
                 <img src="img/product-card/bunny-1.jpg" alt="Netherland dwarf rabbit with flower on head">
                 <h4 class="left-align">Poopy</h4>
