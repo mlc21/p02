@@ -1244,7 +1244,7 @@ right: 0;
     color: #5A9EC4;
 }
 
-/*--------------------------PAYMENT------------------------------*/
+/*------------------------CITATIONS------------------------------*/
 
 .citations {
     margin-top: 10%;
@@ -1255,6 +1255,15 @@ right: 0;
 .citations li {
     margin-top: 10px;
 }
+
+.citations a {
+    color: #8BC8E9;
+}
+
+.citations a:hover {
+    color: #5A9EC4;
+}
+
 /*---------------------------FOOTER------------------------------*/
 footer {
     padding: 0.5% 5% 5% 10%;
