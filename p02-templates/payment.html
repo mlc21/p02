@@ -67,11 +67,12 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-        <!--        <div class="grid-container" role="rowgroup">-->
+        <!--------------------- PAYMENT FORM --------------------->
         <ul class="breadcrumb left-align">
             <li><a href="pricing.html">Pricing</a></li>
             <li>Checkout</li>
         </ul>
+        
         <div class="payment-form left-align">
             <h2 id="checkout-header">Checkout</h2>
             <section>
@@ -90,7 +91,7 @@
                     <label>Confirm Email Address<span class="asterix">&#42;</span></label>
                     <input class="input-sm" type="text">
                 </form>
-            </section>
+            </section><!-- end of personal info -->
 
             <section>
                 <h4>2. Payment Information</h4>
@@ -124,8 +125,9 @@
                         <input class="input-sm" type="text">
                     </div>
                 </form>
-            </section>
+            </section><!-- end of payment info -->
 
+            <!--------------------- ORDER SUMMARY --------------------->
             <div class="payment-summary">
                 <h4>Order Summary</h4>
                 <div class="justified-row border-bottom">
@@ -144,18 +146,16 @@
                     <p><strong>Total</strong></p> 
                     <p>$15.75</p>
                 </div>
-            </div>
+            </div><!-- end of .payment-summary -->
 
+            <!------------------- PAYMENT BUTTONS--------------------->
             <div class="justified-row">
                 <a href="pricing.html" class="cancel-button inline-block">Cancel</a>
                 <button id="payment-button" class="button blue-bg inline-block" onclick="document.location = 'order-confirmation.html'" role="button" aria-label="Confirm Payment">Confirm Payment</button>
             </div>
-        </div>
 
-
-
-        <!--        </div>-->
-
+        </div><!-- end of .payment-form -->
+        
         <script src="script/mobile-nav.js"></script>  
     </body>
 </html>

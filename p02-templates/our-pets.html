@@ -67,7 +67,7 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-
+        <!------------------ OUR PETS BANNER ------------------->
         <div id="our-pets-banner" role="banner">
             <h1 class="left-align">Our Pets</h1>
             <nav class="left-align pet-nav" role="tabpanel" aria-label="secondary">
@@ -76,7 +76,7 @@
                 <button id="cats-button" class="pets-nav-button underline-link" onclick="show('cats'); underline('cats-button');" role="tab" aria-selected="false">Cats</button>
                 <button id="bunnies-button" class="pets-nav-button underline-link" onclick="show('bunnies'); underline('bunnies-button');" role="tab" aria-selected="false">Bunnies</button>
             </nav> <!-- end of .pet-nav -->
-        </div>
+        </div><!--end of #our-pets-banner-->
 
         <!---------------- LISTING SPACE ------------------------>
         <!--  This is the div that switches content-->
@@ -182,7 +182,7 @@
                     <h4 class="left-align">Firefox</h4>
                     <p class="left-align">American Shorthair</p>
                 </a>
-            </div>
+            </div><!-- end of #listing-space -->
 
             <!---------------- ALL PETS ------------------------>
 
@@ -286,7 +286,7 @@
                     <h4 class="left-align">Firefox</h4>
                     <p class="left-align">American Shorthair</p>
                 </a>
-            </div>
+            </div><!-- end of #all-pets -->
 
             <!---------------------- DOGS -------------------------->
             <div id="dogs" class="listings grid-container" role="rowgroup" aria-label="pet listings" style="display:none">
@@ -334,7 +334,7 @@
                     <h4 class="left-align">Naruto</h4>
                     <p class="left-align">Chipoo</p>
                 </a>
-            </div>
+            </div><!-- end of #dogs -->
 
 
             <!---------------------- CATS -------------------------->
@@ -445,6 +445,7 @@
             <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
         </footer>
 
+        <!--------------------- SCRIPT ------------------------->
         <script>
             function show(divID) {
                 document.getElementById('listing-space').innerHTML = document.getElementById(divID).innerHTML;
