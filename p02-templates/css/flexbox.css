@@ -1,0 +1,50 @@
+/* Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan */
+*, *::after, *::before {  /* select EVERYTHING */
+    box-sizing: border-box;
+}
+
+.grid-container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.col.product-card {
+    flex: 1 1 100%;
+    justify-content: center;
+}
+
+.col-half {
+    flex: 1 1 50%;
+}
+
+.col-full {
+    flex: 1 1 100%;
+}
+
+.single-listing .col-1 {
+    flex: 1 1 100%;
+    margin-right: 5%;
+    margin-left: 0;
+}
+
+.single-listing .col-2 {
+    flex: 1 1 100%;
+}
+
+.pricing-cards .col {
+    flex-basis: 80%;
+}
+
+#listing-space .col {
+    flex-grow: 0;
+}
+
+#pricing-text {
+    flex-grow: 0;
+    flex-shrink: 0;
+}

@@ -1,66 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-      <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
-    <title>P01 Process</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  </head>
-  <body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
+        <title>Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+    </head>
+    <body>
 
-    <div class="side-bar">
-        <div class="content">
-        <img id="logo" src="img/logo.png" alt="AUX Logo">
-        <section id="foundations">
-            <p>Foundations</p>
-            <ul>
-                <li><a href="index.html">Grid Structure</a></li>
-                <li><a href="colour.html">Colour Swatches</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
-        </section> <!--end of #foundations -->
+        <div class="side-bar">
+            <div class="content">
+                <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
+                <section id="foundations">
+                    <p>Foundations</p>
+                    <ul>
+                        <li><a href="index.html">Grid Structure</a></li>
+                        <li><a href="colour.html">Colour Swatches</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                    </ul>
+                </section> <!--end of #foundations -->
 
-        <section id="components">
-            <p>Components</p>
-            <ul>
-                <li><a href="navigation.html">Navigation</a></li>
-                <li><a href="buttons.html">Buttons</a></li>
-                <li  id="active-page"><a href="forms.html">Forms</a></li>
-                <li><a href="product-listing.html">Product Listing</a></li>
-            </ul>
-        </section><!--end of #components -->
+                <section id="components">
+                    <p>Components</p>
+                    <ul>
+                        <li><a href="navigation.html">Navigation</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li  id="active-page"><a href="forms.html">Forms</a></li>
+                        <li><a href="product-listing.html">Product Listing</a></li>
+                    </ul>
+                </section><!--end of #components -->
 
-        <section id="more-links">
-            <ul>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </section>
-        </div><!-- end of .content -->
-    </div> <!-- end of #side-bar -->
+                <section id="more-links">
+                    <ul>
+                        <li><a href="http://www.sfu.ca/~aca180/iat339/p02-templates/citations.html" target="_blank">Citations</a></li>
+                    </ul>
+                </section>
+            </div><!-- end of .content -->
+        </div> <!-- end of #side-bar -->
 
-    <div class="main">
+        <div class="main">
 
-        <div id="form">
             <h1>Forms</h1>
-            <h4 class="form-label">Full Name</h4>
-            <input type="text">
 
-            <h4 class="form-label">Favourite Colour</h4>
-            <input type="text">
+            <div class="payment-form">
+                <section>
+                    <h4>1. Personal Information</h4>
+                    <form>
+                        <div class="inline-block margin-right-sm">
+                            <label>First Name<span class="asterix">&#42;</span></label>
+                            <input class="input-sm" type="text">
+                        </div>
+                        <div class="inline-block">
+                            <label>Last Name<span class="asterix">&#42;</span></label>
+                            <input class="input-sm" type="text">
+                        </div>
+                        <label>Email Address<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                        <label>Confirm Email Address<span class="asterix">&#42;</span></label>
+                        <input class="input-sm" type="text">
+                    </form>
+                </section>
 
-            <button type="button" class="button">Book now</button>
-        </div>
+                <div class="justified-row">
+                    <a class="cancel-button inline-block">Cancel</a>
+                    <button id="payment-button" class="button blue-bg inline-block pointer">Confirm</button>
+                </div>
+            </div>
 
-        <h3>CSS Selector</h3>
-        <code>.form-label</code>
 
-        <h3>Sample Code</h3>
-        <code>&lt;h4 class="form-label"&gt;Full Name&lt;/h4&gt;</code>
-        <code>&lt;input type="text"&gt;</code>
-    </div><!-- end of main -->
-  </body>
+            <h3>CSS Selectors</h3>
+            <div class="sample-code">
+                <code>form</code>
+                <code>input</code>
+                <code>.payment-form</code>
+                <code>.cancel-button</code>
+                <code>#payment-button</code>
+            </div>
+
+            <div class="sample-code">
+                <h3>Sample Code</h3>
+                <code>&lt;div class="payment-form"&gt;</code>
+                <code class="indent-code">&lt;section&gt;</code>
+                <code class="indent-code-2">&lt;h4&gt;1. Personal Information&lt;/h4&gt;</code>
+                <code class="indent-code-2">&lt;form&gt;</code>
+                <code class="indent-code-3">&lt;div class="inline-block margin-right-sm&gt;</code>
+                <code class="indent-code-4">&lt;label&gt;First Name&lt;span class="asterix"&gt;&#38;#42;&lt;/span&gt;&lt;/label&gt;</code>
+                <code class="indent-code-4">&lt;input class="input-sm" type="text"&gt;</code>
+                <code class="indent-code-3">&lt;/div&gt;</code>
+
+                <code class="indent-code-3">&lt;div class="inline-block&gt;</code>
+                <code class="indent-code-4">&lt;label&gt;Last Name&lt;span class="asterix"&gt;&#38;#42;&lt;/span&gt;&lt;/label&gt;</code>
+                <code class="indent-code-4">&lt;input class="input-sm" type="text"&gt;</code>
+                <code class="indent-code-3">&lt;/div&gt;</code>
+
+                <code class="indent-code-3">&lt;label&gt;Email Address&lt;span class="asterix"&gt;&#38;#42;&lt;/span&gt;&lt;/label&gt;</code>
+                <code class="indent-code-3">&lt;input class="input-sm" type="text"&gt;</code>
+
+                <code class="indent-code-3">&lt;label&gt;Confirm Email Address&lt;span class="asterix"&gt;&#38;#42;&lt;/span&gt;&lt;/label&gt;</code>
+                <code class="indent-code-3">&lt;input class="input-sm" type="text"&gt;</code>
+
+                <code class="indent-code-2">&lt;/form&gt;</code>
+                <code class="indent-code">&lt;/section&gt;</code>
+
+                <code class="indent-code">&lt;div class="justified-row"&gt;</code>
+                <code class="indent-code-2">&lt;a class="cancel-button inline-block"&gt;Cancel&lt;/a&gt;</code>
+                <code class="indent-code-2">&lt;button id="payment-button" class="button blue-bg inline-block pointer"&gt;Confirm&lt;/button&gt;</code>
+                <code class="indent-code">&lt;/div&gt;</code>
+
+                <code>&lt;/div&gt;</code>
+            </div>
+
+        </div><!-- end of main -->
+    </body>
 </html>

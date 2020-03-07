@@ -1,5 +1,5 @@
-/*------------------------MAIN TAGS--------------------------*/
 html {
+    height: 2000px;
     position: relative;
 }
 
@@ -10,7 +10,6 @@ body {
     font-size: 1em;
     letter-spacing: 0.02em;
     color: #212121;
-    min-width: 500px;
 }
 
 h1, h2, h3, h4{
@@ -43,12 +42,8 @@ h4 {
     text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
-}
-
 button {
-    background-color: rgba(0,0,0,0);
+    background-color: none;
     border: none;
 }
 
@@ -96,7 +91,7 @@ button:focus{
 }
 
 .top-padding {
-    padding-top: 13%;
+    padding-top: 10%;
 }
 
 .image-link {
@@ -105,12 +100,9 @@ button:focus{
 }
 
 /*-------------------------COLOURS---------------------------*/
+
 .black {
     color: #404040;
-}
-
-.black-bg {
-    background-color: #404040;
 }
 
 .lt-blue {
@@ -125,19 +117,13 @@ button:focus{
     color: #5A9EC4;
 }
 
-.dark-blue-bg {
-    background-color: #5A9EC4;
-}
-
 .blue-bg {
     background-color: #D5E9F3;
 }
 
-p.grey-text {
-    color: dimgrey;
-}
 
 /*-------------------------TOP NAV---------------------------*/
+
 .top-nav {
     position: fixed;
     top: 0;
@@ -147,7 +133,7 @@ p.grey-text {
     overflow: visible;
     padding: 0 16px;
     z-index: 3;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .top-nav a {
@@ -171,6 +157,7 @@ p.grey-text {
 
 /*--------------------DROPDOWN TOP NAV-----------------------*/
 /* referenced from www.w3schools.com */
+
 .dropdown-button {
     color: black;
     border: none;
@@ -185,7 +172,7 @@ p.grey-text {
     text-transform: uppercase;
 }
 
-.dropdown {
+.studio-dropdown {
     position: relative;
     display: inline-block;
 }
@@ -238,83 +225,12 @@ p.grey-text {
     opacity: 1;
 }
 
-.dropdown:hover .dropdown-content{
+.studio-dropdown:hover .dropdown-content{
     display: block;
-}
-
-/*------------------------MOBILE NAV------------------------*/
-.mobile-nav-content {
-    position: relative;
-    top: 15%;
-    left: 10%;
-    text-align: left;
-    width: 80%;
-}
-
-.mobile-nav-content img {
-    width: 45%;
-}
-
-.mobile-nav-content a {
-    display: block;
-    position: relative;
-    font-family: termina;
-    font-size: 0.85em;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    text-decoration:none;
-    color: black;
-    margin-top: 18px;
-}
-
-.mobile-nav-heading {
-    padding-top: 18px;
-    border-top: 1px solid rgb(0, 0, 0, 0.25);
-    font-weight: 600;
-    opacity: 0.9;
-}
-
-.mobile-nav-subheading {
-    padding-left: 5%;
-    font-weight: 200;
-    opacity: 0.7;
-    transition: 0.25s opacity ease;
-}
-
-.mobile-nav-subheading:hover {
-    opacity: 1;
-}
-
-.mobile-nav-content a:visited {
-    color: black;
-    opacity: 0;
-}
-
-#mobile-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    background-color: white;
-    overflow-x: hidden;
-}
-
-#mobile-nav .closebtn {
-    display: block;
-    position: absolute;
-    top: 1%;
-    right: 6%;
-
-    font-family: termina;
-    font-weight: 600;
-    font-size: 2em;
-    text-decoration:none;
-    color: black;
 }
 
 /*----------------------ANIMATED LINKS----------------------*/
+
 .underline-link {
     position: relative;
     font-family: termina;
@@ -356,14 +272,8 @@ p.grey-text {
 }
 
 #nav-logo {
-    width: 120px;
-    position: absolute;
-    left: 10%;
-    top: 35%;
-}
-
-#logo-link {
-    opacity: 1;
+    margin-top: -5px;
+    padding: 0px 0px;
 }
 
 #hamburger {
@@ -373,7 +283,81 @@ p.grey-text {
     font-size: 1.5em;
 }
 
+/*------------------------MOBILE NAV------------------------*/
+
+#mobile-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.mobile-nav-content {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    text-align: left;
+    width: 80%;
+}
+
+.mobile-nav-content img {
+    width: 45%;
+}
+
+
+.mobile-nav-content a {
+    display: block;
+    position: relative;
+    font-family: termina;
+    font-size: 0.85em;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: black;
+    margin-top: 18px;
+}
+
+.mobile-nav-heading {
+    padding-top: 18px;
+    border-top: 1px solid rgb(0, 0, 0, 0.25);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.mobile-nav-subheading {
+    padding-left: 5%;
+    font-weight: 200;
+    opacity: 0.7;
+    transition: 0.25s opacity ease;
+}
+
+.mobile-nav-subheading:hover {
+    opacity: 1;
+}
+
+.mobile-nav-content a:visited {
+    color: black;
+    opacity: 0;
+}
+
+#mobile-nav .closebtn {
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+
+    font-family: termina;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration:none;
+}
+
 /*------------------------SALE BANNER---------------------------*/
+
 .sale-banner {
     background-color: rgb(213, 233, 243);
     z-index: 2;
@@ -382,6 +366,17 @@ p.grey-text {
     left: 0;
     width: 100%;
     height: 40px;
+    /* pet nav referenced from www.w3schools.com */
+}
+#our-pets-banner {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    background-image: url("../img/unicorn-dog.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    margin-bottom: 0;
 }
 
 .sale-banner a {
@@ -397,28 +392,15 @@ p.grey-text {
     opacity: 0.8;
     text-decoration: none;
 }
-
-#our-pets-banner {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-    background-image: url("../img/our-pets-banner.jpg");
-    background-size: cover;
-    background-position: bottom;
-    height: 500px;
-    margin-bottom: 0;
-}
-
 #our-pets-banner h1 {
     position: absolute;
-    top: 80%;
+    top: 50%;
 }
 
 #our-pets-banner button {
     background-color: rgb(0,0,0, 0);
 }
 
-/* pet nav referenced from www.w3schools.com */
 .pet-nav {
     display: block;
     width: 80%;
@@ -451,7 +433,7 @@ p.grey-text {
     opacity: 1;
 }
 
-#all-pets-button, #dogs-button, #cats-button, #bunnies-button {
+#dogs-button, #cats-button, #bunnies-button {
     margin-right: 3%;
     padding: 2px 0;
 }
@@ -460,10 +442,6 @@ p.grey-text {
 /*---------------------OUR PETS (CARDS)------------------------*/
 .listings {
     margin: 3% 10% 0 9%;
-}
-
-#listing-space {
-    margin-bottom: 100px;
 }
 
 .product-card {
@@ -481,16 +459,6 @@ p.grey-text {
     width: 90%;
     margin: 4% auto 0 auto;
     display: block;
-}
-
-a.product-card {
-    transition: 0.3s box-shadow ease;
-    transition: 0.3s transform ease;
-}
-
-a.product-card:hover {
-    box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
-    transform: scale(1.02);
 }
 
 .new {
@@ -514,27 +482,6 @@ a.product-card:hover {
     letter-spacing: 2px;
 }
 
-.sick {
-    background-color: rgb(243, 213, 213);
-    border: 1px solid rgb(244, 140, 140);
-    border-radius: 5px;
-    position: absolute;
-    top: 6%;
-    right: 8%;
-    padding: 1% 2%;
-    margin: 0;
-}
-
-.sick p {
-    color: rgb(216, 63, 63);
-    margin: 0;
-    text-transform: uppercase;
-    font-family: termina;
-    font-size: 0.5em;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
 
 /*------------------------HOME (HERO)---------------------------*/
 
@@ -542,23 +489,19 @@ a.product-card:hover {
     position: relative;
     width: 100%;
     z-index: 0;
-    min-width: 320px;
 }
 
-div.hero {
+.hero.banner {
     height: 600px;
-    background-image: url("../img/unicorn-dog-mobile.jpg");
-    background-size: cover;
-    background-position: bottom;
-    margin-bottom: 0;
+    background-color: lightgrey;
 }
 
 .hero .textblock {
     position: absolute;
     text-align: left;
-    top: 30%;
+    top: 38%;
     margin-right: 10%;
-    width: 70%;
+    width: 48%;
 }
 
 .hero p {
@@ -570,82 +513,52 @@ div.hero {
 /*------------------------HOME (ABOUT)---------------------------*/
 
 #home-about {
-    padding-top: 40px;
+    vertical-align: top;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 #home-about .textblock {
-    width: 70%;
-    margin: auto;
-}
-
-#home-about .button {
-    display: block;
-    margin: auto;
-    width: 25%;
-    margin-top: 30px;
-}
-
-#home-about .banner {
-
+    width: 40%;
+    min-width: 400px;
+    display: inline-block;
 }
 
 /*----------------------HOME (BUNNY DAY)-------------------------*/
 
 #bunny-day {
-    background-image: url("../img/bunnies.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
+    background-color: lightgrey;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-top: 75px;
     text-align: center;
-    padding: 7.5% 0;
+}
+
+#bunny-day .textblock {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#bunny-day button {
+    display: block;
+    margin: 25px auto;
 }
 
 /*-----------------------HOME (PRICING)--------------------------*/
-.pricing-cards {
-    padding-top: 5%;
+
+#home-pricing {
+    padding-top: 50px;
     text-align: center;
-    cursor: default;
-    margin-bottom: 100px;
 }
 
-.pricing-card-content {
-    height: 250px;
-}
-
-.pricing-cards button {
-    cursor: pointer;
-    margin: auto;
-    font-weight: 600;
-}
-
-.pricing-cards h2 {
-    padding: 0 10% 0 5%;
-}
-
-.pricing-cards .grid-container {
+#home-pricing .grid-container {
     width: 80%;
-    margin-top: 3%;
-    justify-content: space-between;
 }
 
-.pricing-cards .col {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
+#home-pricing .col {
+    margin: 30px;
     position: relative;
-    border: 0.5px solid #e8e8e8;
-    border-radius: 10px;
-    padding: 5% 10%;
-    transition: 0.3s box-shadow ease;
-    transition: 0.3s transform ease;
-    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.03);
-    flex-shrink: 0;
-}
-
-.pricing-cards .col:hover {
-    box-shadow: 0px 6px 8px rgba(0,0,0,0.05);
-    transform: scale(1.02);
 }
 
 .price {
@@ -661,8 +574,8 @@ div.hero {
     border: 1px solid rgb(139, 200, 233);
     border-radius: 5px;
     position: absolute;
-    top: 3%;
-    right: 3%;
+    top: 6%;
+    right: 0;
     padding: 1% 2%;
     margin: 0;
 }
@@ -678,24 +591,24 @@ div.hero {
 }
 
 
-
 /*---------------------SINGLE LISTING------------------------*/
 
-
-.single-listing img {
+img.single-listing {
+    width: 35%;
     margin-top: 10px;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
+    float: left;
 }
 
 div.single-listing {
+    position: relative;
+    left: 5%;
+    display: inline-block;
+    width: 37.5%;
     line-height: 1.4em;
-    margin: 0 10%;
 }
 
 div.single-listing h1 {
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 div.single-listing button {
@@ -704,15 +617,10 @@ div.single-listing button {
 }
 
 
-div.info {
-    min-width: 300px;
-}
-
 p.just-arrived {
     opacity: 0.5;
     font-family: termina;
     font-weight: 600;
-    margin-top: 30px;
 }
 
 .review {
@@ -734,10 +642,9 @@ p.just-arrived {
 
 .review-section {
     position: relative;
-        margin-bottom: 100px;
 }
 
-#review-button {
+#write-a-review {
     position: absolute;
     right: 0;
     top: 0;
@@ -746,116 +653,9 @@ p.just-arrived {
     text-decoration: underline;
 }
 
-#review-button:hover {
+#write-a-review:hover {
     opacity: 1;
 }
-
-/*---------------------REVIEW MODAL------------------------*/
-
-#thank-you-message {
-    display: none;
-}
-
-#review-pending {
-    display: none;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 15; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; 
-    padding: 30px 40px;
-    border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
-}
-
-.modal-content section {
-    border-bottom: 1px solid lightgrey;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.input-sm, .input-lg {
-    width: 100%;
-    border: 1px solid lightgrey;
-    padding: 10px;
-}
-
-.input-sm {
-    height: 40px;
-    margin-bottom: 15px;
-}
-
-.input-lg {
-    height: 150px;
-    border: 1px solid lightgrey;
-}
-
-form .inline-block {
-    width: 100%;
-}
-
-.modal-content p {
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-#submit-review {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #5A9EC4;
-    color: white;
-    margin-top: 20px;
-    transition: 0.2s background-color;
-}
-
-#submit-review:hover {
-    background-color: #488aaf;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.not-allowed {
-    cursor: not-allowed;
-}
-
-#name-field {
-    margin-right: 3%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 /*---------------------BREAD CRUMB------------------------*/
 
 /* Style the list */
@@ -954,11 +754,6 @@ ul.breadcrumb li a:hover {
     margin: 1.5%;
 }
 
-a.product-card {
-    text-decoration: none;
-    color: black;
-}
-
 .product-card p {
     margin-top: 2%;
 }
@@ -970,10 +765,6 @@ a.product-card {
 }
 
 /*---------------------------ABOUT-------------------------------*/
-
-section.about {
-    margin-bottom: 5%;
-}
 .about h1 {
     word-spacing: 0.3em;
 }
@@ -998,8 +789,12 @@ section.about {
     margin-bottom: 0;
 }
 
-.about-width {
-    max-width: 80%;
+.about-center {
+    padding: 1% 25% 7% 25%;
+}
+
+.about-right {
+    padding-right: 20%;
 }
 
 .about-left {
@@ -1019,55 +814,41 @@ section.about {
 }
 
 #about-kitty {
-    width: 50%;
+    width: 80%;
 }
 
 #about-bunny {
-    width: 80%;
-    margin: auto;
-    float: left;
-    /*    padding: 7% 20% 0 0;*/
+    width: 90%;
+    padding: 7% 20% 0 0;
 }
 
 /*--------------------------CONTACT------------------------------*/
 .contact-top h1 {
-    padding-top: 50%;
-}
-
-#contact-us {
-    padding-right: 10%;
+    padding-top: 15%;
 }
 
 .contact-top {
     position: relative;
     width: 100%;
     z-index: 0;
-    background-image: url("../img/contact-puppy-v9.jpg");
-    background-size: cover;
-    background-position: top right;
-    height: 1200px;
+    background-image: url("../img/contact-puppy-v8.jpg");
+    background-size: 100%;
+    background-position: top;
+    height: 900px;
     background-repeat: no-repeat;
     margin-bottom: 0;
 }
 
 .contact-container {
     padding-top: 10%;
-    width: 80%;
-    justify-content: space-between;
-}
-
-.contact-container .col {
-    flex: 0 0 45%;
-    margin-top: 10%;
 }
 
 .contact-info {
-    /*    margin: 15% 0 0 0;*/
+    margin-right: 3%;
 }
 
 .contact-info h2 {
     padding-right: 5%;
-    margin-top: 2%;
 }
 
 .contact-info p {
@@ -1075,7 +856,7 @@ section.about {
 }
 
 .contact-padding {
-    padding-top: 3%;
+    padding-top: 10%;
 }
 
 .contact-table {
@@ -1090,219 +871,9 @@ section.about {
     padding-top: 0.5rem;
 }
 
-/*--------------------------PRICING------------------------------*/
-.pricing h1 {
-    padding-top: 20%;
-}
-
-.pricing h4 {
-    margin-top: 10%;
-}
-
-.pricing h2 {
-    margin-top: 2%;
-}
-
-.pricing-width {
-    width: 80%;
-}
-
-.pricing .pricing-cards {
-    margin-top: 3%;
-    padding-top: 0;
-}
-
-.pricing-text {
-    margin-top: 10%;
-    width: 80%;
-}
-
-.pricing .grid-container {
-    margin-bottom: 10%;
-}
-
-/*--------------------------PAYMENT------------------------------*/
-
-#checkout-header {
-    margin-top: 0;
-}
-
-.payment-summary {
-    position: relative;
-    background-color: #eaeff2;
-    padding: 5% 10% 5% 10%;
-    height: 100%;
-    width: 100%;
-    margin-left: 0;
-}
-
-.payment-form {
-    margin: 25px 5% 10% 10%;
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: 10%;
-}
-
-.payment-form form {
-    margin-top: 20px;
-}
-
-.payment-form section {
-    margin-top: 25px;
-}
-
-.payment-form input {
-    margin-top: 10px;
-}
-
-.input-sm:focus{
-    outline-style: none;
-    border-color: #5A9EC4;
-}
-
-.input-lg:focus{
-    outline-style: none;
-    border-color: #5A9EC4;
-}
-
-.inline-block.third {
-    width: 31%;
-}
-
-/*
-.half-field {
-width: 48%;
-}
-*/
-
-.payment-summary h4 {
-    margin-bottom: 10px;
-}
-
-.asterix {
-    color: #5A9EC4;
-}
-
-.margin-right-sm {
-    margin-right: 2.75%;
-}
-
-.justified-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.less-margin-bottom {
-    margin-bottom: -15px;
-}
-
-.border-bottom {
-    border-bottom: 1px solid lightgrey;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-#payment-button {
-    margin-top: 3%;
-    margin-right: 0;
-}
-
-.cancel-button {
-    color: darkgrey;
-    transition: 0.5s color;
-    text-decoration: underline;
-    margin-top: 3%;
-}
-
-.cancel-button:hover {
-    color: grey;
-}
-/*
-.justified-row>p {
-display: inline-block;
-}
-
-.right-align {
-right: 0;
-}
-*/
-
-/*--------------------------PAYMENT------------------------------*/
-
-.order-confirmation {
-    margin-top: 185px;
-    width: 80%;
-}
-
-.order-confirmation p {
-    margin-bottom: 60px;
-}
-
-.order-confirmation a:hover {
-    color: #5A9EC4;
-}
-
-/*--------------------------PAYMENT------------------------------*/
-
-.citations {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 50%;
-}
-
-.citations li {
-    margin-top: 10px;
-}
 /*---------------------------FOOTER------------------------------*/
-footer {
-    padding: 0.5% 5% 5% 10%;
-    background-color: #D5E9F3;
-    min-width: 500px;
-    cursor: default;
-}
-
-footer .col {
-    width: 100%;
-    flex-basis: 100%;
-    margin-bottom: 30px;
-}
-
-footer .grid-container {
-    margin-top: 5%;
-}
-
-footer p {
-    margin-bottom: 0;
-}
-
-footer table {
-    text-align: left;
-    padding-top: 3%;
-}
-
-footer th {
-    font-weight: 600;
-    padding-right: 8%;
-}
-
-#footer-logo {
-    margin-left: 0;
-}
-
-
-footer a:hover {
-    color: #5A9EC4;
-}
-
-footer img {
-    width: 100px;
-    margin-top: 5%;
-}
-
-#terms a:hover {
-    cursor: pointer;
+.footer {
+    margin-top: 20%;
 }
 /* end of footer */
 
@@ -1326,4 +897,153 @@ footer img {
 
 #type-of-pets a:hover {
     opacity: 0.8;
+}
+
+/*----------------------MEDIA QUERIES-------------------------*/
+
+@media (max-width: 600px) {
+    .top-nav-right {
+        display: none;
+    }
+
+    .hero .textblock {
+        width: 82%;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        background-size: 100%;
+        height: 1500px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 600px) {
+    .top-nav-right {
+        display: none;
+    }
+
+    .hero .textblock {
+        width: 70%;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .pet-nav {
+        width: 80%;
+    }
+
+    .about h1 {
+        margin: 0 10%;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-mobile3.jpg");
+        height: 1500px;
+    }
+
+    .contact-top h1 {
+        padding-top: 40%;
+    }
+
+    .contact-info {
+        margin-top: 10%;
+    }
+
+    .contact-container {
+        padding-top: 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .top-nav-right {
+        display: block;
+    }
+
+    #hamburger {
+        display:none;
+    }
+
+    .about h1 {
+        padding-top: 12%;
+    }
+
+    .contact-top {
+        background-image: url("../img/contact-puppy-v9.jpg");
+        height: 1300px;
+    }
+
+    .contact-top h1 {
+        padding-top: 40%;
+    }
+
+    #location {
+        margin: 10% 13% 0 0;
+    }
+
+    #social-media {
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 900px) {
+    .contact-top {
+        height: 1200px;
+    }
+
+    .contact-top h1 {
+        padding-top: 25%;
+    }
+
+    .contact-info {
+        padding-right: 10%;
+    }
+
+    #social-media {
+        padding-right: 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-top {
+        height: 900px;
+    }
+
+    .contact-top h1 {
+        padding-top: 15%;
+    }
+
+    #hours {
+        margin-right: 0;
+    }
+
+    #location {
+        margin: 10% 0 0 0;
+        padding-right: 5%;
+    }
+
+    #social-media {
+        margin-left: 0;
+        padding-right: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-top {
+        height: 1000px;
+    }
+
+    #location {
+        padding-right: 3%;
+    }
+
+    #social-media {
+        margin: 10% 0 0 5%;
+    }
 }

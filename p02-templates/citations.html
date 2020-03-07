@@ -1,0 +1,142 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <title>Citations</title>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
+
+        <!--------------------- MOBILE NAV --------------------->
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+        <!--------------------- CITATIONS --------------------->
+        <main class="citations left-align">
+            <h2>Citations</h2>
+            <p>This website was designed and developed by Simon Fraser University students Melissa Chan (STUDENT NUMBER) and Audrey Chow (301339905). HTML, CSS, and Javascript code were written using concepts taught by Paul Brokenshire for IAT 339: Web Design and Development in Spring 2020.</p>
+
+            <h3>HTML, CSS, and Javascript</h3>
+            <ul>
+                <li>Brokenshire, P. (2020, January). IAT339 Web Design and Development. IAT339 Web Design and Development. Surrey.</li>
+                <li>How TO - Dropdown Navbar. (n.d.). Retrieved from <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.as">https://www.w3schools.com/howto/howto_css_dropdown_navbar.as</a></li>
+                <li>HTML input tag. (n.d.). Retrieved from <a href="https://www.w3schools.com/tags/tag_input.asp">https://www.w3schools.com/tags/tag_input.asp</a></li>
+                <li>HTML input type="date". (n.d.). Retrieved from <a href="https://www.w3schools.com/tags/att_input_type_date.asp">https://www.w3schools.com/tags/att_input_type_date.asp</a></li>
+                <li>How to replace div with another div in javascript. (2016). Retrieved from <a href="https://stackoverflow.com/questions/37347690/how-to-replace-div-with-another-div-in-javascript">https://stackoverflow.com/questions/37347690/how-to-replace-div-with-another-div-in-javascript</a></li>
+                <li>CSS Flexbox (n.d.). Retrieved from <a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a></li>
+            </ul>
+
+            <h3>Typefaces</h3>
+            <ul>
+                <li>Darden, J. (n.d.). Freight Sans. Retrieved from <a href="https://fonts.adobe.com/fonts/freight-sans">https://fonts.adobe.com/fonts/freight-sans</a></li>
+                <li>Shuler, M. (n.d.). Termina. Retrieved from <a href=" https://fonts.adobe.com/fonts/termina"> https://fonts.adobe.com/fonts/termina</a></li>
+            </ul>
+
+            <h3>Images</h3>
+            <ul>
+                <li>Faus, I. (2018). Close-Up Photo of Dog Wearing Sunglasses. Retrieved from <a href="https://www.pexels.com/photo/close-up-photo-of-dog-wearing-sunglasses-1629781/">https://www.pexels.com/photo/close-up-photo-of-dog-wearing-sunglasses-1629781/</a></li>
+
+                <li>Pixabay. (2016). Long-coated White and Black Dog. Retrieved from <a href="https://www.pexels.com/photo/adorable-animal-canine-cute-220938/">https://www.pexels.com/photo/adorable-animal-canine-cute-220938/</a></li>
+
+                <li>Glancy, M. (2016). Boston Terrier Wearing Unicorn Pet Costume. Retrieved from <a href="https://www.pexels.com/photo/boston-terrier-wearing-unicorn-pet-costume-1564506/
+                    ">https://www.pexels.com/photo/boston-terrier-wearing-unicorn-pet-costume-1564506/
+                    </a></li>
+
+                <li>Vandenberg, V. (2018). Pomeranian Puppy. Retrieved from <a href="https://www.pexels.com/photo/boston-terrier-wearing-unicorn-pet-costume-1564506/
+                    ">https://www.pexels.com/photo/boston-terrier-wearing-unicorn-pet-costume-1564506/
+                    </a></li>
+
+                <li>Poodles2Doodles. (2018). Pomeranian Puppy. Retrieved from  <a href="pexels.com/photo/tricolor-maltese-puppy-1458925/
+                    ">pexels.com/photo/tricolor-maltese-puppy-1458925/
+                    </a></li>
+
+                <li>Lehman, B. (2018). Dog Wearing Scarf With Fringe While Sitting on Snow Selective Focus Photography. Retrieved from <a href="https://www.pexels.com/photo/dog-wearing-crochet-scarf-with-fringe-while-sitting-on-snow-selective-focus-photography-1436134/
+                    ">https://www.pexels.com/photo/dog-wearing-crochet-scarf-with-fringe-while-sitting-on-snow-selective-focus-photography-1436134/
+                    </a></li>
+
+                <li>Souza, S. (2019). Brown and Black Puppy in Hammock Blanket. Retrieved from <a href="https://www.pexels.com/photo/brown-and-black-puppy-in-hammock-blanket-3198032/
+                    ">https://www.pexels.com/photo/brown-and-black-puppy-in-hammock-blanket-3198032/
+                    </a></li>
+
+                <li>Stanley, L. (2019). Sitting White and Brown Dog With Reindeer Headband. Retrieved from <a href="https://www.pexels.com/photo/sitting-white-and-brown-dog-with-reindeer-headband-3361714/">https://www.pexels.com/photo/sitting-white-and-brown-dog-with-reindeer-headband-3361714/</a></li>
+
+                <li>Pixabay. (2016). White and Grey Kitten on Brown and Black Leopard Print Textile. Retrieved from <a href="https://www.pexels.com/photo/animal-pet-cute-kitten-45201/">https://www.pexels.com/photo/animal-pet-cute-kitten-45201/</a></li>
+
+                <li>Vadim, B. (2016). Grey Fur Kitten. Retrieved from <a href="https://www.pexels.com/photo/grey-fur-kitten-127028/">https://www.pexels.com/photo/grey-fur-kitten-127028/</a></li>
+
+                <li>Ungaro, F. (2016). Black and White Kitten on Brown Textile. Retrieved from <a href="https://www.pexels.com/photo/eyes-cat-coach-sofa-96938/">https://www.pexels.com/photo/eyes-cat-coach-sofa-96938/</a></li>
+
+                <li>Azatskaya, T. (2020). Orange Tabby Cat on Grey Blanket. Retrieved from<a href="https://www.pexels.com/photo/orange-tabby-cat-on-gray-blanket-3616232/">https://www.pexels.com/photo/orange-tabby-cat-on-gray-blanket-3616232/</a></li>
+
+                <li>Did. (2020). Black Cat on Brown Wooden Table. Retrieved from <a href="https://www.pexels.com/photo/black-cat-on-brown-wooden-table-3635547/">https://www.pexels.com/photo/black-cat-on-brown-wooden-table-3635547/</a></li>
+
+                <li>Grossgasteiger, E. (2019). Shallow Focus Photography of Grey Cat in Box. Retrieved from <a href="https://www.pexels.com/photo/black-cat-on-brown-wooden-table-3635547/">https://www.pexels.com/photo/black-cat-on-brown-wooden-table-3635547/</a></li>
+
+                <li>Joutseno, U. (2019). Selective Focus Photo of Rabbiet. Retrieved from <a href="https://www.pexels.com/photo/selective-focus-photo-of-rabbit-2061754/">https://www.pexels.com/photo/selective-focus-photo-of-rabbit-2061754/</a></li>
+
+                <li>Mike. (2016). Beige Rabbit Resting on Green Grasses during Daytime. Retrieved from <a href="https://www.pexels.com/photo/garden-animal-cute-grass-104373/">https://www.pexels.com/photo/garden-animal-cute-grass-104373/</a></li>
+
+                <li>Starcevic, P. (2019). Person Putting Finger on Brown Rabbit's Mouth. Retrieved from <a href=" https://www.pexels.com/photo/person-putting-finger-on-brown-rabbit-s-mouth-2389075/"> https://www.pexels.com/photo/person-putting-finger-on-brown-rabbit-s-mouth-2389075/</a></li>
+
+                <li>Chen, J. (2018). Two Rabbit Plush Toys on Top of Bed. Retrieved from <a href=" https://unsplash.com/photos/aB3wYypke8M/"> https://unsplash.com/photos/aB3wYypke8M</a></li>
+            </ul>
+        </main>
+    </body>
+</html>

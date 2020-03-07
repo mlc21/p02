@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+        <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div><!-- end of .dropdown-content -->
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
+
+        <!--------------------- MOBILE NAV --------------------->
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+
+        <!---------------------- MAIN -------------------------->
+        <section class="about">
+            <!-- ABOUT HEADER -->
+            <div class="about-top" role="banner">
+                <h1 class="center top-padding black">About Petcetera</h1>
+            </div>
+
+            <!---------------------- ABOUT US ---------------------->
+            <div class="left-align about-width top-p bottom-p">
+                <h4>Who are we?</h4>
+                <h2 class="black">A little bit about us.</h2>
+                <p class="black">Petcetera is owned and operated by a dedicated team of pet care professionals. Collectively, we bring over sixty years of experience raising animals at farms, on pastures, and in homes. What bonds each of us is our commitment to loving the animals in our care, in sickness and in health. And it shows — we’ve been awarded Forbes’ Most Loving Home for Pets six years in a row!</p>
+            </div> <!-- end of about us -->
+
+            <!------------------ MISSION + VALUES ------------------>
+            <div class="mission grid-container">
+                <div class="col-full top-p left-align">
+                    <div class="about-width">
+                    <h4>Why Petcetera?</h4>
+                    <h2 class="black">Our mission + values.</h2>
+                    <p class="black">At Petcetera, our mission is to bring the splendor of pet play into the lives of the pet-less, without the hassle of ownership. We want to help everyone, child and adult alike, enjoy the company of our furry friends. We believe that animals have the power to relieve stress and anxiety, and we aim to share this impact with the rest of the community. We value the health and well-being of our pets and customers, which is why we have some basic rules that we ask our customers to abide by:</p>
+                    <ul>
+                        <li>Inform our staff of any allergies or illnesses (you may be asked to stay home if there is a risk of infecting our pets or others around you)</li>
+                        <li>Wash your hands before and after playing with pets</li>
+                        <li>Do not harm or abuse the pets in any way </li>
+                        <li>Do not feed the pets unless given permission</li>
+                    </ul>
+                    </div>
+                </div> <!-- end of #mission-text -->
+                <div class="col-full">
+                    <img id="about-kitty" src="img/about-kitty.jpg">
+                </div> <!-- end of kitty image -->
+            </div> <!-- end of .grid-container -->
+
+            <!--------------------HOW IT WORKS -------------------->
+            <div class="grid-container" id="works">
+                <div class="col-full top-p left-align">
+                    <div class="about-width">
+                    <h4>How it works</h4>
+                    <h2 class="black">Come visit us.</h2>
+                    <p class="black">Whether you are dropping in for the first time or have been a member for years, our animal community welcomes you any day of the week! To make the most of your visit, we encourage all guests to purchase a drop-in, monthly, or annual membership online. Browse our catalog of dogs, cats, and bunnies to arrive with an idea of which pets you hope to spend your time with. Keep in mind that our pets are extra popular on evenings and weekends!</p>
+                    <p class="black">We do not reserve pets or play spaces, however we are happy to check if your favourite pet is already receiving love, shortly before your visit. Simply call 1+&nbsp;(604)&nbsp;098&nbsp;7654</p>
+                    </div>
+                </div> <!-- end of how it works text -->
+                <div class="col-full top-p left-align" align="left" id="about-bunny-div">
+                    <img id="about-bunny" src="img/about-bunny.jpg" align="right">
+                </div> <!-- end of bunny image -->
+            </div> <!-- end of .grid-container -->
+            
+        </section><!-- end of .about -->
+
+        <!--------------------- FOOTER ------------------------->
+        <footer>
+            <div class="grid-container">
+                <div class="col" id="terms">
+                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
+                    <h4><a class="black" href="about.html">About Petcetera</a></h4>
+                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/index.html" target="_blank">Styleguide</a></h4>
+                    <h4><a class="black" href="citations.html" target="_blank">Citations</a></h4>
+                </div> <!-- end of terms .col-->
+                <div class="col">
+                    <h4><a class="black" href="contact.html">Contact</a></h4>
+                    <table>
+                        <tr>
+                            <th>Phone</th>
+                            <td>1+ (604) 098 7654</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>support@petcetera.ca</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>@petcetera</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>@petcetera_pets</td>
+                        </tr>
+                        <tr>
+                            <th>Youtube</th>
+                            <td>Petcetera</td>
+                        </tr>
+                    </table> <!-- end of table -->
+                </div> <!-- end of contact .col -->
+                <div class="col">
+                    <h4 class="black">Location</h4>
+                    <p>Surrey Central Mall &nbsp;<br><strong>250-13450 102 Ave, Surrey</strong></p>
+                </div>
+                <!-- end of location .col-->
+            </div> <!-- end of .grid-container -->
+            <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
+        </footer>
+
+        <script src="script/mobile-nav.js"></script>
+    </body>
+</html>

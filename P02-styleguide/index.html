@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-      <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-    <title>P01 Process</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  </head>
-  <body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+        <title>Petcetera Styleguide</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+    </head>
+    <body>
 
-    <div class="side-bar">
-        <div class="content">
-        <img id="logo" src="img/logo.png" alt="AUX Logo">
-        <section id="foundations">
-            <p>Foundations</p>
-            <ul>
-                <li id="active-page"><a href="index.html">Grid Structure</a></li>
-                <li><a href="colour.html">Colour Swatches</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
-        </section> <!--end of #foundations -->
+        <div class="side-bar">
+            <div class="content">
+                <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
+                <section id="foundations">
+                    <p>Foundations</p>
+                    <ul>
+                        <li id="active-page"><a href="index.html">Grid Structure</a></li>
+                        <li><a href="colour.html">Colour Swatches</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                    </ul>
+                </section> <!--end of #foundations -->
 
-        <section id="components">
-            <p>Components</p>
-            <ul>
-                <li><a href="navigation.html">Navigation</a></li>
-                <li><a href="buttons.html">Buttons</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="product-listing.html">Product Listing</a></li>
-            </ul>
-        </section><!--end of #components -->
+                <section id="components">
+                    <p>Components</p>
+                    <ul>
+                        <li><a href="navigation.html">Navigation</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="product-listing.html">Product Listing</a></li>
+                    </ul>
+                </section><!--end of #components -->
 
-        <section id="more-links">
-            <ul>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </section>
-        </div><!-- end of .content -->
-    </div> <!-- end of #side-bar -->
+                <section id="more-links">
+                    <ul>
+                        <li><a href="http://www.sfu.ca/~aca180/iat339/p02-templates/citations.html" target="_blank">Citations</a></li>
+                    </ul>
+                </section>
+            </div><!-- end of .content -->
+        </div> <!-- end of #side-bar -->
 
-    <div class="main">
+        <div class="main">
 
-        <h1>Grid Structure</h1>
-        <div class="container grid-demo" id="swatches">
-            <div class="col"><p>1/4</p></div>
-            <div class="col"><p>1/4</p></div>
-            <div class="col"><p>1/4</p></div>
-            <div class="col"><p>1/4</p></div>
-        </div>
+            <h1>Grid Structure</h1>
+            <div class="grid-container grid-demo" id="swatches">
+                <div class="col"><p>1/4</p></div>
+                <div class="col"><p>1/4</p></div>
+                <div class="col"><p>1/4</p></div>
+                <div class="col"><p>1/4</p></div>
+            </div>
 
-        <h3>CSS Selector</h3>
-        <code>.container .col</code>
+            <h3>CSS Selector</h3>
+            <div class="sample-code">
+                <code>.grid-container</code>
+                <code>.col</code>
+            </div>
 
-        <h3>Sample Code</h3>
-        <div class="sample-code">
-            <code>&lt;div class="container"&gt;</code>
+            <h3>Sample Code</h3>
+            <div class="sample-code">
+                <code>&lt;div class="grid-container"&gt;</code>
                 <code class="indent-code">&lt;div class="col"&gt;&lt;/div&gt;</code>
                 <code class="indent-code">&lt;div class="col"&gt;&lt;/div&gt;</code>
                 <code class="indent-code">&lt;div class="col"&gt;&lt;/div&gt;</code>
-            <code>&lt;/div&gt;</code>
-        </div>
-    </div><!-- end of main -->
-  </body>
+                <code>&lt;/div&gt;</code>
+            </div>
+        </div><!-- end of main -->
+    </body>
 </html>

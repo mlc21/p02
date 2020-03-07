@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+  <script src="https://kit.fontawesome.com/aa042d8f31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!---------------------- MAIN NAV ---------------------->
+        <nav class="top-nav" role="navigation" aria-label="main">
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <div class="top-nav-right">
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <div class="dropdown-content">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="bunnies.html">Bunnies</a>
+                    </div>
+                </div> <!-- end of our pets -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Our Studio</button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div> <!-- end of our studio -->
+                <div class="dropdown">
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='pricing.html'">Pricing</button>
+                </div> <!-- end of pricing -->
+            </div> <!-- end of .top-nav-right -->
+            <a id="hamburger" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav> <!-- end of .top-nav -->
+
+        <!--------------------- MOBILE NAV --------------------->
+        <div id="mobile-nav">
+            <a href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <section>
+                    <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
+                    <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
+                    <a href="cats.html" onclick="closeNav()" class="mobile-nav-subheading">Cats</a>
+                    <a href="bunnies.html" onclick="closeNav()" class="mobile-nav-subheading">Bunnies</a>
+                </section>
+
+                <section>
+                    <a class="mobile-nav-heading">Our Studio</a>
+                    <a href="about.html" onclick="closeNav()" class="mobile-nav-subheading">About us</a>
+                    <a href="contact.html" onclick="closeNav()" class="mobile-nav-subheading">Contact</a>
+                </section>
+
+                <section>
+                    <a href="pricing.html" onclick="closeNav()" class="mobile-nav-heading">Pricing</a>
+                </section>
+            </div><!--end of .mobile-nav-content-->
+        </div><!--end of .mobile-nav-->
+
+
+
+        <!---------------------------MAIN SECTION--------------------------->
+        <section class="contact">
+            <!--------------------------CONTACT HEADER-------------------------->
+            <div class="contact-top">
+                <h1 class="left-align black">Contact Us</h1>
+                <p id="contact-us" class="left-align black">1+ (604) 098 7654 &#183; support@petcetera.ca</p>
+                <div class="grid-container contact-container left-align">
+                    <div class="col contact-info">
+                        <h4 class="dark-blue">Hours</h4>
+                        <h2 class="black">Open everyday.</h2>
+                        <table class="contact-table contact-padding">
+                            <tr class="black">
+                                <th>Monday</th>
+                                <td>10am - 7pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Tuesday</th>
+                                <td>10am - 7pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Wednesday</th>
+                                <td>10am - 7pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Thursday</th>
+                                <td>10am - 7pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Friday</th>
+                                <td>10am - 8pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Saturday</th>
+                                <td>9:30am - 8pm</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Sunday</th>
+                                <td>11am - 4pm</td>
+                            </tr>
+                        </table>
+                    </div><!-- end of .contact-info -->
+                    <div id="location" class="col contact-info">
+                        <h4 class="dark-blue">Location</h4>
+                        <h2 class="black">Meet our pets.</h2>
+                        <p class="contact-padding black">We're inside the Surrey Central Mall!</p>
+                        <p id="address" class="black"><strong>250-13450 102 Ave, Surrey</strong></p>
+                    </div><!-- end of #location -->
+                    <div id="social-media" class="col contact-info">
+                        <h4 class="dark-blue">Social media</h4>
+                        <h2 class="black">Connect with us.</h2>
+                        <table class="contact-table contact-padding black">
+                            <tr class="black">
+                                <th>Facebook</th>
+                                <td>@petcetera</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Instagram</th>
+                                <td>@petcetera_pets</td>
+                            </tr>
+                            <tr class="black">
+                                <th>Youtube</th>
+                                <td>Petcetera</td>
+                            </tr>
+                        </table>
+                    </div> <!-- end of #social-media-->
+                </div><!-- end of .grid-container -->
+            </div><!-- end of .contact-top -->
+        </section><!-- end of .contact -->
+    
+            <!--------------------- FOOTER ------------------------->
+        <footer>
+            <div class="grid-container">
+                <div class="col" id="terms">
+                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
+                    <h4><a class="black" href="about.html">About Petcetera</a></h4>
+                    <h4><a class="black" href="citations.html" target="_blank">Styleguide</a></h4>
+                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/citations.html" target="_blank">Citations</a></h4>
+                </div> <!-- end of terms .col-->
+                <div class="col">
+                    <h4><a class="black" href="contact.html">Contact</a></h4>
+                    <table>
+                        <tr>
+                            <th>Phone</th>
+                            <td>1+ (604) 098 7654</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>support@petcetera.ca</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>@petcetera</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>@petcetera_pets</td>
+                        </tr>
+                        <tr>
+                            <th>Youtube</th>
+                            <td>Petcetera</td>
+                        </tr>
+                    </table> <!-- end of table -->
+                </div> <!-- end of contact .col -->
+                <div class="col">
+                    <h4 class="black">Location</h4>
+                    <p>Surrey Central Mall &nbsp;<br><strong>250-13450 102 Ave, Surrey</strong></p>
+                </div>
+                <!-- end of location .col-->
+            </div> <!-- end of .grid-container -->
+            <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
+        </footer>
+
+        <script src="script/mobile-nav.js"></script>  
+    </body>
+</html>

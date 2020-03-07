@@ -2,7 +2,7 @@
 <html lang="en-ca">
     <head>
         <!-- Code taught by Paul Brokenshire for IAT 339 and written by Audrey Chow + Melissa Chan -->
-        <title>Petcetera</title>
+        <title>Pricing</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
@@ -15,15 +15,15 @@
     <body>
         <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
-            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder" role="link"></a>
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
             <div class="top-nav-right">
                 <div class="dropdown">
-                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='our-pets.html'">Our Pets</button>
                     <div class="dropdown-content">
                         <a href="dogs.html">Dogs</a>
                         <a href="cats.html">Cats</a>
                         <a href="bunnies.html">Bunnies</a>
-                    </div>
+                    </div> <!-- end of .dropdown-content -->
                 </div> <!-- end of our pets -->
                 <div class="dropdown">
                     <button class="dropdown-button">Our Studio</button>
@@ -33,7 +33,7 @@
                     </div>
                 </div> <!-- end of our studio -->
                 <div class="dropdown">
-                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
+                    <button class="dropdown-button underline-link pointer" onclick="window.location.href='pricing.html'">Pricing</button>
                 </div> <!-- end of pricing -->
             </div> <!-- end of .top-nav-right -->
             <a id="hamburger" onclick="openNav()">
@@ -43,9 +43,9 @@
 
         <!--------------------- MOBILE NAV --------------------->
         <div id="mobile-nav">
-            <a href="javascript:void(0)" aria-label="Close" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()">&times;</a>
             <div class="mobile-nav-content">
-                <a href="index.html" role="link"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
                     <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
                     <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
@@ -65,47 +65,19 @@
             </div><!--end of .mobile-nav-content-->
         </div><!--end of .mobile-nav-->
 
-        <!---------------------- MAIN -------------------------->
-        <div class="sale-banner">
-            <a href="pricing.html" role="link">Limited time: 50% off annual memberships</a>
-        </div>
+        <section class="pricing">
+            <h1 class="center">Pricing</h1>
 
-        <div class="hero banner" role="banner">
-            <div class="textblock left-align" role="textblock">
-                <h1>Say hello to Unipug</h1>
-                <p class="hero">Nothing says magic like a pug in a unicorn suit. Come to Petcetera to play with Unipug and many more pets like him!</p>
-                <a href="our-pets.html" class="underline-link black" role="link">Browse Pets</a>
-            </div><!--end of .textblock-->
-        </div><!--end of .hero-->
-
-        <div class="banner" id="home-about">
-            <div class="textblock center" role="textblock">
-                <h2>Furry friends for everyone!</h2>
-                <p>At Petcetera, we take joy in hosting daily group playdates with the most adorable dogs, cats, and bunnies in Surrey, BC. Drop in to spend an afternoon at our playcentre, or become a member for endless cuddles, all year-round.</p>
-            </div><!--end of .textblock-->
-            <button class="button whiteblue-bg pointer" onclick="document.location = 'about.html'" role="button">About Us</button>
-        </div><!--end of .banner-->
-
-        <div class="banner" id="bunny-day">
-            <div class="textblock">
-                <h2>It's National Bunny Day</h2>
-                <h4>on september 26</h4>
-            </div>
-        </div><!--end of .banner-->
-
-        <div class="banner pricing-cards">
-            
-            <h2 class="center">Join Our Community</h2>
+            <div class="banner pricing-cards">
                 <div class="grid-container left-align">
                     <a class="col black" href="payment.html">
                         <div class="pricing-card-content">
                             <h4 class="med-blue">Drop-in</h4>
                             <p class="price">$15</p>
                             <p class="price-details">Stop by for a 60 minute playdate with a pet of your choice.</p>
-                            <p>* Limited selection of pets are available for drop-ins *</p>
+                            <p>*&nbsp;Limited selection of pets are available for drop-ins&nbsp;*</p>
                         </div>
-                        <button class="dark-blue" role="button">Purchase now</button>
-
+                        <button class="dark-blue">Purchase now</button>
                     </a>
                     
                     <a class="col black" href="payment.html">
@@ -114,7 +86,7 @@
                             <p class="price">$60</p>
                             <p class="price-details">Enjoy unlimited amounts of playdates with our pets for an entire month.</p>
                         </div>
-                        <button class="dark-blue" role="button">Purchase now</button>
+                        <button class="dark-blue">Purchase now</button>
                     </a>
                     
                     <a class="col black" href="payment.html">
@@ -122,23 +94,41 @@
                             <h4 class="med-blue">Yearly</h4>
                             <p class="price">$330</p>
                             <p class="price-details">Get extra access to VIP pet rooms, and unlimited amounts of playdates with our pets for the whole year.</p>
+                            <p>*&nbsp;Discount already applied&nbsp;*</p>
                             <div class="sale-badge">
                                 <p>Save 50%</p>
                             </div><!--end of .sale-badge-->
                         </div>
-                        <button class="dark-blue" role="button">Purchase now</button>
+                        <button class="dark-blue">Purchase now</button>
+
                     </a>
                 </div> <!-- end of .grid-container -->
             </div><!--end of .banner-->
 
+            <div class="grid-container left-align pricing-width" id="pricing-text">
+                <div class="col">
+                    <h4 class="dark-blue">New to Petcetera?</h4>
+                    <h2 class="black">Drop-In</h2>
+                    <p class="pricing-width">Try a 60-minute drop-in session to play with one pet of your choice. Please keep in mind that drop-in sessions happen on a first-come, first-served basis and our maximum occupancy is one guest per animal (18). </p>
+                </div>
+
+                <div class="col" id="membership">
+                    <h4 class="dark-blue">Regular visitor?</h4>
+                    <h2 class="black">Memberships</h2>
+                    <p class="pricing-width">Monthly and yearly memberships let you play with your favourite pets, any day of the week. In addition to unlimited visits, members also have special access to monthly VIP events and three luxury playrooms, separate from other guests. </p>
+                </div><!-- end of #membership-->
+            </div>
+
+        </section>
+
         <!--------------------- FOOTER ------------------------->
         <footer>
             <div class="grid-container">
-                <div class="col" id="terms" role="navigation">
-                    <h4><a class="black" href="pricing.html" role="link">Get Started</a></h4>
-                    <h4><a class="black" href="about.html" role="link">About Petcetera</a></h4>
-                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/index.html" target="_blank" role="link">Styleguide</a></h4>
-                    <h4><a class="black" href="citations.html" target="_blank" role="link">Citations</a></h4>
+                <div class="col" id="terms">
+                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
+                    <h4><a class="black" href="about.html">How It Works</a></h4>
+                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/index.html" target="_blank">Styleguide</a></h4>
+                    <h4><a class="black" href="citations.html" target="_blank">Citations</a></h4>
                 </div> <!-- end of terms .col-->
                 <div class="col">
                     <h4><a class="black" href="contact.html">Contact</a></h4>
@@ -173,7 +163,6 @@
             </div> <!-- end of .grid-container -->
             <img id="footer-logo" src="img/petcetera-logo.png" alt="logo">
         </footer>
-
         <script src="script/mobile-nav.js"></script>
     </body>
 </html>
