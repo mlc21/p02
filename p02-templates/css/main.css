@@ -472,7 +472,7 @@ div.hero {
     height: 250px;
 }
 
-.pricing-cards button {
+.purchase {
     cursor: pointer;
     margin: auto;
     font-weight: 600;
