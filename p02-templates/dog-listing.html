@@ -16,7 +16,6 @@
     </head>
 
     <body>
-
         <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
             <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
@@ -70,7 +69,6 @@
         </div><!--end of .mobile-nav-->
 
 
-
         <ul class="breadcrumb left-align">
             <li><a href="our-pets.html">Our Pets</a></li>
             <li>Loofa</li>
@@ -87,8 +85,8 @@
                     <li>Age: 5 months</li>
                 </ul>
                 <!--     <p>Visit Petcetera today or purchase a membership to play with Loofa any day of the year!</p>-->
-                <button class="button blue-bg">Visit Today</button>
-                <button class="button whiteblue-bg">Become a Member</button>
+                <button class="button blue-bg pointer" onclick="window.location.href='contact.html'">Visit Today</button>
+                <button class="button whiteblue-bg pointer" onclick="window.location.href='pricing.html'">Become a Member</button>
                 <div class="review-section">
                     <button id="review-button" class="pointer">Write a review</button>
                     <p id="review-pending">Review pending</p>
@@ -128,9 +126,9 @@
                             <input class="input-sm" type="date">
                         </div>
                         <div>
-                            <label>Review Title (required)</label>
+                            <label>Review Title <span class="asterix">&#42;</span></label>
                             <input class="input-sm" type="text">
-                            <label>Review (required)</label>
+                            <label>Review <span class="asterix">&#42;</span></label>
                             <textarea class="input-lg" placeholder="Tell the Petcetera family what you loved about this pet."></textarea>
                         </div>
                     </form>

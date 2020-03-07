@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-      <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
-    <title>P01 Process</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
-  </head>
-  <body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
+        <title>Product Listing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> <!-- Fonts imported from Adobe Fonts -->
+    </head>
+    <body>
 
-    <div class="side-bar">
-        <div class="content">
-        <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
-        <section id="foundations">
-            <p>Foundations</p>
-            <ul>
-                <li><a href="index.html">Grid Structure</a></li>
-                <li><a href="colour.html">Colour Swatches</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
-        </section> <!--end of #foundations -->
+        <div class="side-bar">
+            <div class="content">
+                <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
+                <section id="foundations">
+                    <p>Foundations</p>
+                    <ul>
+                        <li><a href="index.html">Grid Structure</a></li>
+                        <li><a href="colour.html">Colour Swatches</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                    </ul>
+                </section> <!--end of #foundations -->
 
-        <section id="components">
-            <p>Components</p>
-            <ul>
-                <li><a href="navigation.html">Navigation</a></li>
-                <li><a href="buttons.html">Buttons</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li  id="active-page"><a href="product-listing.html">Product Listing</a></li>
-            </ul>
-        </section><!--end of #components -->
+                <section id="components">
+                    <p>Components</p>
+                    <ul>
+                        <li><a href="navigation.html">Navigation</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li  id="active-page"><a href="product-listing.html">Product Listing</a></li>
+                    </ul>
+                </section><!--end of #components -->
 
-        <section id="more-links">
-            <ul>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </section>
-        </div><!-- end of .content -->
-    </div> <!-- end of #side-bar -->
+                <section id="more-links">
+                    <ul>
+                        <li><a href="http://www.sfu.ca/~aca180/iat339/p02-templates/citations.html" target="_blank">Citations</a></li>
+                    </ul>
+                </section>
+            </div><!-- end of .content -->
+        </div> <!-- end of #side-bar -->
 
-    <div class="main">
+        <div class="main">
 
-        <h1>Product Listing</h1>
-        <div id="sample-listing" class="grid-container">
-            <div class="col">
-                <img src="img/product-placeholder.jpg" alt="placeholder image">
-                <div>
-                  <h4>Coco</h4>
-                  <p>Pug</p>
+            <h1>Product Listing</h1>
+            <section>
+                <div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings">
+                    <a class="col product-card">
+                        <img src="img/product-placeholder.jpg" alt="Pet portrait image">
+                        <div>
+                            <h4 class="left-align">Pet Name</h4>
+                            <p class="left-align">Breed</p>
+                        </div>
+                        <div class="new"><p>New</p></div>
+                    </a>
+                    <a class="col product-card">
+                        <img src="img/product-placeholder.jpg" alt="Pet profile image">
+                        <div>
+                            <h4 class="left-align">Pet Name</h4>
+                            <p class="left-align">Breed</p>
+                        </div>
+                    </a>
+                    <a class="col product-card">
+                        <img src="img/product-placeholder.jpg" alt="Pet profile image">
+                        <div>
+                            <h4 class="left-align">Pet Name</h4>
+                            <p class="left-align">Breed</p>
+                        </div>
+                    </a>
+                    <a class="col product-card">
+                        <img src="img/product-placeholder.jpg" alt="Pet profile image">
+                        <div>
+                            <h4 class="left-align">Pet Name</h4>
+                            <p class="left-align">Breed</p>
+                        </div>
+                    </a>
                 </div>
+            </section>
+            
+            <h3>CSS Selectors</h3>
+            <div class="sample-code">
+                <code>.listings</code>
+                <code>.product-card</code>
+                <code>.new</code>
+                <code>#listing-space</code>
             </div>
-
-            <div class="col">
-                <img src="img/product-placeholder.jpg" alt="placeholder image">
-                <div>
-                  <h4>Jasper</h4>
-                  <p>German Shepherd</p>
-                </div>
+            
+            <h3>Sample Code</h3>
+            <div class="sample-code">
+                <code>&lt;div id="listing-space" class="listings grid-container" role="rowgroup" aria-label="pet listings"&gt;</code>
+                
+                <code class="indent-code">&lt;a class="col product-card"&gt;</code>
+                <code class="indent-code-2">&lt;img src="img/product-placeholder.jpg" alt="Pet profile image"&gt;</code>
+                <code class="indent-code-3">&lt;div&gt;</code>
+                <code class="indent-code-4">&lt;h4 class="left-align"&gt;Pet Name&lt;/h4&gt;</code>
+                <code class="indent-code-4">&lt;h4 class="left-align"&gt;Breed&lt;/h4&gt;</code>
+                <code class="indent-code-3">&lt;/div&gt;</code>
+                <code class="indent-code-3">&lt;div class="new"&gt;&lt;p&gt;New&lt;/p&gt;&lt;/div&gt;</code>
+                <code class="indent-code">&lt;/a&gt;</code>
+                
+                <code>&lt;/div&gt;</code>
             </div>
-
-            <div class="col">
-                <img src="img/product-placeholder.jpg" alt="placeholder image">
-                <div>
-                  <h4>Milo</h4>
-                  <p>Poodle</p>
-                </div>
-            </div>
-
-        </div><!-- end of grid-container -->
-    </div><!-- end of main -->
-  </body>
+            
+            
+        </div><!-- end of main -->
+    </body>
 </html>

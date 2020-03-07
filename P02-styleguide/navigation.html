@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-      <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
-    <title>P01 Process</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> 
-    <!-- Fonts imported from Adobe Fonts -->
-    <script src="script.js"></script>
-  </head>
-  <body>
+    <head>
+        <!-- Code taught by Paul Brokenshire for IAT 334 and written by Audrey Chow -->
+        <title>Navigation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ruf4kim.css"> 
+        <!-- Fonts imported from Adobe Fonts -->
+        <script src="script.js"></script>
+    </head>
+    <body>
 
-    <div class="side-bar">
-        <div class="content">
-        <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
-        <section id="foundations">
-            <p>Foundations</p>
-            <ul>
-                <li><a href="index.html">Grid Structure</a></li>
-                <li><a href="colour.html">Colour Swatches</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
-        </section> <!--end of #foundations -->
+        <div class="side-bar">
+            <div class="content">
+                <img id="logo" src="img/petcetera-logo.png" alt="AUX Logo">
+                <section id="foundations">
+                    <p>Foundations</p>
+                    <ul>
+                        <li><a href="index.html">Grid Structure</a></li>
+                        <li><a href="colour.html">Colour Swatches</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                    </ul>
+                </section> <!--end of #foundations -->
 
-        <section id="components">
-            <p>Components</p>
-            <ul>
-                <li  id="active-page"><a href="navigation.html">Navigation</a></li>
-                <li><a href="buttons.html">Buttons</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="product-listing.html">Product Listing</a></li>
-            </ul>
-        </section><!--end of #components -->
+                <section id="components">
+                    <p>Components</p>
+                    <ul>
+                        <li  id="active-page"><a href="navigation.html">Navigation</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="product-listing.html">Product Listing</a></li>
+                    </ul>
+                </section><!--end of #components -->
 
-        <section id="more-links">
-            <ul>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </section>
-        </div><!-- end of .content -->
-    </div> <!-- end of #side-bar -->
+                <section id="more-links">
+                    <ul>
+                        <li><a href="http://www.sfu.ca/~aca180/iat339/p02-templates/citations.html" target="_blank">Citations</a></li>
+                    </ul>
+                </section>
+            </div><!-- end of .content -->
+        </div> <!-- end of #side-bar -->
 
-    <div class="main">
+        <div class="main">
 
-        <h1>Navigation</h1>
-        
-                <!---------------------- MAIN NAV ---------------------->
-        <nav class="top-nav" role="navigation" aria-label="main">
-            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
-            <div class="top-nav-right">
-                <div class="dropdown">
-                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
-                    <div class="dropdown-content">
-                        <a href="dogs.html">Dogs</a>
-                        <a href="cats.html">Cats</a>
-                        <a href="bunnies.html">Bunnies</a>
-                    </div>
-                </div> <!-- end of our pets -->
-                <div class="dropdown">
-                    <button class="dropdown-button">Our Studio</button>
-                    <div class="dropdown-content">
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div> <!-- end of our studio -->
-                <div class="dropdown">
-                    <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='pricing.html'">Pricing</button>
-                </div> <!-- end of pricing -->
-            </div> <!-- end of .top-nav-right -->
-            <a id="hamburger" onclick="openNav()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </nav> <!-- end of .top-nav -->
-        
-        
-        
-        <nav id="top-nav">
-            <a id="active-nav">Our Pets</a>
-            <a>Our Studio</a>
-            <a>Pricing</a>
-        </nav>
 
-        <h3>Sample Code</h3>
-        <div class="sample-code">
-            <code>&lt;nav&gt;</code>
-            <code class="indent-code">&lt;a id="active-nav"&gt;Our Pets&lt;/a&gt;</code>
-            <code class="indent-code">&lt;a&gt;Our Studio&lt;/a&gt;</code>
-            <code class="indent-code">&lt;a&gt;Pricing&lt;/a&gt;</code>
-            <code>&lt;/nav&gt;</code>
-        </div><!-- end of sample-code -->
-    </div><!-- end of main -->
-  </body>
+            <h1>Navigation</h1>
+
+            <!---------------------- MAIN NAV ---------------------->
+            <section>
+                <nav class="top-nav">
+                    <a id="logo-link"><img id="nav-logo" src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                    <div class="top-nav-right">
+                        <div class="dropdown">
+                            <button class="dropdown-button underline-link pointer">Our Pets</button>
+                            <div class="dropdown-content">
+                                <a>Dogs</a>
+                                <a>Cats</a>
+                                <a>Bunnies</a>
+                            </div>
+                        </div> <!-- end of our pets -->
+                        <div class="dropdown">
+                            <button class="dropdown-button">Our Studio</button>
+                            <div class="dropdown-content">
+                                <a>About</a>
+                                <a>Contact</a>
+                            </div>
+                        </div> <!-- end of our studio -->
+                        <div class="dropdown">
+                            <button class="dropdown-button underline-link pointer">Pricing</button>
+                        </div> <!-- end of pricing -->
+                    </div> <!-- end of .top-nav-right -->
+                </nav> <!-- end of .top-nav -->
+            </section>
+
+            <section id="navigation-css-selectors">
+                <h3>CSS Selectors</h3>
+                <div class="sample-code">
+                    <code>nav</code>
+                    <code>.top-nav</code>
+                    <code>.top-nav-right</code>
+                    <code>.dropdown</code>
+                    <code>.dropdown-button</code>
+                    <code>.dropdown-content</code>
+                    <code>#logo-link</code>
+                    <code>#nav-logo</code>
+                </div>
+
+            </section>
+
+
+            <h3>Sample Code</h3>
+            <div class="sample-code">
+                <code>&lt;nav class="top-nav"&gt;</code>
+                <code class="indent-code">&lt;a id="logo-link"&gt;&lt;img id="nav-logo" src="img/petcetera-logo.jpg"&gt;&lt;/a&gt;</code>
+                <code class="indent-code">&lt;div class="top-nav-right"&gt;</code>
+                <code class="indent-code-2">&lt;div class="dropdown"&gt;</code>
+                <code class="indent-code-3">&lt;button class="dropdown-button underline-link pointer"&gt;Our Pets&lt;/button&gt;</code>
+                <code class="indent-code-3">&lt;div class="dropdown-content"&gt;</code>
+                <code class="indent-code-4">&lt;a&gt;Dogs&lt;/a&gt;</code>
+                <code class="indent-code-4">&lt;a&gt;Cats&lt;/a&gt;</code>
+                <code class="indent-code-4">&lt;a&gt;Bunnies&lt;/a&gt;</code>
+                <code class="indent-code-3">&lt;/div&gt;</code>
+                <code class="indent-code-2">&lt;/div&gt;</code>
+                <code class="indent-code-2">&lt;div class="dropdown"&gt;</code>
+                <code class="indent-code-3">&lt;button class="dropdown-button"&gt;Our Studio&lt;/button&gt;</code>
+                <code class="indent-code-3">&lt;div class="dropdown-content"&gt;</code>
+                <code class="indent-code-4">&lt;a&gt;About&lt;/a&gt;</code>
+                <code class="indent-code-4">&lt;a&gt;Contact&lt;/a&gt;</code>
+                <code class="indent-code-3">&lt;/div&gt;</code>
+                <code class="indent-code-2">&lt;/div&gt;</code>
+                <code class="indent-code-2">&lt;div class="dropdown"&gt;</code>
+                <code class="indent-code-3">&lt;button class="dropdown-button underline-link pointer"&gt;Pricing&lt;/button&gt;</code>
+                <code class="indent-code-2">&lt;/div&gt;</code>
+                <code class="indent-code">&lt;/div&gt;</code>
+                <code>&lt;/nav&gt;</code>
+            </div><!-- end of sample-code -->
+        </div><!-- end of main -->
+    </body>
 </html>
