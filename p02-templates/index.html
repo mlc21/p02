@@ -15,7 +15,7 @@
     <body>
         <!---------------------- MAIN NAV ---------------------->
         <nav class="top-nav" role="navigation" aria-label="main">
-            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+            <a id="logo-link" href="index.html"><img  id="nav-logo"src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder" role="link"></a>
             <div class="top-nav-right">
                 <div class="dropdown">
                     <button class="dropdown-button underline-link nav-cursor" onclick="window.location.href='our-pets.html'">Our Pets</button>
@@ -43,9 +43,9 @@
 
         <!--------------------- MOBILE NAV --------------------->
         <div id="mobile-nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" aria-label="Close" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="mobile-nav-content">
-                <a href="index.html"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
+                <a href="index.html" role="link"><img src="img/petcetera-logo.jpg" alt="Petcetera logo placeholder"></a>
                 <section>
                     <a class="mobile-nav-heading" href="our-pets.html" onclick="closeNav()">Our Pets</a>
                     <a href="dogs.html" onclick="closeNav()" class="mobile-nav-subheading">Dogs</a>
@@ -67,14 +67,14 @@
 
         <!---------------------- MAIN -------------------------->
         <div class="sale-banner">
-            <a href="pricing.html">Limited time: 50% off annual memberships</a>
+            <a href="pricing.html" role="link">Limited time: 50% off annual memberships</a>
         </div>
 
-        <div class="hero banner">
+        <div class="hero banner" role="banner">
             <div class="textblock left-align" role="textblock">
                 <h1>Say hello to Unipug</h1>
                 <p class="hero">Nothing says magic like a pug in a unicorn suit. Come to Petcetera to play with Unipug and many more pets like him!</p>
-                <a href="our-pets.html" class="underline-link black">Browse Pets</a>
+                <a href="our-pets.html" class="underline-link black" role="link">Browse Pets</a>
             </div><!--end of .textblock-->
         </div><!--end of .hero-->
 
@@ -83,7 +83,7 @@
                 <h2>Furry friends for everyone!</h2>
                 <p>At Petcetera, we take joy in hosting daily group playdates with the most adorable dogs, cats, and bunnies in Surrey, BC. Drop in to spend an afternoon at our playcentre, or become a member for endless cuddles, all year-round.</p>
             </div><!--end of .textblock-->
-            <button class="button whiteblue-bg pointer" onclick="document.location = 'about.html'">About Us</button>
+            <button class="button whiteblue-bg pointer" onclick="document.location = 'about.html'" role="button">About Us</button>
         </div><!--end of .banner-->
 
         <div class="banner" id="bunny-day">
@@ -103,7 +103,7 @@
                             <p class="price-details">Stop by for a 60 minute playdate with a pet of your choice.</p>
                             <p>* Limited selection of pets are available for drop-ins *</p>
                         </div>
-                        <button class="dark-blue">Purchase now</button>
+                        <button class="dark-blue" role="button">Purchase now</button>
 
                     </a>
                     <a class="col black" href="payment.html">
@@ -112,7 +112,7 @@
                             <p class="price">$60</p>
                             <p class="price-details">Enjoy unlimited amounts of playdates with our pets for an entire month.</p>
                         </div>
-                        <button class="dark-blue">Purchase now</button>
+                        <button class="dark-blue" role="button">Purchase now</button>
 
                     </a>
                     <a class="col black" href="payment.html">
@@ -124,7 +124,7 @@
                                 <p>Save 50%</p>
                             </div><!--end of .sale-badge-->
                         </div>
-                        <button class="dark-blue">Purchase now</button>
+                        <button class="dark-blue" role="button">Purchase now</button>
 
                     </a>
                 </div> <!-- end of .grid-container -->
@@ -133,11 +133,11 @@
         <!--------------------- FOOTER ------------------------->
         <footer>
             <div class="grid-container">
-                <div class="col" id="terms">
-                    <h4><a class="black" href="pricing.html">Get Started</a></h4>
-                    <h4><a class="black" href="about.html">About Petcetera</a></h4>
-                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/index.html" target="_blank">Styleguide</a></h4>
-                    <h4><a class="black" href="citations.html" target="_blank">Citations</a></h4>
+                <div class="col" id="terms" role="navigation">
+                    <h4><a class="black" href="pricing.html" role="link">Get Started</a></h4>
+                    <h4><a class="black" href="about.html" role="link">About Petcetera</a></h4>
+                    <h4><a class="black" href="http://www.sfu.ca/~aca180/iat339/P02-styleguide/index.html" target="_blank" role="link">Styleguide</a></h4>
+                    <h4><a class="black" href="citations.html" target="_blank" role="link">Citations</a></h4>
                 </div> <!-- end of terms .col-->
                 <div class="col">
                     <h4><a class="black" href="contact.html">Contact</a></h4>
